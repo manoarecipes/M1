@@ -1,0 +1,19 @@
+<template name="Budget_Page">
+  /** Budget_Page = Create_Student_Data_Page */
+  <div style="margin-top: 20px" class="ui container">
+
+    <form class="ui form budget-form  {{ successClass }} {{ errorClass }}">
+      /** ui form budget-form = ui form student-data-form */
+      <h4 class="ui dividing header">Budget Data</h4>
+      /** Budget Data = Student Data */
+      {{> Select_Form_Control label="Select your Budget" required=true options=Budget errorMessage=(fieldError "budget") }}
+      /** Select your Budget = GPA
+       * Budget = GPAs
+       * "budget" = "gpa"
+       */
+
+      <button class="ui primary button" type="submit">Submit</button>
+    </form>
+
+  </div>
+</template>
