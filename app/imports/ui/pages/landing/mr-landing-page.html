@@ -1,0 +1,59 @@
+<template name="MR_Landing_Page">
+
+  <div class="landing-section-1">
+    <div class="ui grid">
+
+      <div class="row">
+        <div class="ui right aligned sixteen wide column">
+          {{> Cas_Login }}
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="ui center aligned sixteen wide column">
+          <h1 class="landing-section-1-welcome">Welcome to Manoa Recipes</h1>
+          <h3 class="landing-section-1-tagline">A student recipe repository</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section-2">
+    <div class="ui grid">
+      <div class="ui centered eight wide column">
+        <div class="ui right floated big button">
+          search
+        </div>
+        <div class="ui big fluid input">
+          <input class="text" placeholder="search for recipes">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section-3">
+    <h3 class="landing-section-sample">The Manoa Recipes database contains *numberofrecipes* including:</h3>
+    <div class="ui three column centered grid container">
+      <div class="column">
+        <h4 class="landing-section-recipe-name">Pasta Salad square image</h4>
+      </div>
+      <div class="column">
+        <h4 class="landing-section-recipe-name">Pasta Salad tiny image</h4>
+      </div>
+      <div class="column">
+        <h4 class="landing-section-recipe-name">Pasta Salad wide image</h4>
+      </div>
+    </div>
+    <div class="ui three column grid container">
+      <div class="column">
+        <img class="ui centered medium fluid image" src="/images/square-pasta-salad.jpg">
+      </div>
+      <div class="column">
+        <img class="ui centered medium fluid image" src="/images/tiny-pasta-salad.jpg">
+      </div>
+      <div class="column">
+        <img class="ui centered medium fluid image" src="/images/wide-pasta-salad.jpg">
+      </div>
+    </div>
+  </div>
+</template>

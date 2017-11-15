@@ -5,7 +5,7 @@ import { $ } from 'meteor/jquery';
 
 /*                        LANDING ROUTE                       */
 
-export const landingPageRouteName = 'Landing_Page';
+export const landingPageRouteName = 'MR_Landing_Page';
 FlowRouter.route('/', {
   name: landingPageRouteName,
   action() {
