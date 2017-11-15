@@ -5,7 +5,7 @@ import { $ } from 'meteor/jquery';
 
 /*                        LANDING ROUTE                       */
 
-export const landingPageRouteName = 'Landing_Page';
+export const landingPageRouteName = 'MR_Landing_Page';
 FlowRouter.route('/', {
   name: landingPageRouteName,
   action() {
@@ -73,6 +73,14 @@ userRoutes.route('/recipe-directory', {
   name: recipeDirectoryPageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: recipeDirectoryPageRouteName });
+  },
+});
+
+export const recipePageRouteName = 'Add_Recipe_Page';
+userRoutes.route('/add-recipe', {
+  name: recipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipePageRouteName });
   },
 });
 

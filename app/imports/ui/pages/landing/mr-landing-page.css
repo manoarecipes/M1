@@ -1,0 +1,54 @@
+.landing-section-1 {
+  padding: 10px 10px 30px 10px;
+  background-color: #2befe5;
+  color: #323638;
+}
+
+.landing-section-2 {
+  padding: 20px 10px 20px 10px;
+  background-color: #5c706c;
+  color:  #e8e8e8;
+}
+
+.landing-section-3 {
+  padding: 20px 10px 30px 30px;
+  background-color: #2befe5;
+  color: #323638;
+}
+
+.landing-section-5 {
+  padding: 20px 10px 20px 10px;
+  background-color: #5c706c;
+  color: #e8e8e8;
+}
+
+
+.landing-section-1-welcome {
+  font-family: 'Baskerville', sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+}
+
+.landing-section-header {
+  font-family: 'Baskerville', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.landing-section-sample {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.landing-section-recipe-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+body {
+  background-color: #2befe5;
+}
