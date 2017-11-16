@@ -68,6 +68,22 @@ userRoutes.route('/filter', {
   },
 });
 
+export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
+userRoutes.route('/recipe-directory', {
+  name: recipeDirectoryPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipeDirectoryPageRouteName });
+  },
+});
+
+export const recipePageRouteName = 'Add_Recipe_Page';
+userRoutes.route('/add-recipe', {
+  name: recipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipePageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
