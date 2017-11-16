@@ -11,13 +11,13 @@ import { Tracker } from 'meteor/tracker';
  * Represents a specific interest, such as "Software Engineering".
  * @extends module:Base~BaseCollection
  */
-class IngrediantCollection extends BaseCollection {
+class IngredientsCollection extends BaseCollection {
 
   /**
    * Creates the Interest collection.
    */
   constructor() {
-    super('Ingrediant', new SimpleSchema({
+    super('Ingredients', new SimpleSchema({
       name: { type: String },
       cost: { type: String },
     }, { tracker: Tracker }));
@@ -38,7 +38,7 @@ class IngrediantCollection extends BaseCollection {
     check(name, String);
     check(cost, String);
     if (this.find({ name }).count() > 0) {
-      throw new Meteor.Error(`${name} is previously defined in another Interest`);
+      throw new Meteor.Error(`${name} is previously defined in another Ingredient`);
     }
     return this._collection.insert({ name, cost });
   }
@@ -49,19 +49,19 @@ class IngrediantCollection extends BaseCollection {
    * @returns { String } An interest name.
    * @throws { Meteor.Error} If the interest docID cannot be found.
    */
-  findName(ingrediantID) {
-    this.assertDefined(ingrediantID);
-    return this.findDoc(ingrediantID).name;
+  findName(IngredientsID) {
+    this.assertDefined(IngredientsID);
+    return this.findDoc(IngredientsID).name;
   }
 
   /**
    * Returns a list of Interest names corresponding to the passed list of Interest docIDs.
-   * @param ingrediantIDs A list of Interest docIDs.
+   * @param IngredientIDs A list of Interest docIDs.
    * @returns { Array }
    * @throws { Meteor.Error} If any of the instanceIDs cannot be found.
    */
-  findNames(ingrediantIDs) {
-    return ingrediantIDs.map(ingrediantID => this.findName(ingrediantID));
+  findNames(IngredientsIDs) {
+    return IngredientsIDs.map(IngredientsID => this.findName(IngredientsID));
   }
 
   /**
@@ -117,4 +117,4 @@ class IngrediantCollection extends BaseCollection {
 /**
  * Provides the singleton instance of this class to all other entities.
  */
-export const Ingrediant = new IngrediantCollection();
+export const Ingredients = new IngredientsCollection();

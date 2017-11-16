@@ -2,6 +2,83 @@
   "comment": "Initial contents for the BowFolios database. For development purposes only.",
   "collections": [
     {
+      "name": "IngredientsCollection",
+      "contents": [
+        {
+          "name": "Bacon",
+          "cost": "0.01"
+        },
+        {
+          "name": "Bisquick",
+          "cost": "0.01"
+        },
+        {
+          "name": "Blueberries",
+          "cost": "0.01"
+        },
+        {
+          "name": "Bread",
+          "cost": "0.01"
+        },
+        {
+          "name": "Cheddar Cheese",
+          "cost": "0.01"
+        },
+        {
+          "name": "Egg",
+          "cost": "0.01"
+        },
+        {
+          "name": "English Muffin",
+          "cost": "0.01"
+        },
+        {
+          "name": "Ham",
+          "cost": "0.01"
+        },
+        {
+          "name": "Lettuce",
+          "cost": "0.01"
+        },
+        {
+          "name": "Maple Syrup",
+          "description": "0.01"
+        },
+        {
+          "name": "Mayonnaise",
+          "description": "0.01"
+        },
+        {
+          "name": "Milk",
+          "description": "0.01"
+        },
+        {
+          "name": "Mozzarella Cheese",
+          "description": "0.01"
+        },
+        {
+          "name": "Potato",
+          "description": "0.01"
+        },
+        {
+          "name": "Rice",
+          "description": "0.01"
+        },
+        {
+          "name": "Spam",
+          "description": "0.01"
+        },
+        {
+          "name": "Tomato",
+          "cost": "0.01"
+        },
+        {
+          "name": "Tuna",
+          "cost": "0.01"
+        }
+      ]
+    },
+    {
       "name": "InterestCollection",
       "contents": [
         {
