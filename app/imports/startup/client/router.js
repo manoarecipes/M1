@@ -53,10 +53,18 @@ const userRoutes = FlowRouter.group({
 });
 
 export const profilePageRouteName = 'Profile_Page';
-userRoutes.route('/profile', {
+userRoutes.route('/edit-profile', {
   name: profilePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: profilePageRouteName });
+  },
+});
+
+export const profileLandingRouteName = 'Profile_Landing';
+userRoutes.route('/profile', {
+  name: profileLandingRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: profileLandingRouteName });
   },
 });
 
