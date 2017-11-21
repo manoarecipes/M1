@@ -69,7 +69,7 @@ Template.Add_Recipe_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const docID = Recipes.findDoc(FlowRouter.getParam('username'))._id;
+      const docID = Recipes.findDoc(FlowRouter.getParam('recipeName'))._id;
       const id = Recipes.update(docID, { $set: cleanData });
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
@@ -79,6 +79,3 @@ Template.Add_Recipe_Page.events({
     }
   },
 });
-
-
-
