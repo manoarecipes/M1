@@ -49,12 +49,12 @@ Template.Add_Recipe_Page.helpers({
 Template.Add_Recipe_Page.events({
   'submit .profile-data-form'(event, instance) {
     event.preventDefault();
-    const recipeName = event.target.recipe.value;
-    const description = event.target.description.value;
+    const recipeName = event.target.name.value;
+    const description = event.target.Description.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
-    const instructions = event.target.instructions.value;
-    const picture = event.target.picture.value;
-    const selectedFoodTags = _.filter(event.target.foodTags.selectedOptions, (option) => option.selected);
+    const instructions = event.target.Instructions.value;
+    const picture = event.target.Picture.value;
+    const selectedFoodTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const foodTags = _.map(selectedFoodTags, (option) => option.value);
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
     const ingredients = _.map(selectedIngredients, (option) => option.value);
