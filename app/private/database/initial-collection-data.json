@@ -145,6 +145,41 @@
           "picture": "/images/casanova.jpg"
         }
       ]
+    },
+    {
+      "name": "RecipeCollection",
+      "contents": [
+        {
+          "recipeName": "Honey BBQ Chicken Pizza",
+          "description": "It's a chicken pizza",
+          "username": "kleve84",
+          "instructions": "1. Make the pizza",
+          "ingredients": [
+            "Chicken",
+            "Honey"
+          ],
+          "tags": [
+            "Dinner",
+            "Pizza"
+          ],
+          "picture": "/images/pizza.jpg"
+        },
+        {
+          "recipeName": "Cheese Omelette",
+          "description": "It's an omelette",
+          "username": "kleve84",
+          "instructions": "1. Make the omelette",
+          "ingredients": [
+            "Eggs",
+            "Cheese"
+          ],
+          "tags": [
+            "Breakfast",
+            "Cheap"
+          ],
+          "picture": "/images/omelette.jpg"
+        }
+      ]
     }
   ]
 }

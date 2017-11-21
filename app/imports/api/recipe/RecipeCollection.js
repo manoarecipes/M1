@@ -1,6 +1,5 @@
 import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
-import { Ingredients } from '/imports/api/ingredient/IngredientCollection';
 import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
@@ -56,13 +55,6 @@ class RecipeCollection extends BaseCollection {
       recipeName: String, description: String, username: String, instructions: String, picture: String,
     };
     check({ recipeName, description, username, instructions, picture }, checkPattern);
-
-    if (this.find({ username }).count() > 0) {
-      throw new Meteor.Error(`${username} is previously defined in another Recipe`);
-    }
-
-    // Throw an error if any of the passed Interest names are not defined.
-    Ingredients.assertNames(ingredients);
 
     // Throw an error if there are duplicates in the passed interest names.
     if (ingredients.length !== _.uniq(ingredients).length) {
