@@ -50,7 +50,8 @@ class RecipeCollection extends BaseCollection {
    * if one or more ingredients and/or tags are not defined.
    * @returns The newly created docID.
    */
-  define({ recipeName = '', description = '', username, instructions = '', ingredients = [], tags = [], picture = '' }) {
+  define({ recipeName = '', description = '', username, instructions = '',
+           ingredients = [], tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
       recipeName: String, description: String, username: String, instructions: String, picture: String,
@@ -58,7 +59,7 @@ class RecipeCollection extends BaseCollection {
     check({ recipeName, description, username, instructions, picture }, checkPattern);
 
     // Throw an error if any of the passed Ingredient names are not defined.
-    //Ingredients.assertNames(ingredients);
+    // Ingredients.assertNames(ingredients);
 
     // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {
