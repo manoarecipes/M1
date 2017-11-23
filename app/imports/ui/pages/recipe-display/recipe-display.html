@@ -1,0 +1,17 @@
+<template name="Recipe_Display_Page">
+{{#if Template.subscriptionsReady}}
+  <div style="margin-top: 20px" class="ui container">
+    <div class="ui cards">
+
+      {{#each recipe in recipes }}
+        {{> Recipe_Profile recipe=recipe }}
+
+      {{> TextArea_Form_Control label="Comments" placeholder="Please enter any comments here" errorMessage=(fieldError "comments")}}
+      {{/each}}
+    </div>
+  </div>
+{{/if}}
+</template>
+
+
+//directory-page.html

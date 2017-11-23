@@ -1,5 +1,6 @@
 import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
+import { Ingredients } from '/imports/api/ingredients/IngredientsCollection.js';
 import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
@@ -56,7 +57,10 @@ class RecipeCollection extends BaseCollection {
     };
     check({ recipeName, description, username, instructions, picture }, checkPattern);
 
-    // Throw an error if there are duplicates in the passed interest names.
+    // Throw an error if any of the passed Ingredient names are not defined.
+    //Ingredients.assertNames(ingredients);
+
+    // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {
       throw new Meteor.Error(`${ingredients} contains duplicates`);
     }
