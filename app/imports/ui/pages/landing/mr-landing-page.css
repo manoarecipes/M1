@@ -7,7 +7,7 @@
 .landing-section-2 {
   padding: 20px 10px 20px 10px;
   background-color: #5c706c;
-  color:  #e8e8e8;
+  color:  #fafafa;
 }
 
 .landing-section-3 {
@@ -16,10 +16,10 @@
   color: #323638;
 }
 
-.landing-section-5 {
+.landing-section-4   {
   padding: 20px 10px 20px 10px;
   background-color: #5c706c;
-  color: #e8e8e8;
+  color: #fafafa;
 }
 
 
@@ -51,4 +51,12 @@
 
 body {
   background-color: #2befe5;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: underline;
+  text-align: center;
 }
