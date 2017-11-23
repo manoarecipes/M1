@@ -75,6 +75,13 @@ userRoutes.route('/filter', {
     BlazeLayout.render('User_Layout', { main: filterPageRouteName });
   },
 });
+export const filterIngredientsPageRouteName = 'Filter_Ingredients_Page';
+userRoutes.route('/filter-ingredients', {
+  name: filterIngredientsPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: filterIngredientsPageRouteName });
+  },
+});
 
 export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
 userRoutes.route('/recipe-directory', {
