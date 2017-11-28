@@ -2,6 +2,91 @@
   "comment": "Initial contents for the BowFolios database. For development purposes only.",
   "collections": [
     {
+      "name": "IngredientsCollection",
+      "contents": [
+        {
+          "name": "Bacon",
+          "cost": "0.01"
+        },
+        {
+          "name": "Bisquick",
+          "cost": "0.01"
+        },
+        {
+          "name": "Blueberries",
+          "cost": "0.01"
+        },
+        {
+          "name": "Bread",
+          "cost": "0.01"
+        },
+        {
+          "name": "Cheddar Cheese",
+          "cost": "0.01"
+        },
+        {
+          "name": "Egg",
+          "cost": "0.01"
+        },
+        {
+          "name": "English Muffin",
+          "cost": "0.01"
+        },
+        {
+          "name": "Ham",
+          "cost": "0.01"
+        },
+        {
+          "name": "Lettuce",
+          "cost": "0.01"
+        },
+        {
+          "name": "Maple Syrup",
+          "cost": "0.01"
+        },
+        {
+          "name": "Mayonnaise",
+          "cost": "0.01"
+        },
+        {
+          "name": "Milk",
+          "cost": "0.01"
+        },
+        {
+          "name": "Mozzarella Cheese",
+          "cost": "0.01"
+        },
+        {
+          "name": "Potato",
+          "cost": "0.01"
+        },
+        {
+          "name": "Rice",
+          "cost": "0.01"
+        },
+        {
+          "name": "Spam",
+          "cost": "0.01"
+        },
+        {
+          "name": "Tomato",
+          "cost": "0.01"
+        },
+        {
+          "name": "Tuna",
+          "cost": "0.01"
+        },
+        {
+          "name": "Chicken",
+          "cost": "0.01"
+        },
+        {
+          "name": "Honey",
+          "cost": "0.01"
+        }
+      ]
+    },
+    {
       "name": "InterestCollection",
       "contents": [
         {
@@ -143,6 +228,41 @@
           ],
           "title": "Professor, Information and Computer Sciences",
           "picture": "/images/casanova.jpg"
+        }
+      ]
+    },
+    {
+      "name": "RecipeCollection",
+      "contents": [
+        {
+          "recipeName": "Honey BBQ Chicken Pizza",
+          "description": "It's a chicken pizza",
+          "username": "kleve84",
+          "instructions": "1. Make the pizza",
+          "ingredients": [
+            "Chicken",
+            "Honey"
+          ],
+          "tags": [
+            "Dinner",
+            "Pizza"
+          ],
+          "picture": "/images/pizza.jpg"
+        },
+        {
+          "recipeName": "Cheese Omelette",
+          "description": "It's an omelette",
+          "username": "kleve84",
+          "instructions": "1. Make the omelette",
+          "ingredients": [
+            "Egg",
+            "Cheddar Cheese"
+          ],
+          "tags": [
+            "Breakfast",
+            "Cheap"
+          ],
+          "picture": "/images/omelette.jpg"
         }
       ]
     }
