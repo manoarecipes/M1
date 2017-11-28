@@ -58,7 +58,7 @@ class RecipeCollection extends BaseCollection {
     check({ recipeName, description, username, instructions, picture }, checkPattern);
 
     // Throw an error if any of the passed Ingredient names are not defined.
-    //Ingredients.assertNames(ingredients);
+    // Ingredients.assertNames(ingredients);
 
     // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {

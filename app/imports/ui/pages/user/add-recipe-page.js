@@ -4,7 +4,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
-import { Recipes } from '/import/api/recipes/RecipesCollection';
+import { Recipes } from '/imports/api/recipe/RecipeCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
