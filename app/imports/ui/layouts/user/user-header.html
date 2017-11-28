@@ -2,6 +2,7 @@
   <div class="ui top fixed borderless inverted teal menu">
     <div class="ui container">
       <div class="item"><h1>Manoa Recipes</h1></div>
+      <a class="{{isActiveRoute "MR_Landing_Page"}} item" href="{{pathFor "MR_Landing_Page" username=routeUserName}}">Home</a>
       <a class="{{isActiveRoute "Profile_Landing"}} item" href="{{pathFor "Profile_Landing" username=routeUserName}}">Profile</a>
       <a class="{{isActiveRoute "Filter_Page"}} item" href="{{pathFor "Filter_Ingredients_Page" username=routeUserName}}">Filter Ingredients</a>
       <a class="{{isActiveRoute "Add_Recipe_Page"}} item" href="{{pathFor "Add_Recipe_Page" username=routeUserName}}">Add Recipe</a>
