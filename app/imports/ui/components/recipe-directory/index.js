@@ -1,1 +1,1 @@
-import './recipe-directory.html';
+import './recipe-directory-profile.html';
