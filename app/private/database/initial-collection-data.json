@@ -42,31 +42,31 @@
         },
         {
           "name": "Maple Syrup",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Mayonnaise",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Milk",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Mozzarella Cheese",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Potato",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Rice",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Spam",
-          "description": "0.01"
+          "cost": "0.01"
         },
         {
           "name": "Tomato",
