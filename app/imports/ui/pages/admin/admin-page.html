@@ -1,0 +1,35 @@
+<template name="Admin_Page">
+
+  {{#if Template.subscriptionsReady}}
+
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Admin Page
+    </div>
+    <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+      <div class="fields">
+        <input type="text" name="search_user" placeholder="Search User">
+        <input type='submit' onclick="sendToPage();" />
+
+      </div>
+
+
+      <div class="fields">
+        <input type="text" name="search_recipe" placeholder="Search Recipe">
+        <input type='submit' onclick="sendToPage();" />
+      </div>
+
+      <div class="fields">
+        <button class="ui primary button" type="submit">All Users</button>
+        <button class="ui primary button" type="submit">All Recipes</button>
+
+      </div>
+
+    </form>
+  </div>
+
+  {{/if}}
+
+</template>
+
