@@ -54,12 +54,10 @@ Template.Add_Recipe_Page.events({
     const username = FlowRouter.getParam('username'); // schema requires username.
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
-    const selectedFoodTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
-    const foodTags = _.map(selectedFoodTags, (option) => option.value);
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
     const ingredients = _.map(selectedIngredients, (option) => option.value);
 
-    const updatedRecipeData = { recipeName, description, username, instructions, picture, foodTags, ingredients };
+    const updatedRecipeData = { recipeName, description, username, instructions, picture, ingredients };
 
     // Clear out any old validation errors.
     instance.context.reset();
