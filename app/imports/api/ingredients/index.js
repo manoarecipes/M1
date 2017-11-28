@@ -1,0 +1,1 @@
+import './IngredientsCollection.js';
