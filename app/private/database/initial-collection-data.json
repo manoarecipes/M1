@@ -265,6 +265,35 @@
           "picture": "/images/omelette.jpg"
         }
       ]
+    },
+    {
+      "name": "TagCollection",
+      "contents": [
+        {
+          "name": "Dinner",
+          "description": ""
+        },
+        {
+          "name": "Lunch",
+          "description": ""
+        },
+        {
+          "name": "Breakfast",
+          "description": ""
+        },
+        {
+          "name": "Pizza",
+          "description": ""
+        },
+        {
+          "name": "Cheap",
+          "description": ""
+        },
+        {
+          "name": "Foodgasm",
+          "description": ""
+        }
+      ]
     }
   ]
 }
