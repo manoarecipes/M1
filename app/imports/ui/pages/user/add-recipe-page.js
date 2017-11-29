@@ -5,6 +5,8 @@ import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
 import { Recipes } from '/imports/api/recipe/RecipeCollection';
+import { Tags } from '/imports/api/tag/TagCollection';
+
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -13,6 +15,7 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.subscribe(Recipes.getPublicationName());
+  this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
@@ -36,11 +39,19 @@ Template.Add_Recipe_Page.helpers({
     return Recipes.findDoc(FlowRouter.getParam('recipeName'));
   },
   ingredients() {
-    const recipe = Recipes.findDoc(FlowRouter.getParam('recipeName'));
+    const recipe = Recipes.findDoc(FlowRouter.getParam('ingredients'));
     const selectedIngredients = recipe.ingredients;
     return recipe && _.map(Ingredients.findAll(),
         function makeIngredientObject(ingredient) {
           return { label: ingredient.name, selected: _.contains(selectedIngredients, ingredient.name) };
+        });
+  },
+  tags() {
+    const recipe = Recipes.findDoc(FlowRouter.getParam('tags'));
+    const selectedTags = recipe.tags;
+    return recipe && _.map(Tags.findAll(),
+        function makeTagsObject(tags) {
+          return { label: tags.name, selected: _.contains(selectedTags, tags.name) };
         });
   },
 });
@@ -56,8 +67,10 @@ Template.Add_Recipe_Page.events({
     const picture = event.target.Picture.value;
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
     const ingredients = _.map(selectedIngredients, (option) => option.value);
+    const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
+    const tags = _.map(selectedTags, (option) => option.value);
 
-    const updatedRecipeData = { recipeName, description, username, instructions, picture, ingredients };
+    const updatedRecipeData = { recipeName, description, username, instructions, picture, ingredients, tags };
 
     // Clear out any old validation errors.
     instance.context.reset();
