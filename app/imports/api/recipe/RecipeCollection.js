@@ -62,6 +62,7 @@ class RecipeCollection extends BaseCollection {
     Ingredients.assertNames(ingredients);
     Tags.assertNames(tags);
 
+
     // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {
       throw new Meteor.Error(`${ingredients} contains duplicates`);
