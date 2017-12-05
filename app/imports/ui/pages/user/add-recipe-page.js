@@ -7,9 +7,9 @@ import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
 import { Recipes } from '/imports/api/recipe/RecipeCollection';
 import { Tags } from '/imports/api/tag/TagCollection';
 
-
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
+const recipeNum = new Date().valueOf().toString();
 
 Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
@@ -20,6 +20,10 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
   this.context = Recipes.getSchema().namedContext('Add_Recipe_Page');
+  Recipes.define({
+    username: FlowRouter.getParam('username'),
+    identity: recipeNum,
+  });
 });
 
 Template.Add_Recipe_Page.helpers({
@@ -32,14 +36,11 @@ Template.Add_Recipe_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
-  profile() {
-    return Profiles.findDoc(FlowRouter.getParam('username'));
-  },
   recipe() {
-    return Recipes.findDoc(FlowRouter.getParam('recipeName'));
+    return Recipes.findDoc(recipeNum);
   },
   ingredients() {
-    const recipe = Recipes.findDoc(FlowRouter.getParam('ingredients'));
+    const recipe = Recipes.findDoc(recipeNum);
     const selectedIngredients = recipe.ingredients;
     return recipe && _.map(Ingredients.findAll(),
         function makeIngredientObject(ingredient) {
@@ -47,7 +48,7 @@ Template.Add_Recipe_Page.helpers({
         });
   },
   tags() {
-    const recipe = Recipes.findDoc(FlowRouter.getParam('tags'));
+    const recipe = Recipes.findDoc(recipeNum);
     const selectedTags = recipe.tags;
     return recipe && _.map(Tags.findAll(),
         function makeTagsObject(tags) {
@@ -56,13 +57,13 @@ Template.Add_Recipe_Page.helpers({
   },
 });
 
-
 Template.Add_Recipe_Page.events({
   'submit .profile-data-form'(event, instance) {
     event.preventDefault();
     const recipeName = event.target.name.value;
     const description = event.target.Description.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
+    const identity = recipeNum;
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
@@ -70,7 +71,7 @@ Template.Add_Recipe_Page.events({
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-    const updatedRecipeData = { recipeName, description, username, instructions, picture, ingredients, tags };
+    const updatedRecipeData = { recipeName, description, username, identity, instructions, picture, ingredients, tags };
 
     // Clear out any old validation errors.
     instance.context.reset();
@@ -80,7 +81,7 @@ Template.Add_Recipe_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const docID = Recipes.findDoc(FlowRouter.getParam('recipeName'))._id;
+      const docID = Recipes.findDoc(recipeNum)._id;
       const id = Recipes.update(docID, { $set: cleanData });
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
@@ -88,5 +89,12 @@ Template.Add_Recipe_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
+  },
+  'click .delete'(event) {
+    event.preventDefault();
+    const docID = Recipes.findDoc(recipeNum)._id;
+    Recipes.removeIt(docID);
+    const username = FlowRouter.getParam('username');
+    FlowRouter.go(`/${username}/profile`);
   },
 });
