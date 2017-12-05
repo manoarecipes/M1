@@ -53,7 +53,7 @@ class RecipeCollection extends BaseCollection {
    * @returns The newly created docID.
    */
 <<<<<<< HEAD
-  define({ recipeName = '', description = '', username, instructions = '',
+  define({ recipeName = '', description = '', username, identity, instructions = '',
            ingredients = [], tags = [], picture = '' }) {
 =======
   define({ recipeName = '', description = '', username, identity, instructions = '', ingredients = [], tags = [], picture = '' }) {
