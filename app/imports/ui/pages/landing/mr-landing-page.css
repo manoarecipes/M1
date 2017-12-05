@@ -6,8 +6,8 @@
 
 .landing-section-2 {
   padding: 20px 10px 20px 10px;
-  background-color: #5c706c;
-  color:  #fafafa;
+  background-color: #ffffff;
+  color:  #111111;
 }
 
 .landing-section-3 {
@@ -18,8 +18,8 @@
 
 .landing-section-4   {
   padding: 20px 10px 20px 10px;
-  background-color: #5c706c;
-  color: #fafafa;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 
@@ -50,7 +50,7 @@
 }
 
 body {
-  background-color: #2befe5;
+  background-color: #ffffff;
 }
 
 h4 {
