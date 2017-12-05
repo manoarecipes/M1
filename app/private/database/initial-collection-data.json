@@ -5,7 +5,19 @@
       "name": "IngredientsCollection",
       "contents": [
         {
+          "name": "Almonds",
+          "cost": "0.01"
+        },
+        {
+          "name": "Avocado",
+          "cost": "0.01"
+        },
+        {
           "name": "Bacon",
+          "cost": "0.01"
+        },
+        {
+          "name": "Banana",
           "cost": "0.01"
         },
         {
@@ -25,6 +37,14 @@
           "cost": "0.01"
         },
         {
+          "name": "Chicken",
+          "cost": "0.01"
+        },
+        {
+          "name": "Cocoa Powder",
+          "cost": "0.01"
+        },
+        {
           "name": "Egg",
           "cost": "0.01"
         },
@@ -37,7 +57,15 @@
           "cost": "0.01"
         },
         {
+          "name": "Honey",
+          "cost": "0.01"
+        },
+        {
           "name": "Lettuce",
+          "cost": "0.01"
+        },
+        {
+          "name": "Lime Juice",
           "cost": "0.01"
         },
         {
@@ -57,6 +85,18 @@
           "cost": "0.01"
         },
         {
+          "name": "Oats",
+          "cost": "0.01"
+        },
+        {
+          "name": "Peanut Butter",
+          "cost": "0.01"
+        },
+        {
+          "name": "Pepper",
+          "cost": "0.01"
+        },
+        {
           "name": "Potato",
           "cost": "0.01"
         },
@@ -65,7 +105,19 @@
           "cost": "0.01"
         },
         {
+          "name": "Salt",
+          "cost": "0.01"
+        },
+        {
           "name": "Spam",
+          "cost": "0.01"
+        },
+        {
+          "name": "Taco Seasoning",
+          "cost": "0.01"
+        },
+        {
+          "name": "Taco Shells",
           "cost": "0.01"
         },
         {
@@ -77,11 +129,7 @@
           "cost": "0.01"
         },
         {
-          "name": "Chicken",
-          "cost": "0.01"
-        },
-        {
-          "name": "Honey",
+          "name": "Yogurt",
           "cost": "0.01"
         }
       ]
@@ -193,6 +241,30 @@
         {
           "name": "Foodgasm",
           "description": ""
+        },
+        {
+          "name": "Chocolate",
+          "description": ""
+        },
+        {
+          "name": "Peanut Butter",
+          "description": ""
+        },
+        {
+          "name": "Avocado",
+          "description": ""
+        },
+        {
+          "name": "Egg",
+          "description": ""
+        },
+        {
+          "name": "Chicken",
+          "description": ""
+        },
+        {
+          "name": "Taco",
+          "description": ""
         }
       ]
     },
@@ -260,7 +332,7 @@
           "identity": "68234718",
           "instructions": "1. Prepare toast and 2 fried eggs to personal preference. 2. Peel and mash 1 avocado with the lime juice (1 tsp), salt and pepper. 3. Spread avocado evenly on each slice of toast then top each with a fried eggs and additional seasonings you prefer. Serve immediately.",
           "ingredients": [
-            "Eggs",
+            "Egg",
             "Bread",
             "Avocado",
             "Lime Juice",
@@ -305,8 +377,8 @@
           "title": "Third President of the United States",
           "picture": "/images/altenberg.jpg",
           "favorites": [
-            "Honey BBQ Chicken Pizza",
-            "Cheese Omelette"
+            "78234718",
+            "68234718"
           ]
         },
         {
@@ -316,7 +388,7 @@
           "title": "Second President of the United States",
           "picture": "/images/binsted.jpg",
           "favorites": [
-            "Honey BBQ Chicken Pizza"
+            "58234718"
           ]
         },
         {
@@ -326,8 +398,8 @@
           "title": "Student",
           "picture": "/images/crosby.jpg",
           "favorites": [
-            "Honey BBQ Chicken Pizza",
-            "Cheese Omelette"
+            "38234718",
+            "48234718"
           ]
         }
       ]
