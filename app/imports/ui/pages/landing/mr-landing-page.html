@@ -1,0 +1,102 @@
+<template name="MR_Landing_Page">
+
+  <div class="landing-section-1">
+    <div class="ui grid">
+
+      <div class="row">
+        <div class="ui right aligned sixteen wide column">
+          {{> Cas_Login }}
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="ui center aligned sixteen wide column">
+          <h1 class="landing-section-1-welcome">Welcome to Manoa Recipes</h1>
+          <h3 class="landing-section-1-tagline">A student recipe repository</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section-2">
+    <div class="ui grid">
+      <div class="ui centered eight wide column">
+        <div class="ui right floated big button">
+          search
+        </div>
+        <div class="ui big fluid input">
+          <input class="text" placeholder="search for recipes">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section-3">
+    <h3 class="landing-section-sample">The Manoa Recipes database contains *numberofrecipes* including:</h3>
+    <div style="margin-top: 10px" class="ui container">
+      <div class="ui link cards">
+        <div class="card">
+          <div class="image">
+            <img src="/images/strawberry-pie.jpg">
+          </div>
+          <div class="content">
+            <i class="right floated star icon"></i>
+            <div class="header">Strawberry Pie</div>
+            <a style="margin-bottom: 2px" class="ui orange tag small label">Dessert</a>
+            <div class="description">
+              Strawberry pie with whipped cream.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="/images/pizza.jpg">
+          </div>
+          <div class="content">
+            <i class="right floated star icon"></i>
+            <div class="header">Pepperoni Pizza</div>
+            <a style="margin-bottom: 2px" class="ui orange tag small label">Dinner</a>
+            <div class="description">
+              Pepperoni pizza using a toaster oven and canned dough.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="/images/omelette.jpg">
+          </div>
+          <div class="content">
+            <i class="right floated star icon"></i>
+            <div class="header">Vegetable Omelette</div>
+            <a style="margin-bottom: 2px" class="ui orange tag small label">Breakfast</a>
+            <div class="description">
+              Vegetable omelette with ingredients from the farmers market.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section-4">
+    <h4>Login to access the following features</h4>
+    <div class="ui grid">
+      <div class="ui eight wide column">
+        <img class="ui centered x-large bordered image" src="/images/mr-profile.png">
+      </div>
+      <div class="ui eight wide middle aligned column">
+        <h1 class="landing-section-header">Save your favorite recipes.</h1>
+      </div>
+      <div class="ui eight wide column">
+        <img class="ui centered x-large bordered image" src="/images/add-recipe.png">
+      </div>
+      <div class="ui eight wide middle aligned column">
+        <h1 class="landing-section-header">Add your own recipes to the database.</h1>
+      </div>
+    </div>
+  </div>
+
+
+</template>

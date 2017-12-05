@@ -5,7 +5,7 @@ import { $ } from 'meteor/jquery';
 
 /*                        LANDING ROUTE                       */
 
-export const landingPageRouteName = 'Landing_Page';
+export const landingPageRouteName = 'MR_Landing_Page';
 FlowRouter.route('/', {
   name: landingPageRouteName,
   action() {
@@ -53,10 +53,26 @@ const userRoutes = FlowRouter.group({
 });
 
 export const profilePageRouteName = 'Profile_Page';
-userRoutes.route('/profile', {
+userRoutes.route('/edit-profile', {
   name: profilePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: profilePageRouteName });
+  },
+});
+
+export const adminPageRouteName = 'Admin_Page';
+userRoutes.route('/admin', {
+  name: adminPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
+  },
+});
+
+export const profileLandingRouteName = 'Profile_Landing';
+userRoutes.route('/profile', {
+  name: profileLandingRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: profileLandingRouteName });
   },
 });
 
@@ -65,6 +81,22 @@ userRoutes.route('/filter', {
   name: filterPageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: filterPageRouteName });
+  },
+});
+
+export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
+userRoutes.route('/recipe-directory', {
+  name: recipeDirectoryPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipeDirectoryPageRouteName });
+  },
+});
+
+export const recipePageRouteName = 'Add_Recipe_Page';
+userRoutes.route('/add-recipe', {
+  name: recipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipePageRouteName });
   },
 });
 
