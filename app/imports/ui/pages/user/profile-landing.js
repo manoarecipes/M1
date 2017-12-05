@@ -16,8 +16,11 @@ Template.Profile_Landing.helpers({
   profile() {
     return Profiles.findDoc(FlowRouter.getParam('username'));
   },
+  favRecipes() {
+    const prof = Profiles.findDoc(FlowRouter.getParam('username'));
+    return prof.favorites.map(x => Recipes.findDoc(x));
+  },
   myRecipes() {
-    console.log(Recipes.find({ username: FlowRouter.getParam('username') }).map(x => x));
     return Recipes.find({ username: FlowRouter.getParam('username') }).map(x => x);
   },
 });
