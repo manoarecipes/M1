@@ -168,66 +168,31 @@
       ]
     },
     {
-      "name": "ProfileCollection",
+      "name": "TagCollection",
       "contents": [
         {
-          "firstName": "Lee",
-          "lastName": "Altenberg",
-          "username": "altenber",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Evolutionary Computation"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/altenberg.jpg"
+          "name": "Dinner",
+          "description": ""
         },
         {
-          "firstName": "Kyungim",
-          "lastName": "Baek",
-          "username": "baek",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Computer Vision"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/baek.jpg"
+          "name": "Lunch",
+          "description": ""
         },
         {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mobile Networks",
-            "Sailing"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/biagioni.jpg"
+          "name": "Breakfast",
+          "description": ""
         },
         {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mars",
-            "Imu Cooking"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/binsted.jpg"
+          "name": "Pizza",
+          "description": ""
         },
         {
-          "firstName": "Henri",
-          "lastName": "Casanova",
-          "username": "henric",
-          "github": "henricasanova",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Surfing",
-            "Photography"
-          ],
-          "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/casanova.jpg"
+          "name": "Cheap",
+          "description": ""
+        },
+        {
+          "name": "Foodgasm",
+          "description": ""
         }
       ]
     },
@@ -238,6 +203,7 @@
           "recipeName": "Honey BBQ Chicken Pizza",
           "description": "It's a chicken pizza",
           "username": "kleve84",
+          "identity": "38234718",
           "instructions": "1. Make the pizza",
           "ingredients": [
             "Chicken",
@@ -253,6 +219,7 @@
           "recipeName": "Cheese Omelette",
           "description": "It's an omelette",
           "username": "kleve84",
+          "identity": "48234718",
           "instructions": "1. Make the omelette",
           "ingredients": [
             "Egg",
@@ -263,6 +230,94 @@
             "Cheap"
           ],
           "picture": "/images/omelette.jpg"
+        },
+        {
+          "recipeName": "Chocolate Peanut Butter Jelly Oats",
+          "description": "These Chocolate Peanut Butter Jelly Overnight Oats can be made in advance, are easy to make, are filled with chocolate and peanut butter, have a healthy twist on jelly AND are healthy?",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "1. Place ingredients, Oats(1/2 cup), Milk(2/3 cup), Yogurt(1/2 cup), Peanut Butter(2 Tbsp), Cocoa Powder(1 Tbsp), Banana(1/2 mashed), in a medium sized bowl. 2. Stir until well combined. 3. Store in a covered, airtight container, in the fridge overnight. 4. In the morning, top with additional toppings like bananas and almonds.",
+          "ingredients": [
+            "Oats",
+            "Milk",
+            "Yogurt",
+            "Peanut Butter",
+            "Cocoa Powder",
+            "Banana",
+            "Almonds"
+          ],
+          "tags": [
+            "Breakfast",
+            "Chocolate",
+            "Peanut Butter"
+          ],
+          "picture": "/images/ChocPBJ.PNG"
+        },
+        {
+          "recipeName": "Skinny Fried Egg and Avocado Toast",
+          "description": "People have always loved avocado. It’s tasty, versatile and healthy too, what’s not to love?! Avocados became really trendy, especially avocado toast. So adding a fried egg is just the icing on the cake",
+          "username": "kleve84",
+          "identity": "68234718",
+          "instructions": "1. Prepare toast and 2 fried eggs to personal preference. 2. Peel and mash 1 avocado with the lime juice (1 tsp), salt and pepper. 3. Spread avocado evenly on each slice of toast then top each with a fried eggs and additional seasonings you prefer. Serve immediately.",
+          "ingredients": [
+            "Eggs",
+            "Bread",
+            "Avocado",
+            "Lime Juice",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Breakfast",
+            "Avocado",
+            "Egg"
+          ],
+          "picture": "/images/Avocado.PNG"
+        },
+        {
+          "recipeName": "Taco Lime Grilled Chicken",
+          "description": "A quick and easy taco lime grilled chicken that's just packed with flavour!",
+          "username": "kleve84",
+          "identity": "78234718",
+          "instructions": "1. Mix the taco seasoning(2 Tbsp) and lime juice(1/4 cup), cover the chicken(1 lb) in the mixture and optionally marinate for 30 minutes to over night. 2. Grill over medium-high heat until cooked through, about 3-5 minutes per side, let sit for 5 minutes and slice. 3. Put appropriate amount in each taco shell",
+          "ingredients": [
+            "Chicken",
+            "Lime Juice",
+            "Taco Seasoning",
+            "Taco Shells"
+          ],
+          "tags": [
+            "Dinner",
+            "Chicken",
+            "Taco"
+          ],
+          "picture": "/images/Limechicken.PNG"
+        }
+      ]
+    },
+    {
+      "name": "ProfileCollection",
+      "contents": [
+        {
+          "firstName": "Thomas",
+          "lastName": "Jefferson",
+          "username": "tjefferson",
+          "title": "Third President of the United States",
+          "picture": "/images/altenberg.jpg",
+          "favorites": [
+            "Honey BBQ Chicken Pizza",
+            "Cheese Omelette"
+          ]
+        },
+        {
+          "firstName": "John",
+          "lastName": "Adams",
+          "username": "jadams",
+          "title": "Second President of the United States",
+          "picture": "/images/binsted.jpg",
+          "favorites": [
+            "Honey BBQ Chicken Pizza"
+          ]
         }
       ]
     }

@@ -2,62 +2,57 @@
 
   {{#if Template.subscriptionsReady}}
 
-    <div class="ui text container segment">
-      <div class="ui dividing header">
-        Add Recipe
-      </div>
-      <form class="ui equal width form profile-data-form {{ successClass }} {{errorClass}}">
-        <div class="field">
-          <label>Recipe Name</label>
-          <input type="text" placeholder="Spicy BBQ Chicken" name="recipe">
-        </div>
 
-        <div class="field">
-          <label>Description</label>
-          <input type="text" placeholder="Insert short description" name="description">
-        </div>
-
-        <div class="field">
-          <label>Ingredients</label>
-          <textarea placeholder="Example:
-          5lbs Frozen Chicken"></textarea>
-        </div>
-
-        <div class="field">
-          <label>Instructions</label>
-          <textarea rows="2"></textarea>
-        </div>
-
-        <div class="inline field">
-          <label>Picture</label>
-          <button class="ui labeled mini icon button">
-            <i class="photo icon"></i>
-            Browse
-          </button>
-        </div>
-
-        <div class="field">
-          <label>Food Tags</label>
-          <select multiple="" class="ui dropdown">
-            <option value="">Select Tag(s)</option>
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
-            <option value="bacon">Bacon</option>
-            <option value="dessert">Desert</option>
-            <option value="foodgasm">Foodgasm</option>
-            <option value="vegan">Vegan</option>
-          </select>
-        </div>
-
-        <button class="ui primary button" type="submit">Submit</button>
-        {{#if displaySuccessMessage}}
-          <div class="ui success message">
-            <p>Recipe successfully updated.</p>
-          </div>
-        {{/if}}
-      </form>
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Add/Edit Recipe
     </div>
+    <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+      <div class="fields">
+        {{> Text_Form_Control label="Recipe Name" name="name" placeholder="Recipe name" value=recipe.recipeName
+        errorMessage=(fieldError "recipeName")}}
+      </div>
+
+      <div class="fields">
+        {{> TextArea_Form_Control label="Description" value=recipe.description placeholder="Describe your recipe..."
+        errorMessage=(fieldError "description")}}
+      </div>
+
+      <div class="field">
+        {{> Select_Form_Control label="Ingredients" options=ingredients errorMessage=(fieldError "tags") multiple=true }}
+      </div>
+
+      <div class="field">
+        {{> TextArea_Form_Control label="Instructions" value=recipe.instructions placeholder="List the steps..."
+        errorMessage=(fieldError "instructions")}}
+      </div>
+
+      <div class="field">
+        {{> Text_Form_Control label="Picture" placeholder="http://url.com/picture.jpg" value=recipe.picture
+        errorMessage=(fieldError "picture")}}
+      </div>
+
+      <div class="field">
+        {{> Select_Form_Control label="Tags" options=tags errorMessage=(fieldError "tags") multiple=true }}
+      </div>
+
+
+
+      <button class="ui primary button" type="submit">Submit</button>
+      <button class="ui primary button delete" type="submit">Delete</button>
+      {{#if displaySuccessMessage}}
+      <div class="ui success message">
+        <p>Recipe successfully updated.</p>
+      </div>
+      {{/if}}
+      {{#if displayDeleteMessage}}
+      <div class="ui delete message">
+        <p>Recipe successfully deleted.</p>
+      </div>
+      {{/if}}
+    </form>
+  </div>
 
   {{/if}}
 
