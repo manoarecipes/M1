@@ -92,6 +92,40 @@ class RecipeCollection extends BaseCollection {
     const picture = doc.picture;
     return { recipeName, description, username, instructions, ingredients, tags, picture };
   }
+
+  /**
+   * Throws an error if the passed name is not a defined Tag name.
+   * @param name The name of an tag.
+   */
+  assertName(name) {
+    this.findDoc(name);
+  }
+
+  /**
+   * Throws an error if the passed list of names are not all Tag names.
+   * @param names An array of (hopefully) Tag names.
+   */
+  assertNames(names) {
+    _.each(names, name => this.assertName(name));
+  }
+
+  /**
+   * A stricter form of findOne, in that it throws an exception if the entity isn't found in the collection.
+   * @param { String | Object } name Either the docID, or an object selector, or the 'name' field value, or the
+   * username field value.
+   * @returns { Object } The document associated with name.
+   * @throws { Meteor.Error } If the document cannot be found.
+   */
+  findDoc(name) {
+    const doc = (
+        this._collection.findOne({ recipeName: name }) ||
+        this._collection.findOne({ username: name }) ||
+        this._collection.findOne({ _id: name }));
+    if (!doc) {
+      throw new Meteor.Error(`${name} is not a defined ${this._type}`);
+    }
+    return doc;
+  }
 }
 
 /**
