@@ -105,7 +105,7 @@ class RecipeCollection extends BaseCollection {
    * @param docID The docID of a Recipe.
    * @returns { Object } An object representing the definition of docID.
    */
-  dumpOne(docID) {
+  dumpOne(docID)  {
     const doc = this.findDoc(docID);
     const recipeName = doc.recipeName;
     const description = doc.description;

@@ -1,29 +1,29 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
-import { Profiles } from '/imports/api/profile/ProfileCollection';
+import { Recipes } from '/imports/api/recipe/RecipeCollection';
 import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
 
 const selectedIngredientsKey = 'selectedIngredients';
 
 Template.Filter_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
-  this.subscribe(Profiles.getPublicationName());
+  this.subscribe(Recipes.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedIngredientsKey, undefined);
 });
 
 Template.Filter_Page.helpers({
-  profiles() {
+  recipes() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedIngredientsKey)) {
       Template.instance().messageFlags.set(selectedIngredientsKey, _.map(Ingredients.findAll(),
           ingredients => ingredients.name));
     }
     // Find all profiles with the currently selected interests.
-    const allProfiles = Profiles.findAll();
+    const allRecipes = Recipes.findAll();
     const selectedIngredients = Template.instance().messageFlags.get(selectedIngredientsKey);
-    return _.filter(allProfiles, profile => _.intersection(profile.ingredients, selectedIngredients).length > 0);
+    return _.filter(allRecipes, recipe => _.intersection(recipe.ingredients, selectedIngredients).length > 0);
   },
 
   ingredients() {
