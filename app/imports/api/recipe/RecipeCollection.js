@@ -21,6 +21,7 @@ class RecipeCollection extends BaseCollection {
   constructor() {
     super('Recipe', new SimpleSchema({
       username: { type: String },
+      identity: { type: String },
       // Remainder are optional
       recipeName: { type: String, optional: true },
       description: { type: String, optional: true },
@@ -51,17 +52,21 @@ class RecipeCollection extends BaseCollection {
    * if one or more ingredients and/or tags are not defined.
    * @returns The newly created docID.
    */
-  define({ recipeName = '', description = '', username, instructions = '', ingredients = [], tags = [], picture = '' }) {
+  define({ recipeName = '', description = '', username, identity, instructions = '', ingredients = [], tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
-      recipeName: String, description: String, username: String, instructions: String, picture: String,
+      recipeName: String,
+      description: String,
+      username: String,
+      identity: String,
+      instructions: String,
+      picture: String,
     };
-    check({ recipeName, description, username, instructions, picture }, checkPattern);
+    check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
 
     // Throw an error if any of the passed Ingredient or Tag names are not defined.
     Ingredients.assertNames(ingredients);
     Tags.assertNames(tags);
-
 
     // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {
@@ -73,7 +78,16 @@ class RecipeCollection extends BaseCollection {
       throw new Meteor.Error(`${tags} contains duplicates`);
     }
 
-    return this._collection.insert({ recipeName, description, username, instructions, ingredients, tags, picture });
+    return this._collection.insert({
+      identity,
+      recipeName,
+      description,
+      username,
+      instructions,
+      ingredients,
+      tags,
+      picture
+    });
   }
 
   /**
@@ -86,11 +100,12 @@ class RecipeCollection extends BaseCollection {
     const recipeName = doc.recipeName;
     const description = doc.description;
     const username = doc.username;
+    const identity = doc.identity;
     const instructions = doc.instructions;
     const ingredients = doc.ingredients;
     const tags = doc.tags;
     const picture = doc.picture;
-    return { recipeName, description, username, instructions, ingredients, tags, picture };
+    return { recipeName, description, username, identity, instructions, ingredients, tags, picture };
   }
 
   /**
@@ -118,8 +133,11 @@ class RecipeCollection extends BaseCollection {
    */
   findDoc(name) {
     const doc = (
+        this._collection.findOne(name) ||
+        this._collection.findOne({ name }) ||
         this._collection.findOne({ recipeName: name }) ||
         this._collection.findOne({ username: name }) ||
+        this._collection.findOne({ identity: name }) ||
         this._collection.findOne({ _id: name }));
     if (!doc) {
       throw new Meteor.Error(`${name} is not a defined ${this._type}`);
