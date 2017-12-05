@@ -6,14 +6,14 @@ import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
 
 const selectedIngredientsKey = 'selectedIngredients';
 
-Template.Filter_Page.onCreated(function onCreated() {
+Template.Filter_Ingredients_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
   this.subscribe(Recipes.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedIngredientsKey, undefined);
 });
 
-Template.Filter_Page.helpers({
+Template.Filter_Ingredients_Page.helpers({
   recipes() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedIngredientsKey)) {
@@ -37,7 +37,7 @@ Template.Filter_Page.helpers({
   },
 });
 
-Template.Filter_Page.events({
+Template.Filter_Ingredients_Page.events({
   'submit .filter-data-form'(event, instance) {
     event.preventDefault();
     const selectedOptions = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
