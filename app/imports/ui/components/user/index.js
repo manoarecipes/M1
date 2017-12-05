@@ -3,4 +3,4 @@ import './interests-form-field.js';
 import './ingredients-form-field.html';
 import './ingredients-form-field.js';
 import './profile-recipe.html';
-import './profile-recipe';
+import './profile-recipe.js';
