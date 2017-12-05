@@ -4,6 +4,7 @@ import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Tracker } from 'meteor/tracker';
+import { Recipes } from '/imports/api/recipe/RecipeCollection';
 
 /** @module Profile */
 
@@ -24,6 +25,8 @@ class ProfileCollection extends BaseCollection {
       lastName: { type: String, optional: true },
       title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
+      favorites: { type: Array, optional: true },
+      'favorites.$': { type: String },
     }, { tracker: Tracker }));
   }
 
@@ -42,17 +45,26 @@ class ProfileCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', username, picture = '', title = '' }) {
+  define({ firstName = '', lastName = '', username, picture = '', title = '', favorites = [] }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, picture: String,
-      title: String };
+    const checkPattern = {
+      firstName: String, lastName: String, username: String, picture: String, title: String,
+    };
     check({ firstName, lastName, username, picture, title }, checkPattern);
+
+    // Throw an error if any of the passed recipe names are not defined.
+    Recipes.assertNames(favorites);
+
+    // Throw an error if there are duplicates in the passed recipe names.
+    if (favorites.length !== _.uniq(favorites).length) {
+      throw new Meteor.Error(`${favorites} contains duplicates`);
+    }
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, picture, title });
+    return this._collection.insert({ firstName, lastName, username, picture, title, favorites });
   }
 
   /**
@@ -67,7 +79,24 @@ class ProfileCollection extends BaseCollection {
     const username = doc.username;
     const picture = doc.picture;
     const title = doc.title;
-    return { firstName, lastName, username, picture, title };
+    const favorites = doc.favorites;
+    return { firstName, lastName, username, picture, title, favorites };
+  }
+
+  /**
+   * A stricter form of findOne, in that it throws an exception if the entity isn't found in the collection.
+   * @param { String | Object } name Either the docID, or an object selector, or the 'name' field value, or the
+   * username field value.
+   * @returns { Object } The document associated with name.
+   * @throws { Meteor.Error } If the document cannot be found.
+   */
+  findDoc(name) {
+    const doc = this._collection.findOne({ username: name });
+    console.log(doc);
+    if (!doc) {
+      throw new Meteor.Error(`${name} is not a defined goddamn ${this._type}`);
+    }
+    return doc;
   }
 }
 

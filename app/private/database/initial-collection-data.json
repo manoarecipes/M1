@@ -168,70 +168,6 @@
       ]
     },
     {
-      "name": "ProfileCollection",
-      "contents": [
-        {
-          "firstName": "Lee",
-          "lastName": "Altenberg",
-          "username": "altenber",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Evolutionary Computation"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/altenberg.jpg"
-        },
-        {
-          "firstName": "Kyungim",
-          "lastName": "Baek",
-          "username": "baek",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Computer Vision"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/baek.jpg"
-        },
-        {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mobile Networks",
-            "Sailing"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/biagioni.jpg"
-        },
-        {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mars",
-            "Imu Cooking"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/binsted.jpg"
-        },
-        {
-          "firstName": "Henri",
-          "lastName": "Casanova",
-          "username": "henric",
-          "github": "henricasanova",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Surfing",
-            "Photography"
-          ],
-          "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/casanova.jpg"
-        }
-      ]
-    },
-    {
       "name": "RecipeCollection",
       "contents": [
         {
@@ -292,6 +228,32 @@
         {
           "name": "Foodgasm",
           "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ProfileCollection",
+      "contents": [
+        {
+          "firstName": "Thomas",
+          "lastName": "Jefferson",
+          "username": "tjefferson",
+          "title": "Third President of the United States",
+          "picture": "/images/altenberg.jpg",
+          "favorites": [
+            "Honey BBQ Chicken Pizza",
+            "Cheese Omelette"
+          ]
+        },
+        {
+          "firstName": "John",
+          "lastName": "Adams",
+          "username": "jadams",
+          "title": "Second President of the United States",
+          "picture": "/images/binsted.jpg",
+          "favorites": [
+            "Honey BBQ Chicken Pizza"
+          ]
         }
       ]
     }
