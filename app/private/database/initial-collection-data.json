@@ -218,7 +218,7 @@
         {
           "recipeName": "Cheese Omelette",
           "description": "It's an omelette",
-          "username": "kleve84",
+          "username": "dherman",
           "identity": "48234718",
           "instructions": "1. Make the omelette",
           "ingredients": [
@@ -317,6 +317,17 @@
           "picture": "/images/binsted.jpg",
           "favorites": [
             "Honey BBQ Chicken Pizza"
+          ]
+        },
+        {
+          "firstName": "David",
+          "lastName": "Herman",
+          "username": "dherman",
+          "title": "Student",
+          "picture": "/images/crosby.jpg",
+          "favorites": [
+            "Honey BBQ Chicken Pizza",
+            "Cheese Omelette"
           ]
         }
       ]

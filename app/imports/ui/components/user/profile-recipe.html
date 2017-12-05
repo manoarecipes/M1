@@ -1,25 +1,16 @@
 <template name="Profile_Recipe">
-  <div>
-    <h1 class="profile-landing-list-header">My Recipes</h1>
-    <div style="margin-top: 10px" class="ui container">
-      <div class="ui link cards">
-        {{#each recipe in recipe.contents}}
-        <div class="card">
-          <div class="image">
-            <img src="{{recipe.picture}}">
-          </div>
-          <div class="content">
-            <i class="right floated star icon"></i>
-            <div class="header">{{ recipe.recipeName }}</div>
-            {{#each tag in recipe.tags }}
-            <a style="margin-bottom: 2px" class="ui orange tag small label">{{ tag }}</a>
-            {{/each}}
-            <div class="description">
-              {{ recipe.description }}
-            </div>
-          </div>
-        </div>
-        {{/each}}
+  <div class="card">
+    <div class="image">
+      <img src="{{recipe.picture}}">
+    </div>
+    <div class="content">
+      <i class="right floated star icon"></i>
+      <div class="header">{{ recipe.recipeName }}</div>
+      {{#each tag in recipe.tags }}
+      <a style="margin-bottom: 2px" class="ui orange tag small label">{{ tag }}</a>
+      {{/each}}
+      <div class="description">
+        {{ recipe.description }}
       </div>
     </div>
   </div>
