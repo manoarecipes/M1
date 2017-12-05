@@ -40,39 +40,6 @@
       </div>
     </div>
     <div class="ui section divider"></div>
-    <div>
-      <h1 class="profile-landing-list-header">My Recipes</h1>
-      <div style="margin-top: 10px" class="ui container">
-        <div class="ui link cards">
-          <div class="card">
-            <div class="image">
-              <img src="/images/omelette.jpg">
-            </div>
-            <div class="content">
-              <i class="right floated star icon"></i>
-              <div class="header">Vegetable Omelette</div>
-              <a style="margin-bottom: 2px" class="ui orange tag small label">Breakfast</a>
-              <div class="description">
-                Vegetable omelette with ingredients from the farmers market.
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="image">
-              <img src="/images/brownies.jpg">
-            </div>
-            <div class="content">
-              <i class="right floated star icon"></i>
-              <div class="header">Mug Brownies</div>
-              <a style="margin-bottom: 2px" class="ui orange tag small label">Dessert</a>
-              <div class="description">
-                Brownies made with a microwave.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{> Profile_Recipe recipe=myRecipes }}
   </div>
 </template>
