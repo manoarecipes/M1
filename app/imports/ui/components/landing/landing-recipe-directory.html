@@ -1,0 +1,26 @@
+<template name="Landing_Recipe_Directory">
+
+  <div class="card">
+    <div class="content">
+
+      <div class="ui large image">
+        <img src="{{ recipe.picture }}">
+      </div>
+      <div class="header">
+        {{ recipe.recipeName }}
+      </div>
+      <div class="meta">
+        {{ recipe.title}}
+      </div>
+      <div class="description">
+        {{ recipe.description }}
+      </div>
+      <div style="margin-top: 10px">
+        {{#each ingredients in recipe.ingredient}}
+          <a style="margin-bottom: 2px" class="ui teal tag small label">{{ingredients}}</a>
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+</template>

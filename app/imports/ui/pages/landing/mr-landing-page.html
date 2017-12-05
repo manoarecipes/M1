@@ -32,51 +32,12 @@
   </div>
 
   <div class="landing-section-3">
-    <h3 class="landing-section-sample">The Manoa Recipes database contains *numberofrecipes* including:</h3>
-    <div style="margin-top: 10px" class="ui container">
-      <div class="ui link cards">
-        <div class="card">
-          <div class="image">
-            <img src="/images/strawberry-pie.jpg">
-          </div>
-          <div class="content">
-            <i class="right floated star icon"></i>
-            <div class="header">Strawberry Pie</div>
-            <a style="margin-bottom: 2px" class="ui orange tag small label">Dessert</a>
-            <div class="description">
-              Strawberry pie with whipped cream.
-            </div>
-          </div>
-        </div>
+    <h3 class="landing-section-sample">Click on a Recipe:</h3>
 
-        <div class="card">
-          <div class="image">
-            <img src="/images/pizza.jpg">
-          </div>
-          <div class="content">
-            <i class="right floated star icon"></i>
-            <div class="header">Pepperoni Pizza</div>
-            <a style="margin-bottom: 2px" class="ui orange tag small label">Dinner</a>
-            <div class="description">
-              Pepperoni pizza using a toaster oven and canned dough.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="image">
-            <img src="/images/omelette.jpg">
-          </div>
-          <div class="content">
-            <i class="right floated star icon"></i>
-            <div class="header">Vegetable Omelette</div>
-            <a style="margin-bottom: 2px" class="ui orange tag small label">Breakfast</a>
-            <div class="description">
-              Vegetable omelette with ingredients from the farmers market.
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="ui ten cards">
+    {{#each recipe in recipes}}
+      {{> Landing_Recipe_Directory recipe=recipe }}
+    {{/each}}
     </div>
   </div>
 
