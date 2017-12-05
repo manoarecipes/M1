@@ -1,0 +1,26 @@
+<template name="Recipe_Directory_Profile">
+
+  <div class="card">
+    <div class="content">
+      <img class="right floated mini ui image" src="{{ recipe.picture }}">
+      <div class="header">
+        {{ recipe.recipeName }}
+      </div>
+      <div class="meta">
+        {{ recipe.username}}
+      </div>
+      <div style="margin-top: 10px">
+        {{#each ingredients in recipe.ingredients}}
+          <a style="margin-bottom: 2px" class="ui teal tag small label">{{ingredients}}</a>
+        {{/each}}
+      </div><div style="margin-top: 10px">
+        {{#each tags in recipe.tags}}
+          <a style="margin-bottom: 2px" class="ui teal tag small label">{{tags}}</a>
+        {{/each}}
+      </div>
+
+    </div>
+
+  </div>
+
+</template>
