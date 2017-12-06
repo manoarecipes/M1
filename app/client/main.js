@@ -23,4 +23,3 @@ import '/imports/api/interest';
 import '/imports/api/recipe';
 import '/imports/api/ingredients';
 import '/imports/api/tag';
-

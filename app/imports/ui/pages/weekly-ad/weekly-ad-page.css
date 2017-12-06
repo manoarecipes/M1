@@ -1,10 +1,10 @@
-.container {
+.weekly-ad-container {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.centered {
+.weekly-ad-centered {
   position: absolute;
   top: 50%;
   left: 50%;
