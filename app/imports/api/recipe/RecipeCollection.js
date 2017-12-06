@@ -28,6 +28,8 @@ class RecipeCollection extends BaseCollection {
       instructions: { type: String, optional: true },
       ingredients: { type: Array, optional: true },
       'ingredients.$': { type: String },
+      amounts: { type: Array, optional: true },
+      'amounts.$': { type: String },
       tags: { type: Array, optional: true },
       'tags.$': { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -53,7 +55,7 @@ class RecipeCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ recipeName = '', description = '', username, identity, instructions = '',
-           ingredients = [], tags = [], picture = '' }) {
+           ingredients = [], amounts = [], tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
       recipeName: String,
@@ -61,6 +63,7 @@ class RecipeCollection extends BaseCollection {
       username: String,
       identity: String,
       instructions: String,
+      amounts: String,
       picture: String,
     };
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
@@ -87,8 +90,9 @@ class RecipeCollection extends BaseCollection {
       username,
       instructions,
       ingredients,
+      amounts,
       tags,
-      picture
+      picture,
     });
   }
 
@@ -97,7 +101,7 @@ class RecipeCollection extends BaseCollection {
    * @param docID The docID of a Recipe.
    * @returns { Object } An object representing the definition of docID.
    */
-  dumpOne(docID)  {
+  dumpOne(docID) {
     const doc = this.findDoc(docID);
     const recipeName = doc.recipeName;
     const description = doc.description;
@@ -105,9 +109,10 @@ class RecipeCollection extends BaseCollection {
     const identity = doc.identity;
     const instructions = doc.instructions;
     const ingredients = doc.ingredients;
+    const amounts = doc.amounts;
     const tags = doc.tags;
     const picture = doc.picture;
-    return { recipeName, description, username, identity, instructions, ingredients, tags, picture };
+    return { recipeName, description, username, identity, instructions, ingredients, amounts, tags, picture };
   }
 
   /**
