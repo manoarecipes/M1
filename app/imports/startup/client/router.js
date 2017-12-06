@@ -68,6 +68,14 @@ userRoutes.route('/admin', {
   },
 });
 
+export const weeklyAdPageRouteName = 'Weekly_Ad_Page';
+userRoutes.route('/weekly-ad', {
+  name: weeklyAdPageRouteName,
+  action: function () {
+    BlazeLayout.render('User_Layout', { main: weeklyAdPageRouteName });
+  },
+});
+
 export const profileLandingRouteName = 'Profile_Landing';
 userRoutes.route('/profile', {
   name: profileLandingRouteName,
