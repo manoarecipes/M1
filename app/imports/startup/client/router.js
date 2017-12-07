@@ -107,6 +107,22 @@ userRoutes.route('/add-recipe', {
   },
 });
 
+export const editRecipePageRouteName = 'Edit_Recipe_Page';
+userRoutes.route('/edit-recipe/:recipeNum', {
+  name: editRecipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: editRecipePageRouteName });
+  },
+});
+
+export const deleteRecipePageRouteName = 'Delete_Recipe_Page';
+userRoutes.route('/delete-recipe/:recipeNum', {
+  name: deleteRecipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: deleteRecipePageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
