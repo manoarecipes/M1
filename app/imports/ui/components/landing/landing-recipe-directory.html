@@ -3,24 +3,15 @@
   <div class="fluid card">
 
     <div class="large image">
-      <div class="ui dimmer">
-        <div class="content">
-          <div class="center">
-          <h2 class="header"> {{ recipe.recipeName }} </h2>
-          </div>
-        </div>
-      </div>
-
       <img src="{{ recipe.picture }}">
-      
+    </div>
+    <div class="content">
+      <div class="header"> {{recipe.recipeName}} </div>
+      {{#each tag in recipe.tags }}
+        <a style="margin-bottom: 2px" class="ui orange tiny tag label"> {{ tag }} <p></p></a>
+      {{/each}}
     </div>
 
   </div>
-
-  <script>
-    $('.fluid.card .image').dimmer({
-      on: 'hover'
-    });
-  </script>
 
 </template>
