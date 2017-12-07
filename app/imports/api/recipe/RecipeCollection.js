@@ -52,7 +52,8 @@ class RecipeCollection extends BaseCollection {
    * if one or more ingredients and/or tags are not defined.
    * @returns The newly created docID.
    */
-  define({ recipeName = '', description = '', username, identity, instructions = '', ingredients = [], tags = [], picture = '' }) {
+  define({ recipeName = '', description = '', username, identity, instructions = '',
+           ingredients = [], tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
       recipeName: String,
@@ -63,7 +64,8 @@ class RecipeCollection extends BaseCollection {
       picture: String,
     };
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
-
+    // Throw an error if any of the passed Ingredient names are not defined.
+    // Ingredients.assertNames(ingredients);
     // Throw an error if any of the passed Ingredient or Tag names are not defined.
     Ingredients.assertNames(ingredients);
     Tags.assertNames(tags);
@@ -95,7 +97,7 @@ class RecipeCollection extends BaseCollection {
    * @param docID The docID of a Recipe.
    * @returns { Object } An object representing the definition of docID.
    */
-  dumpOne(docID) {
+  dumpOne(docID)  {
     const doc = this.findDoc(docID);
     const recipeName = doc.recipeName;
     const description = doc.description;
