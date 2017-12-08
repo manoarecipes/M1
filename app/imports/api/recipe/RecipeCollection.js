@@ -29,7 +29,8 @@ class RecipeCollection extends BaseCollection {
       ingredients: { type: Array, optional: true },
       'ingredients.$': { type: String },
       amounts: { type: Array, optional: true },
-      'amounts.$': { type: String },
+      'amounts.$': { type: Array },
+      'amounts.$.$': { type: String },
       tags: { type: Array, optional: true },
       'tags.$': { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -63,7 +64,6 @@ class RecipeCollection extends BaseCollection {
       username: String,
       identity: String,
       instructions: String,
-      amounts: String,
       picture: String,
     };
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);

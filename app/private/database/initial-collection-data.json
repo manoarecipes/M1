@@ -277,6 +277,10 @@
           "username": "kleve84",
           "identity": "38234718",
           "instructions": "1. Make the pizza",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["3 oz", "Honey"]
+          ],
           "ingredients": [
             "Chicken",
             "Honey"
@@ -293,6 +297,10 @@
           "username": "dherman",
           "identity": "48234718",
           "instructions": "1. Make the omelette",
+          "amounts": [
+            ["3 large", "Egg"],
+            ["4 oz", "Cheddar Cheese"]
+          ],
           "ingredients": [
             "Egg",
             "Cheddar Cheese"
@@ -309,6 +317,15 @@
           "username": "kleve84",
           "identity": "58234718",
           "instructions": "1. Place ingredients, Oats(1/2 cup), Milk(2/3 cup), Yogurt(1/2 cup), Peanut Butter(2 Tbsp), Cocoa Powder(1 Tbsp), Banana(1/2 mashed), in a medium sized bowl. 2. Stir until well combined. 3. Store in a covered, airtight container, in the fridge overnight. 4. In the morning, top with additional toppings like bananas and almonds.",
+          "amounts": [
+            ["1/2 cup", "Oats"],
+            ["2/3 cup", "Milk"],
+            ["1/2 cup", "Yogurt"],
+            ["2 tbsp", "Peanut Butter"],
+            ["1 tbsp", "Cocoa Powder"],
+            ["1/2 mashed", "Banana"],
+            ["to garnish", "Almonds"]
+          ],
           "ingredients": [
             "Oats",
             "Milk",
@@ -331,6 +348,14 @@
           "username": "kleve84",
           "identity": "68234718",
           "instructions": "1. Prepare toast and 2 fried eggs to personal preference. 2. Peel and mash 1 avocado with the lime juice (1 tsp), salt and pepper. 3. Spread avocado evenly on each slice of toast then top each with a fried eggs and additional seasonings you prefer. Serve immediately.",
+          "amounts": [
+            ["2 large", "Egg"],
+            ["2 slices", "Bread"],
+            ["1 large", "Avocado"],
+            ["1 tsp", "Lime Juice"],
+            ["to taste", "Salt"],
+            ["to taste", "Pepper"]
+          ],
           "ingredients": [
             "Egg",
             "Bread",
@@ -352,6 +377,12 @@
           "username": "kleve84",
           "identity": "78234718",
           "instructions": "1. Mix the taco seasoning(2 Tbsp) and lime juice(1/4 cup), cover the chicken(1 lb) in the mixture and optionally marinate for 30 minutes to over night. 2. Grill over medium-high heat until cooked through, about 3-5 minutes per side, let sit for 5 minutes and slice. 3. Put appropriate amount in each taco shell",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
           "ingredients": [
             "Chicken",
             "Lime Juice",
