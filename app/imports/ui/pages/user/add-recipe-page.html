@@ -18,7 +18,8 @@
       </div>
 
       <div class="field">
-        {{> Ingredient_Form_Control}}
+        {{> Text_Form_Control label="Amount" placeholder="" value=recipe.amount errorMessage=(fieldError "amount")}}
+        {{> Select_Form_Control label="Ingredients" options=ingredients errorMessage=(fieldError "tags") multiple=false }}
       </div>
 
       <div class="field">
