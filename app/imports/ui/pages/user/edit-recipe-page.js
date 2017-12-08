@@ -9,9 +9,8 @@ import { Tags } from '/imports/api/tag/TagCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
-const recipeNum = new Date().valueOf().toString();
 
-Template.Add_Recipe_Page.onCreated(function onCreated() {
+Template.Edit_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.subscribe(Recipes.getPublicationName());
@@ -19,10 +18,10 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
-  this.context = Recipes.getSchema().namedContext('Add_Recipe_Page');
+  this.context = Recipes.getSchema().namedContext('Edit_Recipe_Page');
 });
 
-Template.Add_Recipe_Page.helpers({
+Template.Edit_Recipe_Page.helpers({
   successClass() {
     return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
   },
@@ -32,27 +31,37 @@ Template.Add_Recipe_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
+  recipe() {
+    const recipeNum = FlowRouter.getParam('recipeNum');
+    return Recipes.findDoc(recipeNum);
+  },
   ingredients() {
-    return _.map(Ingredients.findAll(),
+    const recipeNum = FlowRouter.getParam('recipeNum');
+    const recipe = Recipes.findDoc(recipeNum);
+    const selectedIngredients = recipe.ingredients;
+    return recipe && _.map(Ingredients.findAll(),
         function makeIngredientObject(ingredient) {
-          return { label: ingredient.name };
+          return { label: ingredient.name, selected: _.contains(selectedIngredients, ingredient.name) };
         });
   },
   tags() {
-    return _.map(Tags.findAll(),
+    const recipeNum = FlowRouter.getParam('recipeNum');
+    const recipe = Recipes.findDoc(recipeNum);
+    const selectedTags = recipe.tags;
+    return recipe && _.map(Tags.findAll(),
         function makeTagsObject(tags) {
-          return { label: tags.name };
+          return { label: tags.name, selected: _.contains(selectedTags, tags.name) };
         });
   },
 });
 
-Template.Add_Recipe_Page.events({
+Template.Edit_Recipe_Page.events({
   'submit .profile-data-form'(event, instance) {
     event.preventDefault();
     const recipeName = event.target.name.value;
     const description = event.target.Description.value;
-    const username = FlowRouter.getParam('username'); // schema requires username.
-    const identity = recipeNum;
+    const username = FlowRouter.getParam('username');
+    const identity = FlowRouter.getParam('recipeNum');
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
@@ -70,10 +79,11 @@ Template.Add_Recipe_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const id = Recipes.define(cleanData);
+      const recipeNum = FlowRouter.getParam('recipeNum');
+      const docID = Recipes.findDoc(recipeNum)._id;
+      const id = Recipes.update(docID, { $set: cleanData });
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
-      FlowRouter.go(`/${username}/profile`);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);

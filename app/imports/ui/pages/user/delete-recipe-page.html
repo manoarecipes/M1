@@ -1,0 +1,16 @@
+<template name="Delete_Recipe_Page">
+
+  {{#if Template.subscriptionsReady}}
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Are you sure you want to delete this recipe? This cannot be undone.
+    </div>
+    <div>
+      <button class="ui primary button delete" type="submit">Delete</button>
+      <button class="ui primary button return" type="submit">Return to Profile</button>
+    </div>
+  </div>
+  {{/if}}
+  
+</template>
+

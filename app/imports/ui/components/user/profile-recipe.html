@@ -13,5 +13,13 @@
         {{ recipe.description }}
       </div>
     </div>
+    {{#if createdBy}}
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div class="ui basic green edit-button button">Edit</div>
+        <div class="ui basic red delete-button button">Delete</div>
+      </div>
+    </div>
+    {{/if}}
   </div>
 </template>
