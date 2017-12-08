@@ -3,6 +3,8 @@ import './checkbox-field';
 import './checkbox-form-control.html';
 import './form-control-utilities';
 import './form-error-message.html';
+import './ingredient-form-control.html';
+import './ingredient-form-control';
 import './radio-field.html';
 import './radio-field';
 import './radio-form-control.html';
