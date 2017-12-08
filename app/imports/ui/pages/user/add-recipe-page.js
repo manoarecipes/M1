@@ -20,10 +20,6 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
   this.context = Recipes.getSchema().namedContext('Add_Recipe_Page');
-  Recipes.define({
-    username: FlowRouter.getParam('username'),
-    identity: recipeNum,
-  });
 });
 
 Template.Add_Recipe_Page.helpers({
@@ -36,23 +32,16 @@ Template.Add_Recipe_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
-  recipe() {
-    return Recipes.findDoc(recipeNum);
-  },
   ingredients() {
-    const recipe = Recipes.findDoc(recipeNum);
-    const selectedIngredients = recipe.ingredients;
-    return recipe && _.map(Ingredients.findAll(),
+    return _.map(Ingredients.findAll(),
         function makeIngredientObject(ingredient) {
-          return { label: ingredient.name, selected: _.contains(selectedIngredients, ingredient.name) };
+          return { label: ingredient.name };
         });
   },
   tags() {
-    const recipe = Recipes.findDoc(recipeNum);
-    const selectedTags = recipe.tags;
-    return recipe && _.map(Tags.findAll(),
+    return _.map(Tags.findAll(),
         function makeTagsObject(tags) {
-          return { label: tags.name, selected: _.contains(selectedTags, tags.name) };
+          return { label: tags.name };
         });
   },
 });
@@ -81,19 +70,17 @@ Template.Add_Recipe_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const docID = Recipes.findDoc(recipeNum)._id;
-      const id = Recipes.update(docID, { $set: cleanData });
+      const id = Recipes.define(cleanData);
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
+      FlowRouter.go(`/${username}/profile`);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
-  'click .delete'(event) {
+  'click .return'(event) {
     event.preventDefault();
-    const docID = Recipes.findDoc(recipeNum)._id;
-    Recipes.removeIt(docID);
     const username = FlowRouter.getParam('username');
     FlowRouter.go(`/${username}/profile`);
   },

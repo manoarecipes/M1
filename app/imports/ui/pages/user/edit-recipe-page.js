@@ -9,7 +9,6 @@ import { Tags } from '/imports/api/tag/TagCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
-const recipeNum = FlowRouter.getParam('recipeNum');
 
 Template.Edit_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
@@ -33,9 +32,11 @@ Template.Edit_Recipe_Page.helpers({
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
   recipe() {
+    const recipeNum = FlowRouter.getParam('recipeNum');
     return Recipes.findDoc(recipeNum);
   },
   ingredients() {
+    const recipeNum = FlowRouter.getParam('recipeNum');
     const recipe = Recipes.findDoc(recipeNum);
     const selectedIngredients = recipe.ingredients;
     return recipe && _.map(Ingredients.findAll(),
@@ -44,6 +45,7 @@ Template.Edit_Recipe_Page.helpers({
         });
   },
   tags() {
+    const recipeNum = FlowRouter.getParam('recipeNum');
     const recipe = Recipes.findDoc(recipeNum);
     const selectedTags = recipe.tags;
     return recipe && _.map(Tags.findAll(),
@@ -58,8 +60,8 @@ Template.Edit_Recipe_Page.events({
     event.preventDefault();
     const recipeName = event.target.name.value;
     const description = event.target.Description.value;
-    const username = FlowRouter.getParam('username'); // schema requires username.
-    const identity = recipeNum;
+    const username = FlowRouter.getParam('username');
+    const identity = FlowRouter.getParam('recipeNum');
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
     const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
@@ -77,20 +79,18 @@ Template.Edit_Recipe_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
+      const recipeNum = FlowRouter.getParam('recipeNum');
       const docID = Recipes.findDoc(recipeNum)._id;
       const id = Recipes.update(docID, { $set: cleanData });
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
-      FlowRouter.go(`/${username}/profile`);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
-  'click .delete'(event) {
+  'click .return'(event) {
     event.preventDefault();
-    const docID = Recipes.findDoc(recipeNum)._id;
-    Recipes.removeIt(docID);
     const username = FlowRouter.getParam('username');
     FlowRouter.go(`/${username}/profile`);
   },

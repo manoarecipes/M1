@@ -127,6 +127,19 @@ class RecipeCollection extends BaseCollection {
   }
 
   /**
+   * Returns true if the passed entity is in this collection.
+   * @param { String | Object } name The docID, or an object specifying a document, or the name, or the username.
+   * @returns {boolean} True if name exists in this collection.
+   */
+  isDefined(name) {
+    return (
+        !!this._collection.findOne(name) ||
+        !!this._collection.findOne({ name }) ||
+        !!this._collection.findOne({ recipeName: name }) ||
+        !!this._collection.findOne({ identity: name }));
+  }
+
+  /**
    * A stricter form of findOne, in that it throws an exception if the entity isn't found in the collection.
    * @param { String | Object } name Either the docID, or an object selector, or the 'name' field value, or the
    * username field value.

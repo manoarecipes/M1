@@ -1,4 +1,7 @@
 <template name="Profile_Landing">
+
+  {{#if Template.subscriptionsReady}}
+
   <div class="ui container">
     <div class="ui card">
       {{> Directory_Profile profile=profile }}
@@ -24,4 +27,6 @@
       </div>
     </div>
   </div>
+
+  {{/if}}
 </template>

@@ -14,11 +14,20 @@ Template.Profile_Landing.helpers({
     return FlowRouter.getParam('username');
   },
   profile() {
-    return Profiles.findDoc(FlowRouter.getParam('username'));
+    const username = FlowRouter.getParam('username');
+    return Profiles.findDoc(username);
   },
+  /**
+   * Searches through the favorite recipes of the user. If the recipe doesn't exist anymore, it is removed from
+   * favorites. If it exists, it is displayed in a card.
+   * @returns { Objects } The existing recipes referenced by the user's favorite list.
+   */
   favRecipes() {
     const prof = Profiles.findDoc(FlowRouter.getParam('username'));
-    return prof.favorites.map(x => Recipes.findDoc(x));
+    const user = prof._id;
+    return prof.favorites.map(function (x) {
+      return Recipes.isDefined(x) ? Recipes.findDoc(x) : Profiles.update({ _id: user }, { $pull: { favorites: x } });
+    });
   },
   myRecipes() {
     return Recipes.find({ username: FlowRouter.getParam('username') }).map(x => x);

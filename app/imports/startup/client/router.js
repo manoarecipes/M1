@@ -108,7 +108,7 @@ userRoutes.route('/add-recipe', {
 });
 
 export const editRecipePageRouteName = 'Edit_Recipe_Page';
-userRoutes.route('/edit-recipe/:recipeNum', {
+userRoutes.route('/edit/:recipeNum', {
   name: editRecipePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: editRecipePageRouteName });
@@ -116,7 +116,7 @@ userRoutes.route('/edit-recipe/:recipeNum', {
 });
 
 export const deleteRecipePageRouteName = 'Delete_Recipe_Page';
-userRoutes.route('/delete-recipe/:recipeNum', {
+userRoutes.route('/delete/:recipeNum', {
   name: deleteRecipePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: deleteRecipePageRouteName });
