@@ -4,6 +4,16 @@
   color: #323638;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+h2 {
+  column-span: all;
+  text-align: right;
+}
+
 .weekly-ad-share {
   padding: 20px 10px 30px 10px;
   background-color: TAN;
