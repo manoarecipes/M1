@@ -1,3 +1,5 @@
+import './add-ingredient-form.html';
+import './add-ingredient-form';
 import './checkbox-field.html';
 import './checkbox-field';
 import './checkbox-form-control.html';

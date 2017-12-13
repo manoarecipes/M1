@@ -4,11 +4,17 @@
     <label>Add Ingredients</label>
     <div class="ui search" name="Ingredients">
       <div class="ui icon input">
-        <input class="prompt" type="text" placeholder="Enter your ingredients...">
+        <input class="prompt" name="Ingredients" type="text" placeholder="Enter your ingredients...">
         <i class="search icon"></i>
       </div>
       <div class="results"></div>
     </div>
   </div>
-
+  {{> Form_Error_Message errorMessage=errorMessage}}
+  {{#each ingredient in addedIngredient}}
+    <div class="fields">
+      {{> Add_Ingredient_Form value=ingredient}}
+      <button class="circular red ui minus icon button remove" type="button"><i class="minus icon"></i></button>
+    </div>
+  {{/each}}
 </template>

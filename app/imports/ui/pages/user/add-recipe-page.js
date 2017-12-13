@@ -55,7 +55,7 @@ Template.Add_Recipe_Page.events({
     const identity = recipeNum;
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
-    const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
+    const selectedIngredients = _.filter(event.target.Ingredients.tempRow, (option) => option.selected);
     const ingredients = _.map(selectedIngredients, (option) => option.value);
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);

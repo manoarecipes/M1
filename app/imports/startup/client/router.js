@@ -123,6 +123,14 @@ userRoutes.route('/delete/:recipeNum', {
   },
 });
 
+export const testerPage = 'Ingredient_Form_Control';
+userRoutes.route('/tester', {
+  name: testerPage,
+  action() {
+    BlazeLayout.render('User_Layout', { main: testerPage });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
