@@ -10,21 +10,21 @@
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
-        {{> Text_Form_Control label="Recipe Name" name="name" placeholder="Recipe name" value=recipe.recipeName
+        {{> Text_Form_Control required=true label="Recipe Name" name="name" placeholder="Recipe name" value=recipe.recipeName
         errorMessage=(fieldError "recipeName")}}
       </div>
 
       <div class="fields">
-        {{> TextArea_Form_Control label="Description" value=recipe.description placeholder="Describe your recipe..."
+        {{> TextArea_Form_Control required=true label="Description" value=recipe.description placeholder="Describe your recipe..."
         errorMessage=(fieldError "description")}}
       </div>
 
       <div class="field">
-        {{> Ingredient_Form_Control }}
+        {{> Ingredient_Form_Control react=sharedReact}}
       </div>
 
       <div class="field">
-        {{> TextArea_Form_Control label="Instructions" value=recipe.instructions placeholder="List the steps..."
+        {{> TextArea_Form_Control required=true label="Instructions" value=recipe.instructions placeholder="List the steps..."
         errorMessage=(fieldError "instructions")}}
       </div>
 

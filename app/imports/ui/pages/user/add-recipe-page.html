@@ -10,11 +10,11 @@
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
-        {{> Text_Form_Control label="Recipe Name" name="name" placeholder="Recipe name" errorMessage=(fieldError "recipeName")}}
+        {{> Text_Form_Control required=true label="Recipe Name" name="name" placeholder="Recipe name" errorMessage=(fieldError "recipeName")}}
       </div>
 
       <div class="fields">
-        {{> TextArea_Form_Control label="Description" placeholder="Describe your recipe..." errorMessage=(fieldError "description")}}
+        {{> TextArea_Form_Control required=true label="Description" placeholder="Describe your recipe..." errorMessage=(fieldError "description")}}
       </div>
 
       <div class="field">
@@ -22,7 +22,7 @@
       </div>
 
       <div class="field">
-        {{> TextArea_Form_Control label="Instructions" placeholder="List the steps..." errorMessage=(fieldError "instructions")}}
+        {{> TextArea_Form_Control required=true label="Instructions" placeholder="List the steps..." errorMessage=(fieldError "instructions")}}
       </div>
 
       <div class="field">

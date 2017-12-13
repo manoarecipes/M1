@@ -18,7 +18,6 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.tempRow = new ReactiveDict();
-  this.tempRow.set('ingredientRows', []);
   this.tempRow.set('amountRows', []);
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
