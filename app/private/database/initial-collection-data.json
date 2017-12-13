@@ -390,10 +390,14 @@
           "identity": "58234718",
           "instructions": "1. Dice the peppers and onions and saute with chicken and beans for 5 minutes. 2. Push the mixture to one side and add the eggs. 3. Cook until scrambled and mix well. 4. Spoon mixture with chips and add chess and avocado and salsa.",
           "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
+            ["1/4 cup", "Bell Pepper"],
+            ["1/4 cup", "Onion"],
+            ["1/4 cup", "Black Beans"],
+            ["1/2 lb", "Chicken"],
+            ["4", "Eggs"],
+            ["1", "Avocado"],
+            ["4 oz", "Cheese"],
+            ["", "Tortilla Chips"]
           ],
           "ingredients": [
             "Bell Pepper",
@@ -419,10 +423,12 @@
           "identity": "58234718",
           "instructions": "1. Place yogurt(3/4 cup), mango chunks(1 cup), pineapple chunks(1 cup), milk(3/4 cup), big handful of spinach, and honey(1 Tbsp) in a blender. Blend on high speed to completely smooth.",
           "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
+            ["3/4 cup", "Yogurt"],
+            ["1 cup", "Mango"],
+            ["1 cup", "Pineapple"],
+            ["3/4 cup", "Milk"],
+            ["", "Spinach"],
+            ["1 tbsp", "Honey"]
           ],
           "ingredients": [
             "Yogurt",
@@ -986,6 +992,158 @@
             "Casserole"
           ],
           "picture": "/images/CookieBars.PNG"
+        },
+        {
+          "recipeName": "Peanut Butter Clusters",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Combine sugar, corn syrup, and salt in saucepan and bring to a boil over medium-high heat. Stir constantly and boil until mixture looks clear and is free from sugar crystals. Remove pan from heat and stir in peanut butter and vanilla. Stir till smooth and free from lumps. Add cereal and cashews, if using, and mix to combine. Use your hands to form into small balls and place on waxed paper or foil. Clusters will harden as they cool. After 15 to 20 minutes, transfer to an airtight container.",
+          "amounts": [
+            ["1/2 cup", "Sugar"],
+            ["1/2 cup", "Corn Syrup"],
+            ["1/4 tsp", "Vanilla"],
+            ["3/4 cup", "Peanut Butter"],
+            ["3 cups", "Corn Flakes"],
+            ["1/3 cup", "Cashews"]
+          ],
+          "ingredients": [
+            "Sugar",
+            "Corn Syrup",
+            "Vanilla",
+            "Peanut Butter",
+            "Corn Flakes",
+            "Vanilla",
+            "Cashews"
+          ],
+          "tags": [
+            "Dessert",
+            "Peanut Butter"
+          ],
+          "picture": "/images/PeanutClusters.PNG"
+        },
+        {
+          "recipeName": "Simple Grilled Cheese",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Spread 1 1/2 tsp. mayonnaise on 1 side of each bread slice. Heat a large nonstick skillet over medium heat. Place 2 bread slices, mayonnaise side down, in skillet; top each with 2 cheese slices and 1 bread slice, mayonnaise side up. Cook 3 minutes on each side or until golden brown. Repeat with remaining bread slices and cheese. ",
+          "amounts": [
+            ["1/4 cup", "Mayonnasie"],
+            ["8 slices", "Bread"],
+            ["8 slices", "Cheese"]
+          ],
+          "ingredients": [
+            "Mayonnaise",
+            "Bread",
+            "Cheese"
+          ],
+          "tags": [
+            "Snack",
+            "Grilled Cheese"
+          ],
+          "picture": "/images/GrilledCheese.PNG"
+        },
+        {
+          "recipeName": "Chicken Salad with Orange Vinaigrette",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Heat grains according to package directions; set aside. Combine oil and next 4 ingredients (through pepper) in a medium bowl, stirring with a whisk. Add chicken, basil, pistachios, and cheese; toss to coat. Place about 3/4 cup chicken mixture, 1/2 cup quinoa mixture, and 3 tomato wedges on each of 4 plates.",
+          "amounts": [
+            ["8.5 oz", "Quinoa"],
+            ["2 tbsp", "Olive Oil"],
+            ["1 tsp", "Vinegar"],
+            ["1 tbsp", "Orange Juice"],
+            ["1/2 tsp", "Salt"],
+            ["1/2 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Quinoa",
+            "Olive Oil",
+            "Vinegar",
+            "Orange Juice",
+            "Vinegar",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Dinner",
+            "Salad"
+          ],
+          "picture": "/images/ChickenSalad.PNG"
+        },
+        {
+          "recipeName": "Rice and Bean Bowl",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Heat rice according to package instructions, 2 to 4 minutes. Combine beans and salsa in a medium microwave-safe bowl. Partially cover and cook on high power until warmed through, about 1 minute. Stir in 1 cup rice, partially cover and cook until hot, about 1 minute longer. (Check halfway through.) Top with cheese and guacamole. Add hot sauce, if desired.",
+          "amounts": [
+            ["12 oz", "Brown Rice"],
+            ["1/2 cup", "Black Beans"],
+            ["1/2 cup", "Salsa"],
+            ["2 tbsp", "Cheese"],
+            ["2 tbsp", "Guaccamole"]
+          ],
+          "ingredients": [
+            "Brown Rice",
+            "Black Beans",
+            "Salsa",
+            "Cheese",
+            "Guaccamole"
+          ],
+          "tags": [
+            "Dinner",
+            "Bowl"
+          ],
+          "picture": "/images/BeanBowl.PNG"
+        },
+        {
+          "recipeName": "Chocolate Croissants",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Heat oven to 375° F. Unroll the dough and separate it into 8 triangles. Place about 10 chocolate chips on the bottom third of each triangle and roll the dough up around the chocolate. Transfer the croissants to a baking sheet (lined with parchment paper, if desired, for easier cleanup). Bake until golden brown, 12 to 14 minutes.",
+          "amounts": [
+            ["18", "Crescent Rolls"],
+            ["1/3 cup", "Chocolate Chips"]
+          ],
+          "ingredients": [
+            "Crescent Rolls",
+            "Chocolate Chips"
+          ],
+          "tags": [
+            "Dessert",
+            "Croissant"
+          ],
+          "picture": "/images/ChocolateCroissant.PNG"
+        },
+        {
+          "recipeName": "Quick Chive Mashed Potatoes",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "58234718",
+          "instructions": "Bring a pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes; drain. In a small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher or electric beater, slowly blend milk mixture into potatoes until smooth and creamy. Add chives, sour cream, pepper, mix. ",
+          "amounts": [
+            ["2", "Potatoes"],
+            ["2 tbsp", "Chives"],
+            ["2 tbsp", "Sour Cream"],
+            ["2 tbsp", "Milk"],
+            ["1 tbsp", "Butter"]
+          ],
+          "ingredients": [
+            "Potatoes",
+            "Chives",
+            "Sour Cream",
+            "Milk",
+            "Butter"
+          ],
+          "tags": [
+            "Snack",
+            "Mash Potatoes"
+          ],
+          "picture": "/images/MashPotatoes.PNG"
         },
       ]
     },
