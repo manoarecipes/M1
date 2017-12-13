@@ -22,15 +22,15 @@ class RecipeCollection extends BaseCollection {
     super('Recipe', new SimpleSchema({
       username: { type: String },
       identity: { type: String },
-      // Remainder are optional
-      recipeName: { type: String, optional: true },
-      description: { type: String, optional: true },
-      instructions: { type: String, optional: true },
-      ingredients: { type: Array, optional: true },
+      recipeName: { type: String },
+      description: { type: String },
+      instructions: { type: String },
+      ingredients: { type: Array },
       'ingredients.$': { type: String },
-      amounts: { type: Array, optional: true },
+      amounts: { type: Array },
       'amounts.$': { type: Array },
       'amounts.$.$': { type: String },
+      // Remainder are optional
       tags: { type: Array, optional: true },
       'tags.$': { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -55,8 +55,8 @@ class RecipeCollection extends BaseCollection {
    * if one or more ingredients and/or tags are not defined.
    * @returns The newly created docID.
    */
-  define({ recipeName = '', description = '', username, identity, instructions = '',
-           ingredients = [], amounts = [], tags = [], picture = '' }) {
+  define({ recipeName, description, username, identity, instructions,
+           ingredients, amounts, tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
       recipeName: String,

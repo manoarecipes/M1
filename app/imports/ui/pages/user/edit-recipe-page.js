@@ -16,6 +16,8 @@ Template.Edit_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Recipes.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
+  this.tempRow = new ReactiveDict();
+  this.tempRow.set('amountRows', []);
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
   this.context = Recipes.getSchema().namedContext('Edit_Recipe_Page');
@@ -35,15 +37,6 @@ Template.Edit_Recipe_Page.helpers({
     const recipeNum = FlowRouter.getParam('recipeNum');
     return Recipes.findDoc(recipeNum);
   },
-  ingredients() {
-    const recipeNum = FlowRouter.getParam('recipeNum');
-    const recipe = Recipes.findDoc(recipeNum);
-    const selectedIngredients = recipe.ingredients;
-    return recipe && _.map(Ingredients.findAll(),
-        function makeIngredientObject(ingredient) {
-          return { label: ingredient.name, selected: _.contains(selectedIngredients, ingredient.name) };
-        });
-  },
   tags() {
     const recipeNum = FlowRouter.getParam('recipeNum');
     const recipe = Recipes.findDoc(recipeNum);
@@ -53,6 +46,14 @@ Template.Edit_Recipe_Page.helpers({
           return { label: tags.name, selected: _.contains(selectedTags, tags.name) };
         });
   },
+  sharedReact() {
+    const recipeNum = FlowRouter.getParam('recipeNum');
+    const recipe = Recipes.findDoc(recipeNum);
+    const amounts = recipe.amounts;
+    Template.instance().tempRow.set('amountRows', amounts);
+    console.log(Template.instance().tempRow.get('amountRows'));
+    return Template.instance().tempRow;
+  },
 });
 
 Template.Edit_Recipe_Page.events({
@@ -60,16 +61,17 @@ Template.Edit_Recipe_Page.events({
     event.preventDefault();
     const recipeName = event.target.name.value;
     const description = event.target.Description.value;
-    const username = FlowRouter.getParam('username');
+    const username = FlowRouter.getParam('username'); // schema requires username.
     const identity = FlowRouter.getParam('recipeNum');
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
-    const selectedIngredients = _.filter(event.target.Ingredients.selectedOptions, (option) => option.selected);
-    const ingredients = _.map(selectedIngredients, (option) => option.value);
+    const amounts = instance.tempRow.get('amountRows');
+    const ingredients = _.map(amounts, (option) => _.last(option));
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-    const updatedRecipeData = { recipeName, description, username, identity, instructions, picture, ingredients, tags };
+
+    const updatedRecipeData = { recipeName, description, username, identity, instructions, picture, amounts, ingredients, tags };
 
     // Clear out any old validation errors.
     instance.context.reset();

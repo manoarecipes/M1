@@ -1,0 +1,17 @@
+<template name="Ingredient_Form_Control">
+
+  <div class="field">
+    <label>Add Ingredients</label>
+    <div class="ui search" name="Ingredients">
+      <div class="ui icon input">
+        <input class="prompt" name="Ingredients" type="text" placeholder="Enter your ingredients...">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </div>
+  {{> Form_Error_Message errorMessage=errorMessage}}
+  {{#each ingredient in addedIngredient}}
+  {{> Add_Ingredient_Form value=ingredient react=sharedDict}}
+  {{/each}}
+</template>
