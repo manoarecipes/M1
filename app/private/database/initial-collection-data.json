@@ -275,8 +275,12 @@
           "recipeName": "Honey BBQ Chicken Pizza",
           "description": "It's a chicken pizza",
           "username": "kleve84",
-          "identity": "38234718",
+          "identity": "1513132019019",
           "instructions": "1. Make the pizza",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["3 oz", "Honey"]
+          ],
           "ingredients": [
             "Chicken",
             "Honey"
@@ -291,8 +295,12 @@
           "recipeName": "Cheese Omelette",
           "description": "It's an omelette",
           "username": "dherman",
-          "identity": "48234718",
+          "identity": "1513132024821",
           "instructions": "1. Make the omelette",
+          "amounts": [
+            ["3 large", "Egg"],
+            ["4 oz", "Cheddar Cheese"]
+          ],
           "ingredients": [
             "Egg",
             "Cheddar Cheese"
@@ -307,13 +315,16 @@
           "recipeName": "Chocolate Peanut Butter Jelly Oats",
           "description": "These Chocolate Peanut Butter Jelly Overnight Oats can be made in advance, are easy to make, are filled with chocolate and peanut butter, have a healthy twist on jelly AND are healthy?",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513132028535",
           "instructions": "1. Place ingredients, Oats(1/2 cup), Milk(2/3 cup), Yogurt(1/2 cup), Peanut Butter(2 Tbsp), Cocoa Powder(1 Tbsp), Banana(1/2 mashed), in a medium sized bowl. 2. Stir until well combined. 3. Store in a covered, airtight container, in the fridge overnight. 4. In the morning, top with additional toppings like bananas and almonds.",
           "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
+            ["1/2 cup", "Oats"],
+            ["2/3 cup", "Milk"],
+            ["1/2 cup", "Yogurt"],
+            ["2 tbsp", "Peanut Butter"],
+            ["1 tbsp", "Cocoa Powder"],
+            ["1/2 mashed", "Banana"],
+            ["to garnish", "Almonds"]
           ],
           "ingredients": [
             "Oats",
@@ -335,13 +346,15 @@
           "recipeName": "Skinny Fried Egg and Avocado Toast",
           "description": "People have always loved avocado. It’s tasty, versatile and healthy too, what’s not to love?! Avocados became really trendy, especially avocado toast. So adding a fried egg is just the icing on the cake",
           "username": "kleve84",
-          "identity": "68234718",
+          "identity": "1513132031061",
           "instructions": "1. Prepare toast and 2 fried eggs to personal preference. 2. Peel and mash 1 avocado with the lime juice (1 tsp), salt and pepper. 3. Spread avocado evenly on each slice of toast then top each with a fried eggs and additional seasonings you prefer. Serve immediately.",
           "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
+            ["2 large", "Egg"],
+            ["2 slices", "Bread"],
+            ["1 large", "Avocado"],
+            ["1 tsp", "Lime Juice"],
+            ["to taste", "Salt"],
+            ["to taste", "Pepper"]
           ],
           "ingredients": [
             "Egg",
@@ -362,7 +375,7 @@
           "recipeName": "Taco Lime Grilled Chicken",
           "description": "A quick and easy taco lime grilled chicken that's just packed with flavour!",
           "username": "kleve84",
-          "identity": "78234718",
+          "identity": "1513132033058",
           "instructions": "1. Mix the taco seasoning(2 Tbsp) and lime juice(1/4 cup), cover the chicken(1 lb) in the mixture and optionally marinate for 30 minutes to over night. 2. Grill over medium-high heat until cooked through, about 3-5 minutes per side, let sit for 5 minutes and slice. 3. Put appropriate amount in each taco shell",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -387,7 +400,7 @@
           "recipeName": "Breakfast Nachos",
           "description": "Gluten-free and easy to customize, these breakfast nachos are a fun way to change up your morning routine!",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513132036200",
           "instructions": "1. Dice the peppers and onions and saute with chicken and beans for 5 minutes. 2. Push the mixture to one side and add the eggs. 3. Cook until scrambled and mix well. 4. Spoon mixture with chips and add chess and avocado and salsa.",
           "amounts": [
             ["1/4 cup", "Bell Pepper"],
@@ -420,7 +433,7 @@
           "recipeName": "Tropical Green Smoothie",
           "description": "Packed with nutrition and incredible flavor, this creamy Tropical Green Smoothie is a delicious way to start the day!",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133587689",
           "instructions": "1. Place yogurt(3/4 cup), mango chunks(1 cup), pineapple chunks(1 cup), milk(3/4 cup), big handful of spinach, and honey(1 Tbsp) in a blender. Blend on high speed to completely smooth.",
           "amounts": [
             ["3/4 cup", "Yogurt"],
@@ -449,7 +462,7 @@
           "recipeName": "Mexican Scrambled Eggs",
           "description": "This Mexican inspired egg dish is perfect as a quick and easy dinner or a substantial breakfast or brunch idea.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133587956",
           "instructions": "1. Saute the 3 green onions for a couple of minutes till tender. 2. Add 8 eggs and cook and stir over medium-low heat. 3. Season the eggs with salt and stir frequently as they cook. 4. Add the beans(1/3 cup). Cook and stir just till beans have warmed and eggs are fully cooked. 5. Sprinkle with cheese(1/4 cup) and remove from heat. Stir until cheese is melted and well incorporated.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -474,7 +487,7 @@
           "recipeName": "Nutella Filled French Toast",
           "description": "What's better than adding Nutella to an all time favorite breakfast dish.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133588544",
           "instructions": "1. Preheat oven to 400 degrees. Generously coat a large baking sheet with non-stick cooking spray. 2. Spread a heaping tablespon of Nutella on one slice of bread and top with another slice to make a sandwich. Use a serrated break knife to slice the sandwich into thirds and repeat. 3. In a pie plate or similar dish, whisk together 6 eggs, milk(1/2 cup), sugar(2 Tbsp), and vanilla extract(1 Tsp). 4. Dip each assembled french toast stick into the egg mixture. Allow excess egg mixture to drip off of french toast stick and then transfer it to the prepared baking sheet. Lightly coat the top of the french toast sticks with non-stick cooking spray. 5. Bake for 8 minutes then flip over each one. Return to oven for an additional 7 or 8 minutes or until well toasted on both sides. Remove from oven. 6. Add any additional ingredients.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -504,7 +517,7 @@
           "recipeName": "Cheezy 5-ingredient Pizza Bake",
           "description": "This incredibly quick and easy pizza pasta bake is an absolute lifesaver on busy nights.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133588744",
           "instructions": "1. Preheat oven to 425°F. In an ungreased baking pan, combine uncooked rotini(12 oz), pasta sauce(24 oz), water(2 cups), mozzarella(1½ cups), and pepperoni(4 oz), stirring thoroughly to combine. 2. Top with remaining mozzarella(½ cup) and parmesan(2 Tbsp). 3. Cover tightly with foil. Bake for 30-40 minutes, until pasta is tender. 4. Garnish with additional parmesan and fresh basil, if desired.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -531,7 +544,7 @@
           "recipeName": "Spaghetti Bolognese",
           "description": "This fast-track recipe for quick & easy Spaghetti Bolognese is bursting with Italian flavor and cooks in just 30 minutes!",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133588963",
           "instructions": "1. Heat 1 tablespoon of the olive oil in a large pan over medium heat. Add ground beef(1 lb) and fry until fully cooked. Drain and set aside. 2. Heat the remaining oil(1 Tbsp) in the pan. Add the onions, and saute until lightly golden. Add the cooked meat and canned pureed tomatoes(28 oz) and bring to a boil. 3. Season with the salt and pepper. 4. Reduce the heat to low, and cook for 15 minutes. Meanwhile cook the spaghetti. Drain and serve topped with the sauce and cheese (if using).",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -557,7 +570,7 @@
           "recipeName": "Grilled Cheese Roll Ups with Tomato Dipping Sauce",
           "description": "No more boring grilled cheese! Grilled Cheese Roll Ups with Tomato Soup Sauce takes the classic pairing and makes dinner fun.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133589152",
           "instructions": "1. In a oven, heat up the oil until hot. Add the chopped onion(1/4 cup) and cook until soft, 5-8 minutes. 2. Add the sugar(1 Tsp), salt(1/4 Tsp), pepper(1/4 Tsp), basil(1/4 Tsp). Stir all together and cook another 5 minutes. 3. Add the canned tomatoes(14 oz), chicken broth(1 cup), and vinegar(1 Tsp). 4. Add the soup mixture to a blender and puree until smooth. 5. Flatten one slice of bread to about half of its original thickness. Add one slice of cheese. Roll up bread and set aside, seam side down. Repeat with the remaining bread. 6. Heat a skillet over medium heat. Dip each roll up into the butter. Once hot, turn the heat down to medium-low and add several roll ups. Cook until the cheese has melted and the bottom is golden brown. Repeat with remaining roll ups. Serve hot with dipping sauce.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -588,7 +601,7 @@
           "recipeName": "Sloppy Joes",
           "description": "Keep to the classics. Super simple take on Sloppy Joes for that hardy manwich you're looking for.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133589351",
           "instructions": "1. Preheat a large, nonstick skillet over medium heat and add beef(1 lb), onion(1/2 cup), minced garlic(2 cloves), salt(1 Tsp), and black pepper(1 Tsp). Cook until beef is cooked through, stirring to crumble, about 8-10 minutes. 2. Add can tomato sauce(1/6 oz). Cook for 5-10 minutes to allow flavors to meld. Serve on buns.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -615,7 +628,7 @@
           "recipeName": "Chicken Enchilada Soup",
           "description": "Delicious, economical, and filling,this chicken enchilada soup is the perfect comfort food.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133589577",
           "instructions": "1. Add the 3 chicken breasts, chicken broth(5 cups), cumin(1 Tsp), chili powder(1 Tsp), and onions(1/2 cup) to oven and bring to a simmer. 2. Remove the chicken breasts to a cutting board. Cut it into large bite sized pieces. Return the pieces to the pot. 3. Add the rice(1 cup), salsa(2 pints), 1 can of black beans, and a can of enchilada sauce(10 oz) and simmer for about 45 to 60 minutes, until the rice is fully cooked.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -643,7 +656,7 @@
           "recipeName": "Lemon Garlic Pasta",
           "description": "Delicious, economical, and filling,this chicken enchilada soup is the perfect comfort food.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133590542",
           "instructions": "1. Place 10 peeled garlic cloves in an oven, drizzle with olive oil(1/4 cup) and cover with foil. Oven roast at 400° for 30-40 minutes (until lightly golden browned). Let cool for 2-3 minutes, then chop. 2. Cook pasta according to package directions. In a sauté pan over medium/low heat - heat the olive oil and chopped garlic for 4-5 minutes while stirring. Add the lemon juice(4 Tbsp) and continue cooking for 2-3 minutes. 3. Reduce heat to low, add a pinch of salt and red pepper flakes(1/8 Tsp). Add the cooked pasta and toss with the lemon garlic sauce until fully coated. 4. Add any ingredients you want.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -671,7 +684,7 @@
           "recipeName": "Homemade Microwave Lasagna",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133590542",
           "instructions": "1. In a bowl, combine the ricotta(15 oz), chopped spinach(4 cups), mozzarella(1 cup), Parmesan(1/4 cup), salt(1/4 Tsp), and pepper(1/4 Tsp). 2. In the bottom of a microwave-safe 8 inch square baking dish, spread 1/2 cup of the sauce.  Top with 2 no-bake lasagna noodles, 1/2 cup of sauce and half the ricotta mixture. Repeat. 3. Top with the remaining 2 lasagna noodles, the remaining sauce, 1/2 cup remaining mozzarella and 2 Tablespoons grated Parmesan. 4. Cover with wax or parchment paper, then place a plate on top on top of the wax paper. Place the dish on top of a couple paper towels in the microwave, and microwave on high power until the noodles are tender, about 12-20 minutes.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -699,7 +712,7 @@
           "recipeName": "Brocoli and Cheddar Pizza",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133751150",
           "instructions": "1. Set your oven around 350F. Melt butter(2 Tbsp) with 2 fresh minced garlic, parsley(1/4 TSp) and basil(1/4 Tsp) and spread onto the naan. 2. Bake for around 8-10 minutes straight on the rack until lightly golden with a fluffy center. Chop the florets(2 cups) from the raw broccoli until it looks more like confetti and less like baby trees. Either blanch or steam the florets until bright green and tender. 3. After draining the water from the florets, return to the bowl and add cheddar, Gouda and Parmesan cheeses. Spread on the garlicky baked naan and top with crumbled feta. Return to oven and bake for 15-20 minutes until crispy and melty perfection is reached. Slice and serve!",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -727,7 +740,7 @@
           "recipeName": "Taco Salad",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133751803",
           "instructions": "1. Spray a large pan with cooking spray and cook ground beef till nicely browned, drain well.  Return pan to heat and add taco seasoning, pinto beans, and olives.  Stir to incorporate and simmer for just a couple of minutes.  Remove from heat and allow to cool a bit while preparing salad. 2. Add chopped lettuce to a large serving bowl.  Add tomato, green onion, and kidney beans.  Top with slightly cooled meat mixture and 1 cup of the shredded cheese.  Toss salad well to mix all ingredients then garnish with avocado and remaining cheese. 3. Top individual servings with a little salad dressing, some crushed tortilla chips, and a dollop of sour cream.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -758,7 +771,7 @@
           "recipeName": "BBQ Cups",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133752394",
           "instructions": "1. Preheat oven to 400 degrees F. Brown ground turkey in skillet. Add BBQ sauce and garlic powder. Set aside. Separate biscuits and place in muffin tins, pressing dough up sides to edge of cups. Fill dough with cooked turkey mixture. Sprinkle with cheese. Bake 8-10 minutes or until golden brown. Serve and enjoy!!",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -783,7 +796,7 @@
           "recipeName": "Quino Salad",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133752970",
           "instructions": "Add quinoa and water to a medium saucepan, cover, and bring to a boil and reduce to simmer for 15 minutes until water is gone. Let sit for 5 minutes, use a fork to fluff. Add quinoa to a large bowl along with tomato, cucumber, red pepper, orange pepper, parsley, mint, garlic, lemon juice, olive oil, salt, and pepper. Toss to mix everything together.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -812,7 +825,7 @@
           "recipeName": "Noodle Soup",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133753486",
           "instructions": "In a large saucepan, heat the chicken stock and bring to a boil. Add the green onions, Bok Choy,soy sauces, oyster sauce & the noodles. Reduce the heat and cook according to noodle package instructions (just until tender)",
           "amounts": [
           ["1 lb", "Chicken"],
@@ -837,7 +850,7 @@
           "recipeName": "Chicken Salad Sliders",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133754033",
           "instructions": "In a small bowl, whisk together yogurt, mayo, pickle juice and lemon juice. Stir in cooked chicken, celery and onion then season with salt and pepper to taste. Slice rolls in half and top with equal parts chicken salad and lettuce if you wish.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -862,7 +875,7 @@
           "recipeName": "Tortellini Casserole",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133754584",
           "instructions": "Pre-heat oven or toaster oven to 350 degrees F. Bring a pot of water to a boil and cook tortellini via package instructions. In a small baking dish, coming tortellini with enchilada sauce and stir to coat. Top with a hearty sprinkling of grated cheese and bake on center rack for 15-20 minutes or until hot and bubbly. While the tortellini bakes, chop your veggies + toppings and set aside. Once the pasta is ready to be scarfed, remove from oven.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -889,7 +902,7 @@
           "recipeName": "Tortellini Casserole",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133755133",
           "instructions": "Pre-heat oven or toaster oven to 350 degrees F. Bring a pot of water to a boil and cook tortellini via package instructions. In a small baking dish, coming tortellini with enchilada sauce and stir to coat. Top with a hearty sprinkling of grated cheese and bake on center rack for 15-20 minutes or until hot and bubbly. While the tortellini bakes, chop your veggies + toppings and set aside. Once the pasta is ready to be scarfed, remove from oven.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -916,7 +929,7 @@
           "recipeName": "One Bowl Brownies",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133755658",
           "instructions": "Preheat oven to 350 degrees F.Mix all ingredients together except chocolate chips. Spread in a greased 9x13 pan and sprinkle chocolate chips on top. Bake for 30 minutes (check after 20) or until a tooth pick is inserted and comes out almost clean. Let cool completely before cutting and serving.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -943,7 +956,7 @@
           "recipeName": "Cookie Bars",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133756208",
           "instructions": "Melt butter in microwave safe bowl until melted. Let cool. Add brown sugar, vanilla and egg - mix well. Add dry ingredients gradually. Blend well, and pour into greased 9x9 pan. Sprinkle with chocolate chips and bake at 350 for 20-25 minutes.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -970,7 +983,7 @@
           "recipeName": "Cookie Bars",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133756702",
           "instructions": "Melt butter in microwave safe bowl until melted. Let cool. Add brown sugar, vanilla and egg - mix well. Add dry ingredients gradually. Blend well, and pour into greased 9x9 pan. Sprinkle with chocolate chips and bake at 350 for 20-25 minutes.",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -997,7 +1010,7 @@
           "recipeName": "Peanut Butter Clusters",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133757668",
           "instructions": "Combine sugar, corn syrup, and salt in saucepan and bring to a boil over medium-high heat. Stir constantly and boil until mixture looks clear and is free from sugar crystals. Remove pan from heat and stir in peanut butter and vanilla. Stir till smooth and free from lumps. Add cereal and cashews, if using, and mix to combine. Use your hands to form into small balls and place on waxed paper or foil. Clusters will harden as they cool. After 15 to 20 minutes, transfer to an airtight container.",
           "amounts": [
             ["1/2 cup", "Sugar"],
@@ -1026,7 +1039,7 @@
           "recipeName": "Simple Grilled Cheese",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133758531",
           "instructions": "Spread 1 1/2 tsp. mayonnaise on 1 side of each bread slice. Heat a large nonstick skillet over medium heat. Place 2 bread slices, mayonnaise side down, in skillet; top each with 2 cheese slices and 1 bread slice, mayonnaise side up. Cook 3 minutes on each side or until golden brown. Repeat with remaining bread slices and cheese. ",
           "amounts": [
             ["1/4 cup", "Mayonnasie"],
@@ -1048,7 +1061,7 @@
           "recipeName": "Chicken Salad with Orange Vinaigrette",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133858967",
           "instructions": "Heat grains according to package directions; set aside. Combine oil and next 4 ingredients (through pepper) in a medium bowl, stirring with a whisk. Add chicken, basil, pistachios, and cheese; toss to coat. Place about 3/4 cup chicken mixture, 1/2 cup quinoa mixture, and 3 tomato wedges on each of 4 plates.",
           "amounts": [
             ["8.5 oz", "Quinoa"],
@@ -1077,7 +1090,7 @@
           "recipeName": "Rice and Bean Bowl",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133859262",
           "instructions": "Heat rice according to package instructions, 2 to 4 minutes. Combine beans and salsa in a medium microwave-safe bowl. Partially cover and cook on high power until warmed through, about 1 minute. Stir in 1 cup rice, partially cover and cook until hot, about 1 minute longer. (Check halfway through.) Top with cheese and guacamole. Add hot sauce, if desired.",
           "amounts": [
             ["12 oz", "Brown Rice"],
@@ -1103,7 +1116,7 @@
           "recipeName": "Chocolate Croissants",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133859647",
           "instructions": "Heat oven to 375° F. Unroll the dough and separate it into 8 triangles. Place about 10 chocolate chips on the bottom third of each triangle and roll the dough up around the chocolate. Transfer the croissants to a baking sheet (lined with parchment paper, if desired, for easier cleanup). Bake until golden brown, 12 to 14 minutes.",
           "amounts": [
             ["18", "Crescent Rolls"],
@@ -1123,7 +1136,7 @@
           "recipeName": "Quick Chive Mashed Potatoes",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513133860307",
           "instructions": "Bring a pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes; drain. In a small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher or electric beater, slowly blend milk mixture into potatoes until smooth and creamy. Add chives, sour cream, pepper, mix. ",
           "amounts": [
             ["2", "Potatoes"],
@@ -1179,7 +1192,7 @@
           "picture": "/images/crosby.jpg",
           "favorites": [
             "38234718",
-            "48234718"
+            "78234718"
           ]
         }
       ]
