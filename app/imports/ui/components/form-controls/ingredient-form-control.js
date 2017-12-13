@@ -4,8 +4,6 @@ import { Ingredients } from '/imports/api/ingredients/IngredientsCollection';
 
 Template.Ingredient_Form_Control.onCreated(function onCreated() {
   this.subscribe(Ingredients.getPublicationName());
-  this.tempRow = new ReactiveDict();
-  this.tempRow.set('ingredientRows', []);
 });
 
 Template.Ingredient_Form_Control.onRendered(function onRendered() {
@@ -18,9 +16,12 @@ Template.Ingredient_Form_Control.onRendered(function onRendered() {
     ],
     searchFullText: false,
     onSelect: (result) => {
-      const ingredientInput = this.tempRow.get('ingredientRows');
+      const ingredientInput = this.data.react.get('ingredientRows');
+      const amountInput = this.data.react.get('amountRows');
       ingredientInput.push(result);
-      this.tempRow.set('ingredientRows', ingredientInput);
+      amountInput.push(['', result.name]);
+      this.data.react.set('ingredientRows', ingredientInput);
+      this.data.react.set('amountRows', amountInput);
     },
     onNoResults: function () {
     },
@@ -29,20 +30,18 @@ Template.Ingredient_Form_Control.onRendered(function onRendered() {
 
 Template.Ingredient_Form_Control.helpers({
   addedIngredient() {
-    return Template.instance().tempRow.get('ingredientRows');
+    console.log(Template.instance().data.react.get('ingredientRows'));
+    console.log(Template.instance().data.react.get());
+    console.log(Template.instance().data.react);
+    return Template.instance().data.react.get('ingredientRows');
   },
-
+  sharedDict() {
+    return Template.instance().data.react;
+  },
 });
 
 Template.Ingredient_Form_Control.events({
-  'click .remove'(event, instance) {
-    event.preventDefault();
-    console.log(Template.currentData());
-    console.log(event.target.abandon);
-    console.log(event.target.amountRow);
-    console.log(event.target);
-    console.log(instance);
-    console.log(this);
-    console.log(Template.instance().tempRow.get('ingredientRows'));
+  'submit .profile-data-form'() {
+    console.log('ingredient form control happens here!');
   },
 });

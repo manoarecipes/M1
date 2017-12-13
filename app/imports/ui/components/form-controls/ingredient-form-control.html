@@ -12,9 +12,6 @@
   </div>
   {{> Form_Error_Message errorMessage=errorMessage}}
   {{#each ingredient in addedIngredient}}
-    <div class="fields">
-      {{> Add_Ingredient_Form value=ingredient}}
-      <button class="circular red ui minus icon button remove" type="button"><i class="minus icon"></i></button>
-    </div>
+  {{> Add_Ingredient_Form value=ingredient react=sharedDict}}
   {{/each}}
 </template>

@@ -17,6 +17,9 @@ Template.Add_Recipe_Page.onCreated(function onCreated() {
   this.subscribe(Recipes.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
+  this.tempRow = new ReactiveDict();
+  this.tempRow.set('ingredientRows', []);
+  this.tempRow.set('amountRows', []);
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
   this.context = Recipes.getSchema().namedContext('Add_Recipe_Page');
@@ -44,6 +47,9 @@ Template.Add_Recipe_Page.helpers({
           return { label: tags.name };
         });
   },
+  sharedReact() {
+    return Template.instance().tempRow;
+  },
 });
 
 Template.Add_Recipe_Page.events({
@@ -55,12 +61,22 @@ Template.Add_Recipe_Page.events({
     const identity = recipeNum;
     const instructions = event.target.Instructions.value;
     const picture = event.target.Picture.value;
-    const selectedIngredients = _.filter(event.target.Ingredients.tempRow, (option) => option.selected);
-    const ingredients = _.map(selectedIngredients, (option) => option.value);
+    const amounts = instance.tempRow.get('amountRows');
+    const ingredients = _.map(amounts, (option) => _.last(option));
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-    const updatedRecipeData = { recipeName, description, username, identity, instructions, picture, ingredients, tags };
+    const updatedRecipeData = {
+      recipeName,
+      description,
+      username,
+      identity,
+      instructions,
+      picture,
+      amounts,
+      ingredients,
+      tags,
+    };
 
     // Clear out any old validation errors.
     instance.context.reset();
