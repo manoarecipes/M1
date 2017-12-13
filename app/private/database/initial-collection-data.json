@@ -1629,7 +1629,7 @@
           "picture": "/images/BaconEggs.PNG"
         },
         {
-          "recipeName": "Banana Sauce",
+          "recipeName": "Apple Sauce",
           "description": "Back to the classic apple sauce",
           "username": "kleve84",
           "identity": "1513150929069",
@@ -1789,6 +1789,50 @@
           ],
           "picture": "/images/PeanutBars.PNG"
         },
+        {
+          "recipeName": "Paleo Pancakes",
+          "description": "Delicious and easy to breakfast with just 3 ingredients.",
+          "username": "kleve84",
+          "identity": "1513203574568",
+          "instructions": "In a large bowl mix mashed bananas, flour, and eggs. Scoop and cook on pan at medium heat. ",
+          "amounts": [
+            ["1 cup", "Bananas"],
+            ["1 cup", "Flour"],
+            ["2", "Eggs"]
+          ],
+          "ingredients": [
+            "Bananas",
+            "Flour",
+            "Eggs"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/BananaPancakes.PNG"
+        },
+        {
+          "recipeName": "Orange Sorbet",
+          "description": "Delicious and easy dessert.",
+          "username": "kleve84",
+          "identity": "1513203574568",
+          "instructions": "In a large bowl mix orange juice, sugar, and salt. Mix well",
+          "amounts": [
+            ["1 cup", "Orange"],
+            ["1/4 cup", "Sugar"],
+            ["1/2 tsp", "Salt"]
+          ],
+          "ingredients": [
+            "Orange",
+            "Sugar",
+            "Salt"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/OrangeSorbet.PNG"
+        }
       ]
     },
     {
