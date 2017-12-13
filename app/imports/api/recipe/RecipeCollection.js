@@ -28,6 +28,9 @@ class RecipeCollection extends BaseCollection {
       instructions: { type: String, optional: true },
       ingredients: { type: Array, optional: true },
       'ingredients.$': { type: String },
+      amounts: { type: Array, optional: true },
+      'amounts.$': { type: Array },
+      'amounts.$.$': { type: String },
       tags: { type: Array, optional: true },
       'tags.$': { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -52,7 +55,8 @@ class RecipeCollection extends BaseCollection {
    * if one or more ingredients and/or tags are not defined.
    * @returns The newly created docID.
    */
-  define({ recipeName = '', description = '', username, identity, instructions = '', ingredients = [], tags = [], picture = '' }) {
+  define({ recipeName = '', description = '', username, identity, instructions = '',
+           ingredients = [], amounts = [], tags = [], picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = {
       recipeName: String,
@@ -63,7 +67,8 @@ class RecipeCollection extends BaseCollection {
       picture: String,
     };
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
-
+    // Throw an error if any of the passed Ingredient names are not defined.
+    // Ingredients.assertNames(ingredients);
     // Throw an error if any of the passed Ingredient or Tag names are not defined.
     Ingredients.assertNames(ingredients);
     Tags.assertNames(tags);
@@ -85,8 +90,9 @@ class RecipeCollection extends BaseCollection {
       username,
       instructions,
       ingredients,
+      amounts,
       tags,
-      picture
+      picture,
     });
   }
 
@@ -103,9 +109,10 @@ class RecipeCollection extends BaseCollection {
     const identity = doc.identity;
     const instructions = doc.instructions;
     const ingredients = doc.ingredients;
+    const amounts = doc.amounts;
     const tags = doc.tags;
     const picture = doc.picture;
-    return { recipeName, description, username, identity, instructions, ingredients, tags, picture };
+    return { recipeName, description, username, identity, instructions, ingredients, amounts, tags, picture };
   }
 
   /**
@@ -122,6 +129,19 @@ class RecipeCollection extends BaseCollection {
    */
   assertNames(names) {
     _.each(names, name => this.assertName(name));
+  }
+
+  /**
+   * Returns true if the passed entity is in this collection.
+   * @param { String | Object } name The docID, or an object specifying a document, or the name, or the username.
+   * @returns {boolean} True if name exists in this collection.
+   */
+  isDefined(name) {
+    return (
+        !!this._collection.findOne(name) ||
+        !!this._collection.findOne({ name }) ||
+        !!this._collection.findOne({ recipeName: name }) ||
+        !!this._collection.findOne({ identity: name }));
   }
 
   /**

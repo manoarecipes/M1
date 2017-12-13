@@ -92,9 +92,8 @@ class ProfileCollection extends BaseCollection {
    */
   findDoc(name) {
     const doc = this._collection.findOne({ username: name });
-    console.log(doc);
     if (!doc) {
-      throw new Meteor.Error(`${name} is not a defined goddamn ${this._type}`);
+      throw new Meteor.Error(`${name} is not a defined ${this._type}`);
     }
     return doc;
   }

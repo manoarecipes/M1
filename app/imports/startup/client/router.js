@@ -83,6 +83,13 @@ userRoutes.route('/filter', {
     BlazeLayout.render('User_Layout', { main: filterPageRouteName });
   },
 });
+export const filterIngredientsPageRouteName = 'Filter_Ingredients_Page';
+userRoutes.route('/filter-ingredients', {
+  name: filterIngredientsPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: filterIngredientsPageRouteName });
+  },
+});
 
 export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
 userRoutes.route('/recipe-directory', {
@@ -97,6 +104,22 @@ userRoutes.route('/add-recipe', {
   name: recipePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: recipePageRouteName });
+  },
+});
+
+export const editRecipePageRouteName = 'Edit_Recipe_Page';
+userRoutes.route('/edit/:recipeNum', {
+  name: editRecipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: editRecipePageRouteName });
+  },
+});
+
+export const deleteRecipePageRouteName = 'Delete_Recipe_Page';
+userRoutes.route('/delete/:recipeNum', {
+  name: deleteRecipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: deleteRecipePageRouteName });
   },
 });
 

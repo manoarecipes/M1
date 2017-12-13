@@ -1,0 +1,17 @@
+<template name="Landing_Recipe_Directory">
+
+  <div class="fluid card">
+
+    <div class="large image">
+      <img src="{{ recipe.picture }}">
+    </div>
+    <div class="content">
+      <div class="header"> {{recipe.recipeName}} </div>
+      {{#each tag in recipe.tags }}
+        <a style="margin-bottom: 2px" class="ui orange tiny tag label"> {{ tag }} <p></p></a>
+      {{/each}}
+    </div>
+
+  </div>
+
+</template>
