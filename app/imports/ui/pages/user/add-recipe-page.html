@@ -10,19 +10,19 @@
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
-        {{> Text_Form_Control label="Recipe Name" name="name" placeholder="Recipe name" errorMessage=(fieldError "recipeName")}}
+        {{> Text_Form_Control required=true label="Recipe Name" name="name" placeholder="Recipe name" errorMessage=(fieldError "recipeName")}}
       </div>
 
       <div class="fields">
-        {{> TextArea_Form_Control label="Description" placeholder="Describe your recipe..." errorMessage=(fieldError "description")}}
+        {{> TextArea_Form_Control required=true label="Description" placeholder="Describe your recipe..." errorMessage=(fieldError "description")}}
       </div>
 
       <div class="field">
-        {{> Select_Form_Control label="Ingredients" options=ingredients errorMessage=(fieldError "tags") multiple=false }}
+        {{> Ingredient_Form_Control react=sharedReact}}
       </div>
 
       <div class="field">
-        {{> TextArea_Form_Control label="Instructions" placeholder="List the steps..." errorMessage=(fieldError "instructions")}}
+        {{> TextArea_Form_Control required=true label="Instructions" placeholder="List the steps..." errorMessage=(fieldError "instructions")}}
       </div>
 
       <div class="field">
@@ -36,7 +36,7 @@
 
 
       <button class="ui primary button" type="submit">Submit</button>
-      <button class="ui primary button return" type="submit">Return to Profile</button>
+      <button class="ui primary button return" type="button">Return to Profile</button>
       {{#if displaySuccessMessage}}
       <div class="ui success message">
         <p>Recipe successfully created.</p>
