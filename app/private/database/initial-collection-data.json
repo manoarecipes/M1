@@ -41,6 +41,10 @@
           "cost": "0.01"
         },
         {
+          "name": "Canned Dough",
+          "cost": "0.01"
+        },
+        {
           "name": "Capers",
           "cost": "0.01"
         },
@@ -325,19 +329,23 @@
       "contents": [
         {
           "recipeName": "Honey BBQ Chicken Pizza",
-          "description": "It's a chicken pizza",
+          "description": "A BBQ Chicken pizza using canned dough.",
           "username": "kleve84",
           "identity": "1513132019019",
-          "instructions": "1. Make the pizza",
+          "instructions": "1. Cut chicken into cubes. 2. Pan fry chicken with honey for 5-10 minutes or tender. 3. Crush tomatoes into sauce. Season with salt and pepper. 4. Spread dough into baking sheet. Apply sauce, cheese and chicken. 5. Bake at 350F for 15 minutes or until cheese is melted.",
           "amounts": [
             ["1 lb", "Chicken"],
             ["3 oz", "Honey"],
-            ["4 oz", "Tuna Fish"]
+            ["1 can", "Canned Dough"],
+            ["8 whole", "Tomato"],
+            ["1 bag", "Mozzarella Cheese"]
           ],
           "ingredients": [
             "Chicken",
             "Honey",
-            "Tuna Fish"
+            "Canned Dough",
+            "Tomato",
+            "Mozzarella Cheese"
           ],
           "tags": [
             "Dinner",
@@ -347,10 +355,10 @@
         },
         {
           "recipeName": "Cheese Omelette",
-          "description": "It's an omelette",
+          "description": "A simple cheese omelette for a quick and easy breakfast.",
           "username": "dherman",
           "identity": "1513132024821",
-          "instructions": "1. Make the omelette",
+          "instructions": "1. Break eggs into bowl and whisk until yolks are mixed. 2. Pour eggs into a large pan and cook on medium heat. 3. Flip egg and pour cheese onto cooked side. 4. Fold egg in half when bottom of omelette is cooked.",
           "amounts": [
             ["3 large", "Egg"],
             ["4 oz", "Cheddar Cheese"]
