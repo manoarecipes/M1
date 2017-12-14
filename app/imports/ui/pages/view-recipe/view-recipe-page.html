@@ -32,8 +32,8 @@
               </div>
               <div class="ui segment">
                 <div class="ui list">
-                  {{#each ingredient in recipe.ingredients}}
-                    <div class="item">{{ingredient}}</div>
+                  {{#each ingredient in recipe.amounts}}
+                    <div class="item">{{ingredient.[0]}}: {{ingredient.[1]}}</div>
                   {{/each}}
                 </div>
               </div>
