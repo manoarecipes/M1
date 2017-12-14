@@ -67,15 +67,18 @@ class RecipeCollection extends BaseCollection {
       picture: String,
     };
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
-    // Throw an error if any of the passed Ingredient names are not defined.
-    // Ingredients.assertNames(ingredients);
-    // Throw an error if any of the passed Tag names are not defined.
-    Tags.assertNames(tags);
 
     // Adds ingredient to Ingredients if ingredient is not present in database
     _.each(ingredients, function (x) {
       if (!Ingredients.isDefined(x)) {
         Ingredients.define({ name: x, cost: '0.01' });
+      }
+    })
+
+    // Adds ingredient to Ingredients if ingredient is not present in database
+    _.each(tags, function (x) {
+      if (!Tags.isDefined(x)) {
+        Tags.define({ name: x });
       }
     })
 
