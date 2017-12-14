@@ -2,9 +2,9 @@
 
   <div class="card">
     <div class="content">
-      <img class="right floated large ui image" src="{{ profile.picture }}">
+      <img class="right floated large ui image" src="{{#if profile.picture }}{{profile.picture}}{{else}}default-user-image.png{{/if}}">
       <div class="header">
-        {{ profile.firstName }} {{ profile.lastName }}
+        {{#if profile.firstName}}{{profile.firstName}}{{else}}{{profile.username}}{{/if}}{{ profile.lastName }}
       </div>
       <div class="meta">
         {{ profile.title }}

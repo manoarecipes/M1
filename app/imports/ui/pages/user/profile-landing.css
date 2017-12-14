@@ -3,3 +3,9 @@
   font-size: 50px;
   font-weight: 900;
 }
+
+.profile-landing-list-empty {
+  font-family: 'Baskerville', 'sans-serif';
+  font-size: 35px;
+  font-weight: 900;
+}
