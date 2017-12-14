@@ -5,8 +5,7 @@
     <a class="image" href="{{pathFor 'View_Recipe_Page' recipeNum=recipe.identity username=routeUserName}}">
       <img src="{{recipe.picture}}">
     </a>
-    {{/if}}
-    {{#if loggedOut}}
+    {{else}}
     <a class="image" href="{{pathFor 'View_Recipe_Page' recipeNum=recipe.identity}}">
       <img src="{{recipe.picture}}">
     </a>
