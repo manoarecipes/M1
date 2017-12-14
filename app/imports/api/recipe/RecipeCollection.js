@@ -69,9 +69,15 @@ class RecipeCollection extends BaseCollection {
     check({ recipeName, description, username, identity, instructions, picture }, checkPattern);
     // Throw an error if any of the passed Ingredient names are not defined.
     // Ingredients.assertNames(ingredients);
-    // Throw an error if any of the passed Ingredient or Tag names are not defined.
-    Ingredients.assertNames(ingredients);
+    // Throw an error if any of the passed Tag names are not defined.
     Tags.assertNames(tags);
+
+    // Adds ingredient to Ingredients if ingredient is not present in database
+    _.each(ingredients, function (x) {
+      if (!Ingredients.isDefined(x)) {
+        Ingredients.define({ name: x, cost: '0.01' });
+      }
+    })
 
     // Throw an error if there are duplicates in the passed ingredient names.
     if (ingredients.length !== _.uniq(ingredients).length) {
