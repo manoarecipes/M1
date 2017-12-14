@@ -1,0 +1,62 @@
+<template name="View_Recipe_Page">
+  {{#if Template.subscriptionsReady}}
+    <div style='padding-top:20px' class="ui centered container">
+
+      <div class="ui centered huge orange header">{{recipe.recipeName}}</div>
+      <br>
+
+      <div class="ui equal width grid">
+        <div class="row">
+          <div class="column">
+            <img class="ui large circular image" src="{{recipe.picture}}">
+          </div>
+          <div class="left aligned column">
+            <div class="ui medium header">
+              <br>Recipe by: {{recipe.username}}<br><br>
+            </div>
+            "{{recipe.description}}"<br><br>
+            {{#each tag in recipe.tags}}
+              <a class="ui orange tag label">
+                {{tag}}
+              </a>
+            {{/each}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="ui segments">
+              <div class="ui segment">
+                <div class="ui medium header">
+                  Ingredients
+                </div>
+              </div>
+              <div class="ui segment">
+                <div class="ui list">
+                  {{#each ingredient in recipe.ingredients}}
+                    <div class="item">{{ingredient}}</div>
+                  {{/each}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="ui segments">
+              <div class="ui segment">
+                <div class="ui medium header">
+                  Instructions
+                </div>
+              </div>
+              <div class="ui segment">
+                {{recipe.instructions}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  {{/if}}
+</template>
+

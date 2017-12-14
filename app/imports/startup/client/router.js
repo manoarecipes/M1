@@ -58,6 +58,14 @@ openAccessRoutes.route('/weekly-ad', {
   },
 });
 
+export const viewRecipePageRouteName = 'View_Recipe_Page';
+openAccessRoutes.route('/view/:recipeNum', {
+  name: viewRecipePageRouteName,
+  action() {
+    BlazeLayout.render('Open_Access_Layout', { main: viewRecipePageRouteName });
+  },
+});
+
 /*                        USER ROUTES                      */
 
 
@@ -163,6 +171,7 @@ userRoutes.route('/delete/:recipeNum', {
     BlazeLayout.render('User_Layout', { main: deleteRecipePageRouteName });
   },
 });
+
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
