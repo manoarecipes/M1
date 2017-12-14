@@ -1960,35 +1960,15 @@
       "name": "ProfileCollection",
       "contents": [
         {
-          "firstName": "Thomas",
-          "lastName": "Jefferson",
-          "username": "tjefferson",
-          "title": "Third President of the United States",
-          "picture": "/images/altenberg.jpg",
-          "favorites": [
-            "78234718",
-            "68234718"
-          ]
-        },
-        {
-          "firstName": "John",
-          "lastName": "Adams",
-          "username": "jadams",
-          "title": "Second President of the United States",
-          "picture": "/images/binsted.jpg",
-          "favorites": [
-            "58234718"
-          ]
-        },
-        {
           "firstName": "David",
           "lastName": "Herman",
           "username": "dherman",
           "title": "Student",
           "picture": "/images/crosby.jpg",
           "favorites": [
-            "38234718",
-            "78234718"
+            "1513132033058",
+            "1513150929069",
+            "1513158275567"
           ]
         }
       ]

@@ -1,10 +1,16 @@
 <template name="Profile_Recipe">
+  {{#if Template.subscriptionsReady}}
   <div class="card">
     <a class="image" href={{ recipe.identity }}>
       <img src="{{recipe.picture}}">
     </a>
     <div class="content">
-      <i class="right floated star icon"></i>
+      {{#if loggedIn}}
+      <i class="right floated star icon favorite-icon"></i>
+      {{/if}}
+      {{#if favorited}}
+      <i class="right floated yellow star icon unfavorite-icon"></i>
+      {{/if}}
       <div class="header">{{ recipe.recipeName }}</div>
       {{#each ingredient in recipe.ingredients }}
       <a style="margin-bottom: 2px" class="ui orange tag small label">{{ ingredient }}</a>
@@ -22,4 +28,5 @@
     </div>
     {{/if}}
   </div>
+  {{/if}}
 </template>
