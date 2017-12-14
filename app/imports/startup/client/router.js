@@ -132,14 +132,6 @@ userRoutes.route('/add-recipe', {
   },
 });
 
-export const filterPageUserRouteName = 'Filter_Page';
-openAccessRoutes.route('/filter', {
-  name: filterPageUserRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: filterPageUserRouteName });
-  },
-});
-
 export const filterIngredientsPageUserRouteName = 'Filter_Ingredients_Page';
 userRoutes.route('/filter-ingredients', {
   name: filterIngredientsPageUserRouteName,
