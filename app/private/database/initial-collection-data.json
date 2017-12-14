@@ -21,7 +21,15 @@
           "cost": "0.01"
         },
         {
+          "name": "Bell Pepper",
+          "cost": "0.01"
+        },
+        {
           "name": "Bisquick",
+          "cost": "0.01"
+        },
+        {
+          "name": "Black Beans",
           "cost": "0.01"
         },
         {
@@ -38,6 +46,10 @@
         },
         {
           "name": "Cheddar Cheese",
+          "cost": "0.01"
+        },
+        {
+          "name": "Cheese",
           "cost": "0.01"
         },
         {
@@ -101,6 +113,10 @@
           "cost": "0.01"
         },
         {
+          "name": "Onion",
+          "cost": "0.01"
+        },
+        {
           "name": "Parsley",
           "cost": "0.01"
         },
@@ -146,6 +162,10 @@
         },
         {
           "name": "Tomato",
+          "cost": "0.01"
+        },
+        {
+          "name": "Tortilla Chips",
           "cost": "0.01"
         },
         {
@@ -1832,6 +1852,114 @@
             "Breakfast"
           ],
           "picture": "/images/OrangeSorbet.PNG"
+        },
+        {
+          "recipeName": "Fried Rice",
+          "description": "Delicious and easy breakfast.",
+          "username": "kleve84",
+          "identity": "1513208711830",
+          "instructions": "On a pan, cook bacon and eggs till cooked. Mix rice in and cook for 5 min.",
+          "amounts": [
+            ["3", "Bacon"],
+            ["3", "Eggs"],
+            ["1 cup", "Rice"]
+          ],
+          "ingredients": [
+            "Bacon",
+            "Eggs",
+            "Rice"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/FriedRice.PNG"
+        },
+        {
+          "recipeName": "Lemon Pudding",
+          "description": "Delicious little dessert.",
+          "username": "kleve84",
+          "identity": "1513208728001",
+          "instructions": "Mix lemon juice, cream, and sugar till well blended.",
+          "amounts": [
+            ["3", "Lemon"],
+            ["1 cup", "Cream"],
+            ["1/4 cup", "Sugar"]
+          ],
+          "ingredients": [
+            "Lemon",
+            "Cream",
+            "Sugar"
+          ],
+          "tags": [
+            "Snack",
+            "Dessert"
+          ],
+          "picture": "/images/LemonPudding.PNG"
+        },
+        {
+          "recipeName": "Chicken Katsu",
+          "description": "Best way to prepare chicken.",
+          "username": "kleve84",
+          "identity": "1513208728001",
+          "instructions": "Cut chicken into thin pieces. Dip chicken in egg and roll in bread crumbs. Fry until golden brown.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["2", "Eggs"],
+            ["4", "Bread"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Eggs",
+            "Bread"
+          ],
+          "tags": [
+            "Dinner",
+            "Lunch"
+          ],
+          "picture": "/images/ChickenKatsu.PNG"
+        },
+        {
+          "recipeName": "Parmesan Hash Brown Cups",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513210384265",
+          "instructions": "Shred the potatoes and cheese into a bowl and mix. Scoop servings into pan and bake at 350 for 15 min.",
+          "amounts": [
+            ["1 lb", "Potatoes"],
+            ["2", "Parmesan Cheese"]
+          ],
+          "ingredients": [
+            "Potatoes",
+            "Parmesan Cheese"
+          ],
+          "tags": [
+            "Snack",
+            "Lunch"
+          ],
+          "picture": "/images/ParmesanHash.PNG"
+        },
+        {
+          "recipeName": "Shortbread Cookies",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513210385227",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Sugar"],
+            ["8 oz", "Butter"],
+            ["2 cup", "Flour"]
+          ],
+          "ingredients": [
+            "Sugar",
+            "Butter",
+            "Flour"
+          ],
+          "tags": [
+            "Snack",
+            "Dessert"
+          ],
+          "picture": "/images/Shortbread.PNG"
         }
       ]
     },
