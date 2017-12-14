@@ -41,12 +41,6 @@ Template.Profile_Recipe.helpers({
     }
     return false;
   },
-  loggedOut: function loggedOut() {
-    if (Meteor.user()) {
-      return false;
-    }
-    return true;
-  },
   favorited: function favorited() {
     const recipeIdentity = Template.instance().data.recipe.identity;
     const username = Meteor.user().profile.name;
