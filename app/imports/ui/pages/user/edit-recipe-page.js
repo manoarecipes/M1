@@ -70,8 +70,17 @@ Template.Edit_Recipe_Page.events({
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-
-    const updatedRecipeData = { recipeName, description, username, identity, instructions, picture, amounts, ingredients, tags };
+    const updatedRecipeData = {
+      recipeName,
+      description,
+      username,
+      identity,
+      instructions,
+      picture,
+      amounts,
+      ingredients,
+      tags
+    };
 
     // Clear out any old validation errors.
     instance.context.reset();

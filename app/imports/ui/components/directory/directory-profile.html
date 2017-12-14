@@ -1,8 +1,7 @@
 <template name="Directory_Profile">
-
   <div class="card">
     <div class="content">
-      <img class="right floated large ui image" src="{{#if profile.picture }}{{profile.picture}}{{else}}default-user-image.png{{/if}}">
+      <img class="right floated large ui image" src="{{#if profile.picture }}{{profile.picture}}{{else}}/images/default-user-image.png{{/if}}">
       <div class="header">
         {{#if profile.firstName}}{{profile.firstName}}{{else}}{{profile.username}}{{/if}}{{ profile.lastName }}
       </div>
@@ -11,5 +10,4 @@
       </div>
     </div>
   </div>
-
 </template>
