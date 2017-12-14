@@ -10,7 +10,7 @@
 }
 
 .landing-section-3 {
-  background: burlywood url("images/cuttingboard.jpg");
+  background: burlywood url("/images/cuttingboard.jpg");
   background-size: cover;
 }
 
@@ -34,14 +34,13 @@
 }
 
 .landing-section-sample {
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Baskerville', sans-serif;
   font-weight: 900;
   font-size: 20px;
 }
 
 .landing-section-recipe-name {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Baskerville', sans-serif;
   font-weight: 900;
   font-size: 20px;
 }
