@@ -1,8 +1,8 @@
 <template name="Profile_Recipe">
   <div class="card">
-    <div class="image">
+    <a class="image" href={{ recipe.identity }}>
       <img src="{{recipe.picture}}">
-    </div>
+    </a>
     <div class="content">
       <i class="right floated star icon"></i>
       <div class="header">{{ recipe.recipeName }}</div>

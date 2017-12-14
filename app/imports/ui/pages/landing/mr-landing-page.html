@@ -5,7 +5,9 @@
       <div class="row">
         <div class="ui center aligned sixteen wide column">
           <h1 class="landing-section-1-welcome">Welcome to Manoa Recipes</h1>
-          <h3 class="landing-section-1-tagline">A student recipe repository</h3>
+          <h3 class="landing-section-1-tagline">A Student's Recipe Repository</h3>
+        <h3 class="landing-section-1-tagline">Please Search For a Recipe By Ingredient Using The Dropdown Menu Below</h3>
+          <h3 class="landing-section-1-tagline">Or Browse the Entire Collection</h3>
         </div>
       </div>
     </div>
@@ -16,7 +18,6 @@
   </div>
 
   <div class="landing-section-3">
-    <h3 class="landing-section-sample">Browse Through All Recipes:</h3>
     <div class="ui five raised cards">
     {{#each recipe in recipes}}
       {{> Profile_Recipe recipe=recipe }}
