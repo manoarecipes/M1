@@ -279,11 +279,13 @@
           "instructions": "1. Make the pizza",
           "amounts": [
             ["1 lb", "Chicken"],
-            ["3 oz", "Honey"]
+            ["3 oz", "Honey"],
+            ["4 oz", "Tuna Fish"]
           ],
           "ingredients": [
             "Chicken",
-            "Honey"
+            "Honey",
+            "Tuna Fish"
           ],
           "tags": [
             "Dinner",
