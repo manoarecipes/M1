@@ -1,17 +1,16 @@
 .landing-section-1 {
-  background: burlywood url("images/background2.jpg");
+  background: burlywood;
   background-size: cover;
 }
 
 .landing-section-2 {
   background: burlywood url("images/cooking.jpg");
   background-size: cover;
-  max-height: 1000px;
 }
 
 .landing-section-3 {
-  background: burlywood url("/images/cuttingboard.jpg");
-  background-size: cover;
+  background: burlywood url("/images/background2.jpg");
+  background-size: contain;
 }
 
 .landing-section-4   {

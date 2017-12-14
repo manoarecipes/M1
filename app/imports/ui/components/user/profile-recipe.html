@@ -1,9 +1,9 @@
 <template name="Profile_Recipe">
   {{#if Template.subscriptionsReady}}
   <div class="card">
-    <div class="image">
+    <a class="image" href={{ recipe.identity }}>
       <img src="{{recipe.picture}}">
-    </div>
+    </a>
     <div class="content">
       {{#if loggedIn}}
       <i class="right floated star icon favorite-icon"></i>
