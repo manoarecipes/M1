@@ -3,8 +3,6 @@ import './landing-page.css';
 import './mr-landing-page.html';
 import './mr-landing-page.css';
 import './mr-landing-page.js';
-import './filter-page.html';
-import './filter-page-directory.html';
-import './filter-page.js';
-
-
+import './filter-ingredients.html';
+import './filter-ingredients-directory.html';
+import './filter-ingredients.js';
