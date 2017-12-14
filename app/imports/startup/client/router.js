@@ -156,6 +156,14 @@ userRoutes.route('/recipe-directory', {
   },
 });
 
+export const viewRecipePageUserRouteName = 'View_Recipe_Page';
+userRoutes.route('/view/:recipeNum', {
+  name: viewRecipePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: viewRecipePageUserRouteName });
+  },
+});
+
 export const editRecipePageRouteName = 'Edit_Recipe_Page';
 userRoutes.route('/edit/:recipeNum', {
   name: editRecipePageRouteName,

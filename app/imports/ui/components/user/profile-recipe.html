@@ -1,9 +1,16 @@
 <template name="Profile_Recipe">
   {{#if Template.subscriptionsReady}}
   <div class="card">
+    {{#if loggedIn}}
+    <a class="image" href="{{pathFor 'View_Recipe_Page' recipeNum=recipe.identity username=routeUserName}}">
+      <img src="{{recipe.picture}}">
+    </a>
+    {{/if}}
+    {{#if loggedOut}}
     <a class="image" href="{{pathFor 'View_Recipe_Page' recipeNum=recipe.identity}}">
       <img src="{{recipe.picture}}">
     </a>
+    {{/if}}
     <div class="content">
       {{#if loggedIn}}
       <i class="right floated star icon favorite-icon"></i>
