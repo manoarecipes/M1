@@ -1,4 +1,6 @@
 .user-layout-body {
   padding-top: 75px;
+  background: url("images/cuttingboard.jpg");
+  background-size: cover;
 }
 
