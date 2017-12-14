@@ -3,10 +3,11 @@
   {{#if Template.subscriptionsReady}}
 
   <div class="ui container">
-    <div class="ui card">
+    <div class="ui centered card">
       {{> Directory_Profile profile=profile }}
+
+    <a class="{{isActiveRoute " Profile_Page"}} item" href="{{pathFor "Profile_Page" username=routeUserName}}">Edit Profile</a>
     </div>
-    <a class="{{isActiveRoute " Profile_Page"}} item" href="{{pathFor "Profile_Page" username=routeUserName}}">Edit</a>
     <div class="ui section divider"></div>
     <h1 class="profile-landing-list-header">Favorite Recipes</h1>
     <div style="margin-top: 10px" class="ui container">
