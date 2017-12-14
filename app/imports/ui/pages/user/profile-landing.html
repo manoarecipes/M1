@@ -11,9 +11,13 @@
     <h1 class="profile-landing-list-header">Favorite Recipes</h1>
     <div style="margin-top: 10px" class="ui container">
       <div class="ui link cards">
+        {{#if favRecipes}}
         {{#each recipe in favRecipes }}
         {{> Profile_Recipe recipe=recipe }}
         {{/each}}
+        {{else}}
+        <h2 class="profile-landing-list-empty">You don't have any favorited recipes yet.</h2>
+        {{/if}}
       </div>
     </div>
 
@@ -21,9 +25,13 @@
     <h1 class="profile-landing-list-header">My Recipes</h1>
     <div style="margin-top: 10px" class="ui container">
       <div class="ui link cards">
+        {{#if myRecipes}}
         {{#each recipe in myRecipes }}
         {{> Profile_Recipe recipe=recipe }}
         {{/each}}
+        {{else}}
+        <h2 class="profile-landing-list-empty">You haven't added any recipes to this database yet.</h2>
+        {{/if}}
       </div>
     </div>
   </div>
