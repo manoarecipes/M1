@@ -1,0 +1,16 @@
+<template name="Open_Access_Header">
+  <div class="ui top fixed borderless inverted teal menu">
+    <div class="ui container">
+
+      <div class="item"><h1>Manoa Recipes</h1></div>
+      <a class="{{isActiveRoute " MR_Landing_Page"}} item" href="{{pathFor "MR_Landing_Page"}}">Home</a>
+      <a class="{{isActiveRoute " Filter_Ingredients_Page"}} item" href="{{pathFor
+      "Filter_Ingredients_Page"}}">Filter Ingredients</a>
+      <a class="{{isActiveRoute " Recipe_Directory_Page"}} item" href="{{pathFor
+      "Recipe_Directory_Page"}}">Recipes</a>
+      <a class="{{isActiveRoute " Weekly_Ad_Page"}} item" href="{{pathFor "Weekly_Ad_Page"}}">WeeklyAd</a>
+
+      <div class="right aligned item">{{> Cas_Login }}</div>
+    </div>
+  </div>
+</template>
