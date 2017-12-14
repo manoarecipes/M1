@@ -1,16 +1,11 @@
 <template name="Add_Ingredient_Form" class="ingredientRow">
   <form class="amount-row-field">
     <div class="fields">
-      <l class="amount-form">
+    <section-1>
       {{> Text_Form_Control label="" name="amount" placeholder="Amount" value=existingAmount }}
-      </l>
-      <div class="field">
-        <label></label>
-        <div class="field">
-          <input readonly="" name="amountRow" type="text" value="{{value}}">
-        </div>
-      </div>
-      <button class="circular red ui minus icon button" type="submit"><i class="minus icon"></i></button>
+    </section-1>
+      {{> Text_Form_Control label="" name="ingredient" placeholder="Ingredient" value=existingIngredient }}
+    <button class="circular red ui minus icon button" type="submit"><i class="minus icon"></i></button>
     </div>
   </form>
 </template>

@@ -17,7 +17,7 @@ Template.Filter_Ingredients_Page.helpers({
   recipes() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedIngredientsKey)) {
-      Template.instance().messageFlags.set(selectedIngredientsKey, _.map(Ingredients.findAll(),
+      Template.instance().messageFlags.set(selectedIngredientsKey, _.map(Ingredients.find(),
           ingredients => ingredients.name));
     }
     // Find all profiles with the currently selected interests.

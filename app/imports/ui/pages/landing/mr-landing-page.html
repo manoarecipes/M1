@@ -19,45 +19,20 @@
   </div>
 
   <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui centered eight wide column">
-        <div class="ui right floated big button">
-          search
-        </div>
-        <div class="ui big fluid input">
-          <input class="text" placeholder="search for recipes">
-        </div>
-      </div>
-    </div>
+
+
+
   </div>
 
   <div class="landing-section-3">
-    <h3 class="landing-section-sample">Click on a Recipe:</h3>
-
-    <div class="ui eight cards">
+    <h3 class="landing-section-sample">Browse Through All Recipes:</h3>
+    <div class="ui fifty raised cards">
     {{#each recipe in recipes}}
       {{> Landing_Recipe_Directory recipe=recipe }}
     {{/each}}
     </div>
   </div>
 
-  <div class="landing-section-4">
-    <h4>Login to access the following features</h4>
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui centered x-large bordered image" src="/images/mr-profile.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Save your favorite recipes.</h1>
-      </div>
-      <div class="ui eight wide column">
-        <img class="ui centered x-large bordered image" src="/images/add-recipe.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Add your own recipes to the database.</h1>
-      </div>
-    </div>
-  </div>
 
 
 </template>
