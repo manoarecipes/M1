@@ -1,7 +1,7 @@
 <template name="Profile_Recipe">
   {{#if Template.subscriptionsReady}}
   <div class="card">
-    <a class="image" href={{ recipe.identity }}>
+    <a class="image" href="{{pathFor 'View_Recipe_Page' recipeNum=recipe.identity}}">
       <img src="{{recipe.picture}}">
     </a>
     <div class="content">
