@@ -21,7 +21,15 @@
           "cost": "0.01"
         },
         {
+          "name": "Bell Pepper",
+          "cost": "0.01"
+        },
+        {
           "name": "Bisquick",
+          "cost": "0.01"
+        },
+        {
+          "name": "Black Beans",
           "cost": "0.01"
         },
         {
@@ -33,7 +41,15 @@
           "cost": "0.01"
         },
         {
+          "name": "Capers",
+          "cost": "0.01"
+        },
+        {
           "name": "Cheddar Cheese",
+          "cost": "0.01"
+        },
+        {
+          "name": "Cheese",
           "cost": "0.01"
         },
         {
@@ -41,7 +57,15 @@
           "cost": "0.01"
         },
         {
+          "name": "Chicken Broth",
+          "cost": "0.01"
+        },
+        {
           "name": "Cocoa Powder",
+          "cost": "0.01"
+        },
+        {
+          "name": "Corn Starch",
           "cost": "0.01"
         },
         {
@@ -89,6 +113,14 @@
           "cost": "0.01"
         },
         {
+          "name": "Onion",
+          "cost": "0.01"
+        },
+        {
+          "name": "Parsley",
+          "cost": "0.01"
+        },
+        {
           "name": "Peanut Butter",
           "cost": "0.01"
         },
@@ -113,6 +145,14 @@
           "cost": "0.01"
         },
         {
+          "name": "Sweet Potato",
+          "cost": "0.01"
+        },
+        {
+          "name": "Spinach",
+          "cost": "0.01"
+        },
+        {
           "name": "Taco Seasoning",
           "cost": "0.01"
         },
@@ -125,7 +165,19 @@
           "cost": "0.01"
         },
         {
+          "name": "Tortilla Chips",
+          "cost": "0.01"
+        },
+        {
           "name": "Tuna",
+          "cost": "0.01"
+        },
+        {
+          "name": "Vanilla",
+          "cost": "0.01"
+        },
+        {
+          "name": "Vanilla Extract",
           "cost": "0.01"
         },
         {
@@ -275,7 +327,7 @@
           "recipeName": "Honey BBQ Chicken Pizza",
           "description": "It's a chicken pizza",
           "username": "kleve84",
-          "identity": "38234718",
+          "identity": "1513132019019",
           "instructions": "1. Make the pizza",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -297,7 +349,7 @@
           "recipeName": "Cheese Omelette",
           "description": "It's an omelette",
           "username": "dherman",
-          "identity": "48234718",
+          "identity": "1513132024821",
           "instructions": "1. Make the omelette",
           "amounts": [
             ["3 large", "Egg"],
@@ -317,7 +369,7 @@
           "recipeName": "Chocolate Peanut Butter Jelly Oats",
           "description": "These Chocolate Peanut Butter Jelly Overnight Oats can be made in advance, are easy to make, are filled with chocolate and peanut butter, have a healthy twist on jelly AND are healthy?",
           "username": "kleve84",
-          "identity": "58234718",
+          "identity": "1513132028535",
           "instructions": "1. Place ingredients, Oats(1/2 cup), Milk(2/3 cup), Yogurt(1/2 cup), Peanut Butter(2 Tbsp), Cocoa Powder(1 Tbsp), Banana(1/2 mashed), in a medium sized bowl. 2. Stir until well combined. 3. Store in a covered, airtight container, in the fridge overnight. 4. In the morning, top with additional toppings like bananas and almonds.",
           "amounts": [
             ["1/2 cup", "Oats"],
@@ -348,7 +400,7 @@
           "recipeName": "Skinny Fried Egg and Avocado Toast",
           "description": "People have always loved avocado. It’s tasty, versatile and healthy too, what’s not to love?! Avocados became really trendy, especially avocado toast. So adding a fried egg is just the icing on the cake",
           "username": "kleve84",
-          "identity": "68234718",
+          "identity": "1513132031061",
           "instructions": "1. Prepare toast and 2 fried eggs to personal preference. 2. Peel and mash 1 avocado with the lime juice (1 tsp), salt and pepper. 3. Spread avocado evenly on each slice of toast then top each with a fried eggs and additional seasonings you prefer. Serve immediately.",
           "amounts": [
             ["2 large", "Egg"],
@@ -377,7 +429,7 @@
           "recipeName": "Taco Lime Grilled Chicken",
           "description": "A quick and easy taco lime grilled chicken that's just packed with flavour!",
           "username": "kleve84",
-          "identity": "78234718",
+          "identity": "1513132033058",
           "instructions": "1. Mix the taco seasoning(2 Tbsp) and lime juice(1/4 cup), cover the chicken(1 lb) in the mixture and optionally marinate for 30 minutes to over night. 2. Grill over medium-high heat until cooked through, about 3-5 minutes per side, let sit for 5 minutes and slice. 3. Put appropriate amount in each taco shell",
           "amounts": [
             ["1 lb", "Chicken"],
@@ -397,6 +449,1510 @@
             "Taco"
           ],
           "picture": "/images/Limechicken.PNG"
+        },
+        {
+          "recipeName": "Breakfast Nachos",
+          "description": "Gluten-free and easy to customize, these breakfast nachos are a fun way to change up your morning routine!",
+          "username": "kleve84",
+          "identity": "1513132036200",
+          "instructions": "1. Dice the peppers and onions and saute with chicken and beans for 5 minutes. 2. Push the mixture to one side and add the eggs. 3. Cook until scrambled and mix well. 4. Spoon mixture with chips and add chess and avocado and salsa.",
+          "amounts": [
+            ["1/4 cup", "Bell Pepper"],
+            ["1/4 cup", "Onion"],
+            ["1/4 cup", "Black Beans"],
+            ["1/2 lb", "Chicken"],
+            ["4", "Eggs"],
+            ["1", "Avocado"],
+            ["4 oz", "Cheese"],
+            ["", "Tortilla Chips"]
+          ],
+          "ingredients": [
+            "Bell Pepper",
+            "Onion",
+            "Black Beans",
+            "Chicken",
+            "Eggs",
+            "Avocado",
+            "Cheese",
+            "Tortilla Chips"
+          ],
+          "tags": [
+            "Breakfast",
+            "Eggs",
+            "Chicken"
+          ],
+          "picture": "/images/BreakfastNachos.PNG"
+        },
+        {
+          "recipeName": "Tropical Green Smoothie",
+          "description": "Packed with nutrition and incredible flavor, this creamy Tropical Green Smoothie is a delicious way to start the day!",
+          "username": "kleve84",
+          "identity": "1513133587689",
+          "instructions": "1. Place yogurt(3/4 cup), mango chunks(1 cup), pineapple chunks(1 cup), milk(3/4 cup), big handful of spinach, and honey(1 Tbsp) in a blender. Blend on high speed to completely smooth.",
+          "amounts": [
+            ["3/4 cup", "Yogurt"],
+            ["1 cup", "Mango"],
+            ["1 cup", "Pineapple"],
+            ["3/4 cup", "Milk"],
+            ["", "Spinach"],
+            ["1 tbsp", "Honey"]
+          ],
+          "ingredients": [
+            "Yogurt",
+            "Mango",
+            "Pineapple",
+            "Milk",
+            "Spinach",
+            "Honey"
+          ],
+
+          "tags": [
+            "Breakfast",
+            "Smoothie"
+          ],
+          "picture": "/images/GreenSmoothie.PNG"
+        },
+        {
+          "recipeName": "Mexican Scrambled Eggs",
+          "description": "This Mexican inspired egg dish is perfect as a quick and easy dinner or a substantial breakfast or brunch idea.",
+          "username": "kleve84",
+          "identity": "1513133587956",
+          "instructions": "1. Saute the 3 green onions for a couple of minutes till tender. 2. Add 8 eggs and cook and stir over medium-low heat. 3. Season the eggs with salt and stir frequently as they cook. 4. Add the beans(1/3 cup). Cook and stir just till beans have warmed and eggs are fully cooked. 5. Sprinkle with cheese(1/4 cup) and remove from heat. Stir until cheese is melted and well incorporated.",
+          "amounts": [
+            ["8", "Eggs"],
+            ["3", "Green Onion"],
+            ["1/3 cup", "Black Beans"],
+            ["1/4 cup", "Cheese"]
+          ],
+          "ingredients": [
+            "Eggs",
+            "Green Onion",
+            "Salt",
+            "Black Beans",
+            "Cheese"
+          ],
+          "tags": [
+            "Breakfast",
+            "Eggs"
+          ],
+          "picture": "/images/MexicanEggs.PNG"
+        },
+        {
+          "recipeName": "Nutella Filled French Toast",
+          "description": "What's better than adding Nutella to an all time favorite breakfast dish.",
+          "username": "kleve84",
+          "identity": "1513133588544",
+          "instructions": "1. Preheat oven to 400 degrees. Generously coat a large baking sheet with non-stick cooking spray. 2. Spread a heaping tablespon of Nutella on one slice of bread and top with another slice to make a sandwich. Use a serrated break knife to slice the sandwich into thirds and repeat. 3. In a pie plate or similar dish, whisk together 6 eggs, milk(1/2 cup), sugar(2 Tbsp), and vanilla extract(1 Tsp). 4. Dip each assembled french toast stick into the egg mixture. Allow excess egg mixture to drip off of french toast stick and then transfer it to the prepared baking sheet. Lightly coat the top of the french toast sticks with non-stick cooking spray. 5. Bake for 8 minutes then flip over each one. Return to oven for an additional 7 or 8 minutes or until well toasted on both sides. Remove from oven. 6. Add any additional ingredients.",
+          "amounts": [
+            ["", "Bread"],
+            ["", "Nutella"],
+            ["6", "Eggs"],
+            ["1/2 cup", "Milk"],
+            ["2 tbsp", "Sugar"],
+            ["1 tsp", "Vanilla Extract"],
+            ["6", "Powdered Sugar"],
+            ["", "Maple Syrup"]
+          ],
+          "ingredients": [
+            "Bread",
+            "Nutella",
+            "Eggs",
+            "Milk",
+            "Sugar",
+            "Vanilla Extract",
+            "Powdered Sugar",
+            "Maple Syrup"
+          ],
+          "tags": [
+            "Breakfast",
+            "Eggs",
+            "Nutella",
+            "Dessert"
+          ],
+          "picture": "/images/NutellaToast.PNG"
+        },
+        {
+          "recipeName": "Cheezy 5-ingredient Pizza Bake",
+          "description": "This incredibly quick and easy pizza pasta bake is an absolute lifesaver on busy nights.",
+          "username": "kleve84",
+          "identity": "1513133588744",
+          "instructions": "1. Preheat oven to 425°F. In an ungreased baking pan, combine uncooked rotini(12 oz), pasta sauce(24 oz), water(2 cups), mozzarella(1½ cups), and pepperoni(4 oz), stirring thoroughly to combine. 2. Top with remaining mozzarella(½ cup) and parmesan(2 Tbsp). 3. Cover tightly with foil. Bake for 30-40 minutes, until pasta is tender. 4. Garnish with additional parmesan and fresh basil, if desired.",
+          "amounts": [
+            ["12 oz", "Pasta"],
+            ["24 oz", "Marinara Sauce"],
+            ["2 cups", "Water"],
+            ["1.5 cups", "Mozzarella"],
+            ["4 oz", "Pepperoni"],
+            ["2 tbsp", "Parmesan"]
+          ],
+          "ingredients": [
+            "Pasta",
+            "Marinara Sauce",
+            "Water",
+            "Mozzarella",
+            "Pepperoni",
+            "Parmesan",
+            "Basil"
+          ],
+          "tags": [
+            "Dinner",
+            "Pizza"
+          ],
+          "picture": "/images/PizzaBake.PNG"
+        },
+        {
+          "recipeName": "Spaghetti Bolognese",
+          "description": "This fast-track recipe for quick & easy Spaghetti Bolognese is bursting with Italian flavor and cooks in just 30 minutes!",
+          "username": "kleve84",
+          "identity": "1513133588963",
+          "instructions": "1. Heat 1 tablespoon of the olive oil in a large pan over medium heat. Add ground beef(1 lb) and fry until fully cooked. Drain and set aside. 2. Heat the remaining oil(1 Tbsp) in the pan. Add the onions, and saute until lightly golden. Add the cooked meat and canned pureed tomatoes(28 oz) and bring to a boil. 3. Season with the salt and pepper. 4. Reduce the heat to low, and cook for 15 minutes. Meanwhile cook the spaghetti. Drain and serve topped with the sauce and cheese (if using).",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Olive Oil",
+            "Onion",
+            "Beef",
+            "Salt",
+            "Pepper",
+            "Cheese"
+          ],
+          "tags": [
+            "Dinner",
+            "Spaghetti"
+          ],
+          "picture": "/images/SpaghettiBolgnese.PNG"
+        },
+        {
+          "recipeName": "Grilled Cheese Roll Ups with Tomato Dipping Sauce",
+          "description": "No more boring grilled cheese! Grilled Cheese Roll Ups with Tomato Soup Sauce takes the classic pairing and makes dinner fun.",
+          "username": "kleve84",
+          "identity": "1513133589152",
+          "instructions": "1. In a oven, heat up the oil until hot. Add the chopped onion(1/4 cup) and cook until soft, 5-8 minutes. 2. Add the sugar(1 Tsp), salt(1/4 Tsp), pepper(1/4 Tsp), basil(1/4 Tsp). Stir all together and cook another 5 minutes. 3. Add the canned tomatoes(14 oz), chicken broth(1 cup), and vinegar(1 Tsp). 4. Add the soup mixture to a blender and puree until smooth. 5. Flatten one slice of bread to about half of its original thickness. Add one slice of cheese. Roll up bread and set aside, seam side down. Repeat with the remaining bread. 6. Heat a skillet over medium heat. Dip each roll up into the butter. Once hot, turn the heat down to medium-low and add several roll ups. Cook until the cheese has melted and the bottom is golden brown. Repeat with remaining roll ups. Serve hot with dipping sauce.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Olive Oil",
+            "Sugar",
+            "Basil",
+            "Salt",
+            "Pepper",
+            "Tomatoes",
+            "Chicken Broth",
+            "Vinegar",
+            "Bread",
+            "Cheese",
+            "Butter"
+          ],
+          "tags": [
+            "Dinner",
+            "Soup"
+          ],
+          "picture": "/images/GrilledRoll.PNG"
+        },
+        {
+          "recipeName": "Sloppy Joes",
+          "description": "Keep to the classics. Super simple take on Sloppy Joes for that hardy manwich you're looking for.",
+          "username": "kleve84",
+          "identity": "1513133589351",
+          "instructions": "1. Preheat a large, nonstick skillet over medium heat and add beef(1 lb), onion(1/2 cup), minced garlic(2 cloves), salt(1 Tsp), and black pepper(1 Tsp). Cook until beef is cooked through, stirring to crumble, about 8-10 minutes. 2. Add can tomato sauce(1/6 oz). Cook for 5-10 minutes to allow flavors to meld. Serve on buns.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Onions",
+            "Garlic",
+            "Salt",
+            "Pepper",
+            "Tomatoes",
+            "Buns"
+          ],
+          "tags": [
+            "Dinner",
+            "Sloppy Joe"
+          ],
+          "picture": "/images/SloppyJoe.PNG"
+        },
+        {
+          "recipeName": "Chicken Enchilada Soup",
+          "description": "Delicious, economical, and filling,this chicken enchilada soup is the perfect comfort food.",
+          "username": "kleve84",
+          "identity": "1513133589577",
+          "instructions": "1. Add the 3 chicken breasts, chicken broth(5 cups), cumin(1 Tsp), chili powder(1 Tsp), and onions(1/2 cup) to oven and bring to a simmer. 2. Remove the chicken breasts to a cutting board. Cut it into large bite sized pieces. Return the pieces to the pot. 3. Add the rice(1 cup), salsa(2 pints), 1 can of black beans, and a can of enchilada sauce(10 oz) and simmer for about 45 to 60 minutes, until the rice is fully cooked.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Chicken Broth",
+            "Cumin",
+            "Chili Powder",
+            "Onion",
+            "White Rice",
+            "Salsa",
+            "Enchilada Sauce"
+          ],
+          "tags": [
+            "Dinner",
+            "Sloppy Joe"
+          ],
+          "picture": "/images/SloppyJoe.PNG"
+        },
+        {
+          "recipeName": "Lemon Garlic Pasta",
+          "description": "Delicious, economical, and filling,this chicken enchilada soup is the perfect comfort food.",
+          "username": "kleve84",
+          "identity": "1513133590542",
+          "instructions": "1. Place 10 peeled garlic cloves in an oven, drizzle with olive oil(1/4 cup) and cover with foil. Oven roast at 400° for 30-40 minutes (until lightly golden browned). Let cool for 2-3 minutes, then chop. 2. Cook pasta according to package directions. In a sauté pan over medium/low heat - heat the olive oil and chopped garlic for 4-5 minutes while stirring. Add the lemon juice(4 Tbsp) and continue cooking for 2-3 minutes. 3. Reduce heat to low, add a pinch of salt and red pepper flakes(1/8 Tsp). Add the cooked pasta and toss with the lemon garlic sauce until fully coated. 4. Add any ingredients you want.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Garlic",
+            "Olive Oil",
+            "Lemon Juice",
+            "Lemon Zest",
+            "Salt",
+            "Pepper Flakes",
+            "Pasta",
+            "Parmesan"
+          ],
+          "tags": [
+            "Dinner",
+            "Pasta"
+          ],
+          "picture": "/images/LemonPasta.PNG"
+        },
+        {
+          "recipeName": "Homemade Microwave Lasagna",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133590542",
+          "instructions": "1. In a bowl, combine the ricotta(15 oz), chopped spinach(4 cups), mozzarella(1 cup), Parmesan(1/4 cup), salt(1/4 Tsp), and pepper(1/4 Tsp). 2. In the bottom of a microwave-safe 8 inch square baking dish, spread 1/2 cup of the sauce.  Top with 2 no-bake lasagna noodles, 1/2 cup of sauce and half the ricotta mixture. Repeat. 3. Top with the remaining 2 lasagna noodles, the remaining sauce, 1/2 cup remaining mozzarella and 2 Tablespoons grated Parmesan. 4. Cover with wax or parchment paper, then place a plate on top on top of the wax paper. Place the dish on top of a couple paper towels in the microwave, and microwave on high power until the noodles are tender, about 12-20 minutes.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Ricotta",
+            "Spinach",
+            "Mozzarella",
+            "Parmesan",
+            "Salt",
+            "Pepper",
+            "Marinara Sauce",
+            "Lasagna"
+          ],
+          "tags": [
+            "Dinner",
+            "Lasagna"
+          ],
+          "picture": "/images/HomemadeLasagna.PNG"
+        },
+        {
+          "recipeName": "Brocoli and Cheddar Pizza",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133751150",
+          "instructions": "1. Set your oven around 350F. Melt butter(2 Tbsp) with 2 fresh minced garlic, parsley(1/4 TSp) and basil(1/4 Tsp) and spread onto the naan. 2. Bake for around 8-10 minutes straight on the rack until lightly golden with a fluffy center. Chop the florets(2 cups) from the raw broccoli until it looks more like confetti and less like baby trees. Either blanch or steam the florets until bright green and tender. 3. After draining the water from the florets, return to the bowl and add cheddar, Gouda and Parmesan cheeses. Spread on the garlicky baked naan and top with crumbled feta. Return to oven and bake for 15-20 minutes until crispy and melty perfection is reached. Slice and serve!",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Naan",
+            "Olive Oil",
+            "Garlic",
+            "Parsley",
+            "Basil",
+            "Brocoli",
+            "Cheddar",
+            "Feta"
+          ],
+          "tags": [
+            "Dinner",
+            "Lasagna"
+          ],
+          "picture": "/images/BrocoliCheddar.PNG"
+        },
+        {
+          "recipeName": "Taco Salad",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133751803",
+          "instructions": "1. Spray a large pan with cooking spray and cook ground beef till nicely browned, drain well.  Return pan to heat and add taco seasoning, pinto beans, and olives.  Stir to incorporate and simmer for just a couple of minutes.  Remove from heat and allow to cool a bit while preparing salad. 2. Add chopped lettuce to a large serving bowl.  Add tomato, green onion, and kidney beans.  Top with slightly cooled meat mixture and 1 cup of the shredded cheese.  Toss salad well to mix all ingredients then garnish with avocado and remaining cheese. 3. Top individual servings with a little salad dressing, some crushed tortilla chips, and a dollop of sour cream.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Ground Beef",
+            "Taco Seasoning",
+            "Beans",
+            "Olives",
+            "Onions",
+            "Lettuce",
+            "Tomato",
+            "Avocado",
+            "Cheddar",
+            "Tortilla Chips",
+            "Sour Cream"
+          ],
+          "tags": [
+            "Dinner",
+            "Salad"
+          ],
+          "picture": "/images/TacoSalad.PNG"
+        },
+        {
+          "recipeName": "BBQ Cups",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133752394",
+          "instructions": "1. Preheat oven to 400 degrees F. Brown ground turkey in skillet. Add BBQ sauce and garlic powder. Set aside. Separate biscuits and place in muffin tins, pressing dough up sides to edge of cups. Fill dough with cooked turkey mixture. Sprinkle with cheese. Bake 8-10 minutes or until golden brown. Serve and enjoy!!",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Ground Beef",
+            "BBQ Sauce",
+            "Garlic Powder",
+            "Cheddar",
+            "Biscuits"
+          ],
+          "tags": [
+            "Dinner",
+            "BBQ"
+          ],
+          "picture": "/images/TacoSalad.PNG"
+        },
+        {
+          "recipeName": "Quinoa Salad",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133752970",
+          "instructions": "Add quinoa and water to a medium saucepan, cover, and bring to a boil and reduce to simmer for 15 minutes until water is gone. Let sit for 5 minutes, use a fork to fluff. Add quinoa to a large bowl along with tomato, cucumber, red pepper, orange pepper, parsley, mint, garlic, lemon juice, olive oil, salt, and pepper. Toss to mix everything together.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Quinoa",
+            "Water",
+            "Tomato",
+            "Garlic",
+            "Lemon Juice",
+            "Olive Oil",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Dinner",
+            "Salad"
+          ],
+          "picture": "/images/TacoSalad.PNG"
+        },
+        {
+          "recipeName": "Noodle Soup",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133753486",
+          "instructions": "In a large saucepan, heat the chicken stock and bring to a boil. Add the green onions, Bok Choy,soy sauces, oyster sauce & the noodles. Reduce the heat and cook according to noodle package instructions (just until tender)",
+          "amounts": [
+          ["1 lb", "Chicken"],
+          ["1/4 cup", "Lime Juice"],
+          ["2 tbsp", "Taco Seasoning"],
+          ["", "Taco Shells"]
+        ],
+          "ingredients": [
+            "Chicken",
+            "Green Onion",
+            "Oyster Sauce",
+            "Soy Sauce",
+            "Noodles"
+          ],
+          "tags": [
+            "Dinner",
+            "Soup"
+          ],
+          "picture": "/images/NoodleSoup.PNG"
+        },
+        {
+          "recipeName": "Chicken Salad Sliders",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133754033",
+          "instructions": "In a small bowl, whisk together yogurt, mayo, pickle juice and lemon juice. Stir in cooked chicken, celery and onion then season with salt and pepper to taste. Slice rolls in half and top with equal parts chicken salad and lettuce if you wish.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Green Onion",
+            "Oyster Sauce",
+            "Soy Sauce",
+            "Noodles"
+          ],
+          "tags": [
+            "Dinner",
+            "Soup"
+          ],
+          "picture": "/images/ChickenSliders.PNG"
+        },
+        {
+          "recipeName": "Tortellini Casserole",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133754584",
+          "instructions": "Pre-heat oven or toaster oven to 350 degrees F. Bring a pot of water to a boil and cook tortellini via package instructions. In a small baking dish, coming tortellini with enchilada sauce and stir to coat. Top with a hearty sprinkling of grated cheese and bake on center rack for 15-20 minutes or until hot and bubbly. While the tortellini bakes, chop your veggies + toppings and set aside. Once the pasta is ready to be scarfed, remove from oven.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Enchilada Sauce",
+            "Cheese",
+            "Tomatoes",
+            "Bell Pepper",
+            "Cilantro",
+            "Yogurt",
+            "Guacamole"
+          ],
+          "tags": [
+            "Dinner",
+            "Casserole"
+          ],
+          "picture": "/images/Casserole.PNG"
+        },
+        {
+          "recipeName": "One Bowl Brownies",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133755658",
+          "instructions": "Preheat oven to 350 degrees F.Mix all ingredients together except chocolate chips. Spread in a greased 9x13 pan and sprinkle chocolate chips on top. Bake for 30 minutes (check after 20) or until a tooth pick is inserted and comes out almost clean. Let cool completely before cutting and serving.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Sugar",
+            "Flour",
+            "Eggs",
+            "Salt",
+            "Oil",
+            "Vanilla Extract",
+            "Chocolate Chips"
+          ],
+          "tags": [
+            "Dinner",
+            "Casserole"
+          ],
+          "picture": "/images/Brownies.PNG"
+        },
+        {
+          "recipeName": "Cookie Bars",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133756208",
+          "instructions": "Melt butter in microwave safe bowl until melted. Let cool. Add brown sugar, vanilla and egg - mix well. Add dry ingredients gradually. Blend well, and pour into greased 9x9 pan. Sprinkle with chocolate chips and bake at 350 for 20-25 minutes.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1/4 cup", "Lime Juice"],
+            ["2 tbsp", "Taco Seasoning"],
+            ["", "Taco Shells"]
+          ],
+          "ingredients": [
+            "Butter",
+            "Brown Sugar",
+            "Eggs",
+            "Salt",
+            "Baking Powder",
+            "Vanilla Extract",
+            "Chocolate Chips"
+          ],
+          "tags": [
+            "Dinner",
+            "Casserole"
+          ],
+          "picture": "/images/CookieBars.PNG"
+        },
+        {
+          "recipeName": "Peanut Butter Clusters",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133757668",
+          "instructions": "Combine sugar, corn syrup, and salt in saucepan and bring to a boil over medium-high heat. Stir constantly and boil until mixture looks clear and is free from sugar crystals. Remove pan from heat and stir in peanut butter and vanilla. Stir till smooth and free from lumps. Add cereal and cashews, if using, and mix to combine. Use your hands to form into small balls and place on waxed paper or foil. Clusters will harden as they cool. After 15 to 20 minutes, transfer to an airtight container.",
+          "amounts": [
+            ["1/2 cup", "Sugar"],
+            ["1/2 cup", "Corn Syrup"],
+            ["1/4 tsp", "Vanilla"],
+            ["3/4 cup", "Peanut Butter"],
+            ["3 cups", "Corn Flakes"],
+            ["1/3 cup", "Cashews"]
+          ],
+          "ingredients": [
+            "Sugar",
+            "Corn Syrup",
+            "Vanilla",
+            "Peanut Butter",
+            "Corn Flakes",
+            "Cashews"
+          ],
+          "tags": [
+            "Dessert",
+            "Peanut Butter"
+          ],
+          "picture": "/images/PeanutClusters.PNG"
+        },
+        {
+          "recipeName": "Simple Grilled Cheese",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133758531",
+          "instructions": "Spread 1 1/2 tsp. mayonnaise on 1 side of each bread slice. Heat a large nonstick skillet over medium heat. Place 2 bread slices, mayonnaise side down, in skillet; top each with 2 cheese slices and 1 bread slice, mayonnaise side up. Cook 3 minutes on each side or until golden brown. Repeat with remaining bread slices and cheese. ",
+          "amounts": [
+            ["1/4 cup", "Mayonnasie"],
+            ["8 slices", "Bread"],
+            ["8 slices", "Cheese"]
+          ],
+          "ingredients": [
+            "Mayonnaise",
+            "Bread",
+            "Cheese"
+          ],
+          "tags": [
+            "Snack",
+            "Grilled Cheese"
+          ],
+          "picture": "/images/GrilledCheese.PNG"
+        },
+        {
+          "recipeName": "Chicken Salad with Orange Vinaigrette",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133858967",
+          "instructions": "Heat grains according to package directions; set aside. Combine oil and next 4 ingredients (through pepper) in a medium bowl, stirring with a whisk. Add chicken, basil, pistachios, and cheese; toss to coat. Place about 3/4 cup chicken mixture, 1/2 cup quinoa mixture, and 3 tomato wedges on each of 4 plates.",
+          "amounts": [
+            ["8.5 oz", "Quinoa"],
+            ["2 tbsp", "Olive Oil"],
+            ["1 tsp", "Vinegar"],
+            ["1 tbsp", "Orange Juice"],
+            ["1/2 tsp", "Salt"],
+            ["1/2 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Quinoa",
+            "Olive Oil",
+            "Vinegar",
+            "Orange Juice",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Dinner",
+            "Salad"
+          ],
+          "picture": "/images/ChickenSalad.PNG"
+        },
+        {
+          "recipeName": "Rice and Bean Bowl",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133859262",
+          "instructions": "Heat rice according to package instructions, 2 to 4 minutes. Combine beans and salsa in a medium microwave-safe bowl. Partially cover and cook on high power until warmed through, about 1 minute. Stir in 1 cup rice, partially cover and cook until hot, about 1 minute longer. (Check halfway through.) Top with cheese and guacamole. Add hot sauce, if desired.",
+          "amounts": [
+            ["12 oz", "Brown Rice"],
+            ["1/2 cup", "Black Beans"],
+            ["1/2 cup", "Salsa"],
+            ["2 tbsp", "Cheese"],
+            ["2 tbsp", "Guaccamole"]
+          ],
+          "ingredients": [
+            "Brown Rice",
+            "Black Beans",
+            "Salsa",
+            "Cheese",
+            "Guaccamole"
+          ],
+          "tags": [
+            "Dinner",
+            "Bowl"
+          ],
+          "picture": "/images/BeanBowl.PNG"
+        },
+        {
+          "recipeName": "Chocolate Croissants",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133859647",
+          "instructions": "Heat oven to 375° F. Unroll the dough and separate it into 8 triangles. Place about 10 chocolate chips on the bottom third of each triangle and roll the dough up around the chocolate. Transfer the croissants to a baking sheet (lined with parchment paper, if desired, for easier cleanup). Bake until golden brown, 12 to 14 minutes.",
+          "amounts": [
+            ["18", "Crescent Rolls"],
+            ["1/3 cup", "Chocolate Chips"]
+          ],
+          "ingredients": [
+            "Crescent Rolls",
+            "Chocolate Chips"
+          ],
+          "tags": [
+            "Dessert",
+            "Croissant"
+          ],
+          "picture": "/images/ChocolateCroissant.PNG"
+        },
+        {
+          "recipeName": "Quick Chive Mashed Potatoes",
+          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
+          "username": "kleve84",
+          "identity": "1513133860307",
+          "instructions": "Bring a pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes; drain. In a small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher or electric beater, slowly blend milk mixture into potatoes until smooth and creamy. Add chives, sour cream, pepper, mix. ",
+          "amounts": [
+            ["2", "Potatoes"],
+            ["2 tbsp", "Chives"],
+            ["2 tbsp", "Sour Cream"],
+            ["2 tbsp", "Milk"],
+            ["1 tbsp", "Butter"]
+          ],
+          "ingredients": [
+            "Potatoes",
+            "Chives",
+            "Sour Cream",
+            "Milk",
+            "Butter"
+          ],
+          "tags": [
+            "Snack",
+            "Mash Potatoes"
+          ],
+          "picture": "/images/MashPotatoes.PNG"
+        },
+        {
+          "recipeName": "Creamy Scrambled Eggs",
+          "description": "Delicious Scrambled Eggs",
+          "username": "kleve84",
+          "identity": "1513141736451",
+          "instructions": "In a bowl, beat eggs to blend. In a pan blend broth with cornstarch. Stir over high heat until boiling. Let cool slightly (or cover and chill up to 1 day). Whisk broth mixture into eggs. Set a frying pan over medium heat. Add butter; when melted, pour in the egg mixture. With a heat-resistant flexible spatula, or a wide metal one, push cooked eggs from pan bottom and sides, letting liquid mixture flow against hot pan; for creamiest texture, don't stir. Cook until eggs are firm but still moist and shiny on top (they must be at least 160° for egg safety), 3 to 20 minutes.",
+          "amounts": [
+            ["6", "Eggs"],
+            ["5 tbsp", "Chicken Broth"],
+            ["1/2 tsp", "Corn Starch"],
+            ["1/2 tsp", "Butter"]
+          ],
+          "ingredients": [
+            "Eggs",
+            "Chicken Broth",
+            "Corn Starch",
+            "Butter"
+          ],
+          "tags": [
+            "Breakfast",
+            "Eggs"
+          ],
+          "picture": "/images/ScrambledEggs.PNG"
+        },
+        {
+          "recipeName": "Easy Quesadillas",
+          "description": "Delicious and easy to make quesadillas",
+          "username": "kleve84",
+          "identity": "1513143088363",
+          "instructions": "Spread beans evenly over 2 tortillas. Sprinkle evenly with 3/4 cup cheese, and drizzle with 1/4 cup taco sauce. Top with remaining tortilla. Microwave 1 quesadilla, covered with a paper towel, on a microwave-safe plate at HIGH 1 to 1 1/2 minutes. Repeat procedure with remaining quesadilla. Cut each into 8 wedges; serve with remaining 1/4 cup taco sauce, sour cream, and remaining 1/2 cup cheese.",
+          "amounts": [
+            ["3/4 cup", "Beans"],
+            ["4", "Tortillas"],
+            ["5 oz", "Cheese"],
+            ["", "Sour Cream"]
+          ],
+          "ingredients": [
+            "Beans",
+            "Tortillas",
+            "Cheese",
+            "Sour Cream"
+          ],
+          "tags": [
+            "Snack",
+            "Quesadillas"
+          ],
+          "picture": "/images/EasyQuesadillas.PNG"
+        },
+        {
+          "recipeName": "Easy Chili",
+          "description": "Delicious and easy to make Chili",
+          "username": "kleve84",
+          "identity": "1513143566482",
+          "instructions": "Cook first 4 ingredients in a large skillet over medium-high heat, stirring until beef crumbles and is no longer pink; drain. Place mixture in 5-quart slow cooker; stir in beans and remaining ingredients. Cook at HIGH 3 to 4 hours or at LOW 5 to 6 hours.",
+          "amounts": [
+            ["1.5 lb", "Beef"],
+            ["1", "Onion"],
+            ["2", "Garlic"],
+            ["32 oz", "Beans"],
+            ["30 oz", "Tomatoes"],
+            ["2 tbsp", "Chili Powder"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Onion",
+            "Garlic",
+            "Beans",
+            "Tomato",
+            "Chili Powder"
+          ],
+          "tags": [
+            "Dinner",
+            "Chili"
+          ],
+          "picture": "/images/EasyChili.PNG"
+        },
+        {
+          "recipeName": "Smashed Avocado",
+          "description": "Smashed Avocado on Toast is a great snack before a run or workout.",
+          "username": "kleve84",
+          "identity": "1513143961257",
+          "instructions": "Mash avocado onto toasted bread. Sprinkle with black pepper and a dash of kosher salt.",
+          "amounts": [
+            ["1", "Bread"],
+            ["1", "Avocado"],
+            ["", "Pepper"],
+            ["", "Salt"]
+          ],
+          "ingredients": [
+            "Bread",
+            "Avocado",
+            "Pepper",
+            "Salt"
+          ],
+          "tags": [
+            "Snack",
+            "Avocado"
+          ],
+          "picture": "/images/SmashedAvocado.PNG"
+        },
+        {
+          "recipeName": "Banana Mango Smoothie",
+          "description": "Start your day with a flavorful fruit smoothie. This drink is as delicious as breakfast, but also serves well as an afternoon snack or even a frosty dessert.",
+          "username": "kleve84",
+          "identity": "1513144409074",
+          "instructions": "Arrange the mango cubes in a single layer on a baking sheet; freeze until firm (about 1 hour). Place frozen mango and the remaining ingredients in a blender. Process until smooth.",
+          "amounts": [
+            ["1 cup", "Mango"],
+            ["3/4 cup", "Banana"],
+            ["2/3 cup", "Milk"],
+            ["1 tsp", "Honey"],
+            ["1/4 tsp", "Vanilla Extract"]
+          ],
+          "ingredients": [
+            "Mango",
+            "Banana",
+            "Milk",
+            "Honey",
+            "Vanilla Extract"
+          ],
+          "tags": [
+            "Snack",
+            "Smoothie"
+          ],
+          "picture": "/images/BananaMango.PNG"
+        },
+        {
+          "recipeName": "Microwave Brownies",
+          "description": "This is by far the easiest, quickest and yummiest brownie recipe that I've ever made.",
+          "username": "kleve84",
+          "identity": "1513144945902",
+          "instructions": "Mist an 8-inch, square microwave-safe baking dish with nonstick cooking spray. Place butter and cocoa powder in a large bowl. Microwave on high until butter is melted, 30 to 90 seconds. Add sugar and whisk to combine. Let mixture cool slightly, then whisk in eggs and vanilla. Stir in flour. Scrape batter into prepared baking dish. Microwave on high until brownies are just set in center, 4 to 7 minutes. Let brownies cool in pan on a wire rack for 10 minutes. ",
+          "amounts": [
+            ["4 oz", "Butter"],
+            ["3/4 cup", "Cocoa Powder"],
+            ["1.5 cup", "Sugar"],
+            ["3", "Eggs"],
+            ["1 tsp", "Vanilla Extract"],
+            ["3/4 cup", "Flour"]
+          ],
+          "ingredients": [
+            "Butter",
+            "Cocoa Powder",
+            "Sugar",
+            "Eggs",
+            "Vanilla Extract"
+          ],
+          "tags": [
+            "Snack",
+            "Smoothie"
+          ],
+          "picture": "/images/MicrowaveBrownie.PNG"
+        },
+        {
+          "recipeName": "Breakfast Club",
+          "description": "Delicious Breakfast Club sandwich.",
+          "username": "kleve84",
+          "identity": "1513145423589",
+          "instructions": "Spread about 2 teaspoons mayonnaise on 1 side of each of 3 toasted slices of bread. Set 1 slice, mayonnaise side up, on a plate. Top with 2 soft-scrambled large eggs or 1 large egg fried sunny side up; sprinkle lightly with salt and pepper. Top with another slice of toast (mayonnaise side up), 1 thick slice firm-ripe tomato, 2 slices crisp-cooked bacon, and remaining toast (mayonnaise side down). Secure layers with toothpicks and cut sandwich into halves or quarters.",
+          "amounts": [
+            ["2 tsp", "Mayonnaise"],
+            ["3", "Bread"],
+            ["3", "Eggs"],
+            ["1", "Tomato"],
+            ["2", "Bacon"]
+          ],
+          "ingredients": [
+            "Mayonnaise",
+            "Bread",
+            "Eggs",
+            "Tomato",
+            "Bacon"
+          ],
+          "tags": [
+            "Snack",
+            "Sandwich"
+          ],
+          "picture": "/images/BreakfastClub.PNG"
+        },
+        {
+          "recipeName": "Microwave Sweet Potato Chips",
+          "description": "This is by far the easiest, quickest chips recipe.",
+          "username": "kleve84",
+          "identity": "1513144945902",
+          "instructions": "Cut a circle of parchment paper to fit a microwave-safe plate; coat parchment lightly with cooking spray. Arrange one-fourth of the potato slices in a single layer on parchment. Sprinkle evenly 1/8 teaspoon salt, and a dash of pepper. Microwave at POWER LEVEL 9 for 4 minutes. Check for crispness. Continue to cook at 30-second intervals until done. Repeat procedure with remaining potato, rosemary, salt, and pepper.",
+          "amounts": [
+            ["1", "Sweet Potato"],
+            ["1/2 tsp", "Salt"],
+            ["1/4 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Sweet Potato",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Snack",
+            "Chips"
+          ],
+          "picture": "/images/SweetChips.PNG"
+        },
+        {
+          "recipeName": "Mozzarella Sticks",
+          "description": "This is by far the easiest, quickest cheese sticks recipe.",
+          "username": "kleve84",
+          "identity": "1513145423589",
+          "instructions": "Line a small baking sheet with foil and mist lightly with cooking spray. Make 1/2 cup of bread crumbs. Place milk and bread crumbs in separate shallow bowls. Dip cheese pieces in milk, rolling to moisten completely. Dredge in bread crumbs to cover entire surface and place on baking sheet. Mist with cooking spray. Freeze for 1 hour. Preheat oven to 400°F. Bake mozzarella sticks until bread crumbs are browned and cheese begins to ooze, 6 to 7 minutes. Let stand 3 minutes.",
+          "amounts": [
+            ["2", "Bread"],
+            ["1/4 cup", "Milk"],
+            ["4 oz", "Mozzarella Cheese"],
+            ["1/2 cup", "Marinara Sauce"]
+          ],
+          "ingredients": [
+            "Bread",
+            "Milk",
+            "Mozzarella Cheese",
+            "Marinara Sauce"
+          ],
+          "tags": [
+            "Snack",
+            "Sticks"
+          ],
+          "picture": "/images/MozzarellaSticks.PNG"
+        },
+        {
+          "recipeName": "Almond Granola",
+          "description": "Delicious and healthy breakfast!",
+          "username": "kleve84",
+          "identity": "1513146732952",
+          "instructions": "Preheat oven to 350° and line a rimmed baking sheet with parchment paper. In a large bowl, combine oats almonds, salt, and spices. In a small bowl, whisk together oil, honey, and vanilla. Add oil mixture to oat mixture and stir to combine well. Spread mixture evenly in lined pan. Bake granola, stirring every 10 minutes, until light brown and fragrant, 30 to 35 minutes total.",
+          "amounts": [
+            ["3 cups", "Oats"],
+            ["3/4 cup", "Almonds"],
+            ["1 tsp", "Salt"],
+            ["1/2 cup", "Olive Oil"],
+            ["1/2 cup", "Honey"],
+            ["1/2 tsp", "Vanilla"]
+          ],
+          "ingredients": [
+            "Oats",
+            "Almonds",
+            "Salt",
+            "Olive Oil",
+            "Honey",
+            "Vanilla"
+          ],
+          "tags": [
+            "Breakfast",
+            "Oats"
+          ],
+          "picture": "/images/AlmondGranola.PNG"
+        },
+        {
+          "recipeName": "Chicken Piccata",
+          "description": "Chicken Piccata is typically made with sliced chicken breasts, but we find chicken thiccatta to be even more flavorful.",
+          "username": "kleve84",
+          "identity": "1513147109319",
+          "instructions": "Sprinkle chicken with 1/4 teaspoon salt and pepper. Heat a skillet over medium-high heat. Add 1 tablespoon oil to pan; swirl to coat. Add chicken to pan; cook 5 minutes. Turn chicken over. Add wine, capers, garlic, and thyme to pan; cook 2 minutes. Add remaining 1/4 teaspoon salt, remaining 2 tablespoons oil, and stock to pan; bring to a boil. Reduce heat to medium; cook 8 minutes. Remove pan from heat. Stir in lemon juice and butter. Sprinkle evenly with parsley.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["1 tsp", "Pepper"],
+            ["1 tsp", "Salt"],
+            ["2 tbsp", "Capers"],
+            ["4", "Garlic"],
+            ["3/4 cup", "Chicken Broth"],
+            ["1 tbsp", "Butter"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Pepper",
+            "Salt",
+            "Olive Oil",
+            "Capers",
+            "Garlic",
+            "Chicken Broth",
+            "Butter"
+          ],
+          "tags": [
+            "Dinner",
+            "Chicken"
+          ],
+          "picture": "/images/ChickenPicotta.PNG"
+        },
+        {
+          "recipeName": "Chocolate Mayonnaise Cake",
+          "description": "If you've never known the glory of a mayonnaise cake, you're in for a treat! The staple ingredient yields an ultra-moist crumb and keeps the sugar from taking over your taste buds.",
+          "username": "kleve84",
+          "identity": "1513147664184",
+          "instructions": "Preheat oven to 350°. Whisk together flour and next 3 ingredients in a medium bowl. Grease and flour a pan. Beat eggs, sugar, and vanilla until mixture is very light brown and ribbons form when beater is lifted. Add mayonnaise, and beat at low speed until combined. Add flour mixture to egg mixture alternately with hot water, beginning and ending with flour mixture. Beat at low speed just until blended after each addition. Pour batter into prepared pan. Bake at 350° for 30 to 35 minutes or until a wooden pick inserted in center comes out clean. Cool completely on a wire rack (about 1 hour). Spread Chocolate-Cream Cheese Frosting on cake.",
+          "amounts": [
+            ["2 cups", "Flour"],
+            ["3", "Eggs"],
+            ["1 tsp", "Salt"],
+            ["2 cups", "Brown Sugar"],
+            ["2 tsp", "Vanilla Extract"],
+            ["1 cup", "Mayonnaise"],
+            ["1 cup", "Water"]
+          ],
+          "ingredients": [
+            "Flour",
+            "Eggs",
+            "Salt",
+            "Brown Sugar",
+            "Vanilla Extract",
+            "Mayonnaise",
+            "Water"
+          ],
+          "tags": [
+            "Dessert",
+            "Cake"
+          ],
+          "picture": "/images/BrownCake.PNG"
+        },
+        {
+          "recipeName": "Ram N Cheese",
+          "description": "First there was ramen, the stereotypical college-student food staple. Then there was mac n’ cheese, the childhood guilty pleasure and go-to dinner for babysitters everywhere.",
+          "username": "kleve84",
+          "identity": "1513148004822",
+          "instructions": "Grate cheddar cheese and add with cornstarch into a small bowl.  Combine with milk in a medium saucepan and cook on medium to low heat until consistent. Keep warm until serving. In a separate pan boil ramen noodles. Set aside the included flavor packets. Once boiling, drain the noodles and combine with cheese.",
+          "amounts": [
+            ["8 oz", "Cheddar Cheese"],
+            ["1 tbsp", "Cornstarch"],
+            ["3/4 cup", "Milk"]
+          ],
+          "ingredients": [
+            "Cheddar Cheese",
+            "Cornstarch",
+            "Milk"
+          ],
+          "tags": [
+            "Dinner",
+            "Noodles"
+          ],
+          "picture": "/images/RamCheese.PNG"
+        },
+        {
+          "recipeName": "Baked Grapefruit",
+          "description": "Eating this brown sugar-baked grapefruit for breakfast will be the difference between feeling awake and falling asleep in lecture.",
+          "username": "kleve84",
+          "identity": "1513148392427",
+          "instructions": "Preheat oven to 350°. Halve the grapefruit and coat with brown sugar. Bake for 10 min. Remove and let sit for 5 min.",
+          "amounts": [
+            ["1", "Grapefruit"],
+            ["1 tbsp", "Brown Sugar"]
+          ],
+          "ingredients": [
+            "Grapefruit",
+            "Brown Sugar"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/BakedGrapefruit.PNG"
+        },
+        {
+          "recipeName": "Veggie Wraps",
+          "description": "Many meat eaters tend to stay away from vegetarian dishes, but give this one a try! If nothing else, your mom will be proud.",
+          "username": "kleve84",
+          "identity": "1513148742296",
+          "instructions": "Cut the avocado and red pepper into thin slices. Cover the spinach wrap with hummus, carrots, avocado, peppers and spinach. Season wrap with salt and pepper. Roll the wrap and enjoy cold.",
+          "amounts": [
+            ["1", "Avocado"],
+            ["1 tbsp", "Pepper"],
+            ["1/8 tsp", "Salt"],
+            ["1/4 cup", "Spinach"]
+          ],
+          "ingredients": [
+            "Avocado",
+            "Pepper",
+            "Salt",
+            "Spinach"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/VeggieWrap.PNG"
+        },
+        {
+          "recipeName": "Crock Pot Chicken Chili",
+          "description": "This one-pot wonder can make anything from soup to best chili recipes.",
+          "username": "kleve84",
+          "identity": "1513149170852",
+          "instructions": "Place chicken breast in Crock-Pot. Pour remaining ingredients over chicken. Set Crock-Pot on “low” and cook for 7 hours. Remove chicken breasts from Crock-Pot. Shred chicken breast with two forks.  The chicken will be extremely tender, so this will be easy! Return chicken to Crock-Pot and cook for one more hour.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["2 cups", "Beans"],
+            ["14 oz", "Tomatoes"],
+            ["2 cup", "Chicken Broth"],
+            ["1", "Onion"],
+            ["3", "Garlic"],
+            ["1/2 tsp", "Salt"],
+            ["1/2 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Beans",
+            "Tomatoes",
+            "Chicken Broth",
+            "Onion",
+            "Garlic",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Lunch",
+            "Chicken"
+          ],
+          "picture": "/images/ChickenChili.PNG"
+        },
+        {
+          "recipeName": "Bacon Egg Cups",
+          "description": "Two ingredient recipe with the two best ingredients.",
+          "username": "kleve84",
+          "identity": "1513150470537",
+          "instructions": "Preheat oven to 400°F. Wrap a strip of bacon around the diameter of a muffin cup, laying the end of the strip across the bottom of the cup. Crack an egg into the cup. Season with salt and pepper. Repeat these steps with as many bacon and egg cups as you would like. Bake for 12-15 minutes for runny eggs, 15-20 minutes for a fully cooked egg.",
+          "amounts": [
+            ["5", "Bacon"],
+            ["5", "Eggs"]
+          ],
+          "ingredients": [
+            "Bacon",
+            "Eggs"
+          ],
+          "tags": [
+            "Breakfast",
+            "Snack"
+          ],
+          "picture": "/images/BaconEggs.PNG"
+        },
+        {
+          "recipeName": "Apple Sauce",
+          "description": "Back to the classic apple sauce",
+          "username": "kleve84",
+          "identity": "1513150929069",
+          "instructions": "Cut and core apples, and chop into about 1-inch pieces. Add apples, water and cinnamon to a large soup pot. Cook over medium-low heat until apples are mushy and water is incorporated into applesauce, about 45 minutes. Turn off heat. Use a potato masher to roughly mash apples into a chunky applesauce. You can also use a mixer (which will create an even chunkier sauce) or a food processor or blender (both of which will create a smoother sauce).",
+          "amounts": [
+            ["12", "Apples"],
+            ["2 tbsp", "Brown Sugar"],
+            ["2 cups", "Water"]
+          ],
+          "ingredients": [
+            "Apples",
+            "Brown Sugar",
+            "Water"
+          ],
+          "tags": [
+            "Breakfast",
+            "Snack"
+          ],
+          "picture": "/images/AppleSauce.PNG"
+        },
+        {
+          "recipeName": "Cheesy Meatloaf",
+          "description": "Whats better than tasty meatloaf stuffed with cheese.",
+          "username": "kleve84",
+          "identity": "1513151615023",
+          "instructions": "Combine 1½ pounds ground beef, 1 large egg, 1 grated onion, ½ cup chopped flat-leaf parsley, ½ cup bread crumbs, ½ cup grated cheese, and ¼ cup tomato; season with salt and pepper. On a foil-lined baking sheet, form the mixture into an 8-inch loaf. Bake at 400° F until cooked through, 40 to 50 minutes",
+          "amounts": [
+            ["1 lb", "Beef"],
+            ["1", "Eggs"],
+            ["1", "Onion"],
+            ["1/2 cup", "Parsley"],
+            ["1/2 cup", "Bread"],
+            ["1/2 cup", "Cheese"],
+            ["1/4 cup", "Tomatoes"],
+            ["1 tsp", "Salt"],
+            ["1 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Onion",
+            "Eggs",
+            "Parsley",
+            "Tomatoes",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Dinner",
+            "Meatloaf"
+          ],
+          "picture": "/images/CheesyMeatloaf.PNG"
+        },
+        {
+          "recipeName": "Cocktail Meatballs",
+          "description": "These easy-to-make broiled meatballs are perfect for a party. ",
+          "username": "kleve84",
+          "identity": "1513154412024",
+          "instructions": "Combine 1 pound ground beef, 1/2 small onion (finely chopped), 1/2 cup bread crumbs, 1 large egg, season with salt and pepper. Shape into 1-inch balls and broil until cooked through, 5 to 6 minutes.",
+          "amounts": [
+            ["1 lb", "Beef"],
+            ["1", "Eggs"],
+            ["1/2", "Onion"],
+            ["1/2 cup", "Bread"],
+            ["1 tsp", "Salt"],
+            ["1 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Onion",
+            "Eggs",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Dinner",
+            "Meatballs"
+          ],
+          "picture": "/images/Meatballs.PNG"
+        },
+        {
+          "recipeName": "Green Burrito Bowl",
+          "description": "Delicious and healthy vegetarian bowl.",
+          "username": "kleve84",
+          "identity": "1513158275567",
+          "instructions": "Prepare rice according to package instructions. In a microwave-safe bowl, combine rice, black beans, salsa, plain Greek yogurt, and shredded cheese. Microwave on high for 30-60 seconds, or until heated through. Top with diced avocado, diced tomato, guacamole, pico de gallo, crushed tortilla chips, or other desired toppings.",
+          "amounts": [
+            ["1 cup", "Rice"],
+            ["1 cup", "Beans"],
+            ["1/4", "Yogurt"],
+            ["1", "Avocado"],
+            ["1 tsp", "Salt"],
+            ["1 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Rice",
+            "Beans",
+            "Yogurt",
+            "Avocado",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Snack",
+            "Vegetarian"
+          ],
+          "picture": "/images/GreenBowl.PNG"
+        },
+        {
+          "recipeName": "Stuffed Sweet Potato",
+          "description": "Delicious and healthy snack.",
+          "username": "kleve84",
+          "identity": "1513158275567",
+          "instructions": "Clean all potatoes, and poke holes throughout with a fork. Place potatoes in microwave safe dish, and cook on HIGH for 8-10 minutes, or until tender. Remove and set aside. Saute onions and mix with beans and tomatoes. Working one potato at a time, cut potato in half lengthwise, and scoop out a bit of the filling. Add everything.",
+          "amounts": [
+            ["4", "Sweet Potatoes"],
+            ["1/4 cup", "Onion"],
+            ["1/4 cup", "Beans"],
+            ["1/8 cup", "Tomatoes"],
+            ["1/4 tsp", "Salt"],
+            ["1/4 tsp", "Pepper"]
+          ],
+          "ingredients": [
+            "Sweet Potatoes",
+            "Onions",
+            "Beans",
+            "Tomatoes",
+            "Salt",
+            "Pepper"
+          ],
+          "tags": [
+            "Snack",
+            "Vegetarian"
+          ],
+          "picture": "/images/StuffedSweet.PNG"
+        },
+        {
+          "recipeName": "Peanut Butter and Chocolate Bars",
+          "description": "Delicious and easy to make snack.",
+          "username": "kleve84",
+          "identity": "1513159416063",
+          "instructions": "In a large bowl add oats, ground flax seed, unsweetened coconut, chia seeds, salt, and ground cinnamon. Bring a small saucepan to medium heat add peanut butter and maple syrup, melt peanut butter and continue to stir until liquidy. Pour peanut butter mixture over oats, stir to combine. Let cool for 2-3 minutes. Add in dark chocolate chunks, stir together. Place oat mixture in a 8x8 pan, press the mixture down until flat. Cover   and place in refrigerator for 30 minutes.",
+          "amounts": [
+            ["2 cups", "Oats"],
+            ["3/4 cup", "Peanut Butter"],
+            ["1/2 cup", "Chocolate Chips"],
+            ["1/4 tsp", "Salt"]
+          ],
+          "ingredients": [
+            "Oats",
+            "Peanut",
+            "Chocolate Chips",
+            "Salt"
+          ],
+          "tags": [
+            "Snack",
+            "Dessert"
+          ],
+          "picture": "/images/PeanutBars.PNG"
+        },
+        {
+          "recipeName": "Paleo Pancakes",
+          "description": "Delicious and easy to breakfast with just 3 ingredients.",
+          "username": "kleve84",
+          "identity": "1513203574568",
+          "instructions": "In a large bowl mix mashed bananas, flour, and eggs. Scoop and cook on pan at medium heat. ",
+          "amounts": [
+            ["1 cup", "Bananas"],
+            ["1 cup", "Flour"],
+            ["2", "Eggs"]
+          ],
+          "ingredients": [
+            "Bananas",
+            "Flour",
+            "Eggs"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/BananaPancakes.PNG"
+        },
+        {
+          "recipeName": "Orange Sorbet",
+          "description": "Delicious and easy dessert.",
+          "username": "kleve84",
+          "identity": "1513204727199",
+          "instructions": "In a large bowl mix orange juice, sugar, and salt. Mix well",
+          "amounts": [
+            ["1 cup", "Orange"],
+            ["1/4 cup", "Sugar"],
+            ["1/2 tsp", "Salt"]
+          ],
+          "ingredients": [
+            "Orange",
+            "Sugar",
+            "Salt"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/OrangeSorbet.PNG"
+        },
+        {
+          "recipeName": "Fried Rice",
+          "description": "Delicious and easy breakfast.",
+          "username": "kleve84",
+          "identity": "1513208711830",
+          "instructions": "On a pan, cook bacon and eggs till cooked. Mix rice in and cook for 5 min.",
+          "amounts": [
+            ["3", "Bacon"],
+            ["3", "Eggs"],
+            ["1 cup", "Rice"]
+          ],
+          "ingredients": [
+            "Bacon",
+            "Eggs",
+            "Rice"
+          ],
+          "tags": [
+            "Snack",
+            "Breakfast"
+          ],
+          "picture": "/images/FriedRice.PNG"
+        },
+        {
+          "recipeName": "Lemon Pudding",
+          "description": "Delicious little dessert.",
+          "username": "kleve84",
+          "identity": "1513208728001",
+          "instructions": "Mix lemon juice, cream, and sugar till well blended.",
+          "amounts": [
+            ["3", "Lemon"],
+            ["1 cup", "Cream"],
+            ["1/4 cup", "Sugar"]
+          ],
+          "ingredients": [
+            "Lemon",
+            "Cream",
+            "Sugar"
+          ],
+          "tags": [
+            "Snack",
+            "Dessert"
+          ],
+          "picture": "/images/LemonPudding.PNG"
+        },
+        {
+          "recipeName": "Chicken Katsu",
+          "description": "Best way to prepare chicken.",
+          "username": "kleve84",
+          "identity": "1513208728001",
+          "instructions": "Cut chicken into thin pieces. Dip chicken in egg and roll in bread crumbs. Fry until golden brown.",
+          "amounts": [
+            ["1 lb", "Chicken"],
+            ["2", "Eggs"],
+            ["4", "Bread"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Eggs",
+            "Bread"
+          ],
+          "tags": [
+            "Dinner",
+            "Lunch"
+          ],
+          "picture": "/images/ChickenKatsu.PNG"
+        },
+        {
+          "recipeName": "Parmesan Hash Brown Cups",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513210384265",
+          "instructions": "Shred the potatoes and cheese into a bowl and mix. Scoop servings into pan and bake at 350 for 15 min.",
+          "amounts": [
+            ["1 lb", "Potatoes"],
+            ["2", "Parmesan Cheese"]
+          ],
+          "ingredients": [
+            "Potatoes",
+            "Parmesan Cheese"
+          ],
+          "tags": [
+            "Snack",
+            "Lunch"
+          ],
+          "picture": "/images/ParmesanHash.PNG"
+        },
+        {
+          "recipeName": "Shortbread Cookies",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513210385227",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Sugar"],
+            ["8 oz", "Butter"],
+            ["2 cup", "Flour"]
+          ],
+          "ingredients": [
+            "Sugar",
+            "Butter",
+            "Flour"
+          ],
+          "tags": [
+            "Snack",
+            "Dessert"
+          ],
+          "picture": "/images/Shortbread.PNG"
+        },
+        {
+          "recipeName": "Breaded Beef",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513216512451",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Beef"],
+            ["8 oz", "Bread"],
+            ["2 cup", "Flour"],
+            ["3", "Eggs"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Bread",
+            "Flour",
+            "Eggs"
+          ],
+          "tags": [
+            "Dinner",
+            "Beef"
+          ],
+          "picture": "/images/BreadedBeef.PNG"
+        },
+        {
+          "recipeName": "Chicken and Bacon Spaghetti",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513216543347",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Chicken"],
+            ["8 oz", "Bacon"],
+            ["2 cup", "Noodles"],
+            ["3", "Tomatoes"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Bacon",
+            "Noodles",
+            "Tomatoes"
+          ],
+          "tags": [
+            "Dinner",
+            "Spaghetti"
+          ],
+          "picture": "/images/BaconSpaghetti.PNG"
         }
       ]
     },
