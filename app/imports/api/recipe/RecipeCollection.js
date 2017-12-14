@@ -78,7 +78,7 @@ class RecipeCollection extends BaseCollection {
     // Adds ingredient to Ingredients if ingredient is not present in database
     _.each(tags, function (x) {
       if (!Tags.isDefined(x)) {
-        Tags.define({ name: x });
+        Tags.define({ name: x, description: '' });
       }
     })
 
