@@ -2,37 +2,53 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import { $ } from 'meteor/jquery';
 
+/*                        OPEN ACCESS ROUTES               */
 
-/*                        LANDING ROUTE                       */
+function addOpenBodyClass() {
+  $('body').addClass('open-access-body');
+}
+
+function removeOpenBodyClass() {
+  $('body').removeClass('open-access-body');
+}
+
+const openAccessRoutes = FlowRouter.group({
+  name: 'openAccessRoutes',
+  triggersEnter: [addOpenBodyClass],
+  triggersExit: [removeOpenBodyClass],
+});
 
 export const landingPageRouteName = 'MR_Landing_Page';
-FlowRouter.route('/', {
+openAccessRoutes.route('/', {
   name: landingPageRouteName,
   action() {
-    BlazeLayout.render('Landing_Layout', { main: landingPageRouteName });
+    BlazeLayout.render('Open_Access_Layout', { main: landingPageRouteName });
   },
 });
 
-/*                        DIRECTORY ROUTE                       */
-
-function addDirectoryBodyClass() {
-  $('body').addClass('directory-page-body');
-}
-
-function removeDirectoryBodyClass() {
-  $('body').removeClass('directory-page-body');
-}
-
-export const directoryPageRouteName = 'Directory_Page';
-FlowRouter.route('/directory', {
-  name: directoryPageRouteName,
+export const filterPageRouteName = 'Filter_Page';
+openAccessRoutes.route('/filter', {
+  name: filterPageRouteName,
   action() {
-    BlazeLayout.render('Directory_Layout', { main: directoryPageRouteName });
+    BlazeLayout.render('Open_Access_Layout', { main: filterPageRouteName });
   },
-  triggersEnter: [addDirectoryBodyClass],
-  triggersExit: [removeDirectoryBodyClass],
 });
 
+export const filterIngredientsPageRouteName = 'Filter_Ingredients_Page';
+openAccessRoutes.route('/filter-ingredients', {
+  name: filterIngredientsPageRouteName,
+  action() {
+    BlazeLayout.render('Open_Access_Layout', { main: filterIngredientsPageRouteName });
+  },
+});
+
+export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
+openAccessRoutes.route('/recipe-directory', {
+  name: recipeDirectoryPageRouteName,
+  action() {
+    BlazeLayout.render('Open_Access_Layout', { main: recipeDirectoryPageRouteName });
+  },
+});
 
 /*                        USER ROUTES                      */
 
@@ -50,6 +66,14 @@ const userRoutes = FlowRouter.group({
   name: 'userRoutes',
   triggersEnter: [addUserBodyClass],
   triggersExit: [removeUserBodyClass],
+});
+
+export const landingPageUserRouteName = 'MR_Landing_Page';
+userRoutes.route('/', {
+  name: landingPageUserRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: landingPageUserRouteName });
+  },
 });
 
 export const profilePageRouteName = 'Profile_Page';
@@ -76,34 +100,35 @@ userRoutes.route('/profile', {
   },
 });
 
-export const filterPageRouteName = 'Filter_Page';
-userRoutes.route('/filter', {
-  name: filterPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: filterPageRouteName });
-  },
-});
-export const filterIngredientsPageRouteName = 'Filter_Ingredients_Page';
-userRoutes.route('/filter-ingredients', {
-  name: filterIngredientsPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: filterIngredientsPageRouteName });
-  },
-});
-
-export const recipeDirectoryPageRouteName = 'Recipe_Directory_Page';
-userRoutes.route('/recipe-directory', {
-  name: recipeDirectoryPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: recipeDirectoryPageRouteName });
-  },
-});
-
 export const recipePageRouteName = 'Add_Recipe_Page';
 userRoutes.route('/add-recipe', {
   name: recipePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: recipePageRouteName });
+  },
+});
+
+export const filterPageUserRouteName = 'Filter_Page';
+openAccessRoutes.route('/filter', {
+  name: filterPageUserRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: filterPageUserRouteName });
+  },
+});
+
+export const filterIngredientsPageUserRouteName = 'Filter_Ingredients_Page';
+userRoutes.route('/filter-ingredients', {
+  name: filterIngredientsPageUserRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: filterIngredientsPageUserRouteName });
+  },
+});
+
+export const recipeDirectoryPageUserRouteName = 'Recipe_Directory_Page';
+userRoutes.route('/recipe-directory', {
+  name: recipeDirectoryPageUserRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: recipeDirectoryPageUserRouteName });
   },
 });
 
@@ -120,14 +145,6 @@ userRoutes.route('/delete/:recipeNum', {
   name: deleteRecipePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: deleteRecipePageRouteName });
-  },
-});
-
-export const testerPage = 'Ingredient_Form_Control';
-userRoutes.route('/tester', {
-  name: testerPage,
-  action() {
-    BlazeLayout.render('User_Layout', { main: testerPage });
   },
 });
 

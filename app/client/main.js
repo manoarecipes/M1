@@ -6,6 +6,7 @@ import '/imports/ui/components/landing';
 import '/imports/ui/components/recipe-directory';
 import '/imports/ui/layouts/directory';
 import '/imports/ui/layouts/landing';
+import '/imports/ui/layouts/open-access';
 import '/imports/ui/layouts/shared';
 import '/imports/ui/layouts/user';
 import '/imports/ui/pages/directory';
