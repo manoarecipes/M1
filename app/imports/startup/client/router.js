@@ -50,6 +50,14 @@ openAccessRoutes.route('/recipe-directory', {
   },
 });
 
+export const weeklyAdPageRouteName = 'Weekly_Ad_Page';
+openAccessRoutes.route('/weekly-ad', {
+  name: weeklyAdPageRouteName,
+  action: function () {
+    BlazeLayout.render('Open_Access_Layout', { main: weeklyAdPageRouteName });
+  },
+});
+
 /*                        USER ROUTES                      */
 
 
@@ -92,11 +100,11 @@ userRoutes.route('/admin', {
   },
 });
 
-export const weeklyAdPageRouteName = 'Weekly_Ad_Page';
+export const weeklyAdPageUserRouteName = 'Weekly_Ad_Page';
 userRoutes.route('/weekly-ad', {
-  name: weeklyAdPageRouteName,
+  name: weeklyAdPageUserRouteName,
   action: function () {
-    BlazeLayout.render('User_Layout', { main: weeklyAdPageRouteName });
+    BlazeLayout.render('User_Layout', { main: weeklyAdPageUserRouteName });
   },
 });
 
