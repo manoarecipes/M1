@@ -1931,6 +1931,95 @@
           "picture": "/images/BreadedBeef.PNG"
         },
         {
+          "recipeName": "Quinoa",
+          "description": "Cook Quinoa in the Microwave.",
+          "username": "mserai",
+          "identity": "1513216543347",
+          "instructions": "Pour Quinoa into a microwave safe bowl. Cover Quinoa with 2 cups water. Microwave for 6 Minutes covered. Stir. Microwave 2 more minutes uncovered.",
+          "amounts": [
+            ["1 Cup", "Quinoa"],
+            ["2 Cups", "Water"]
+          ],
+          "ingredients": [
+            "Quinoa",
+            "Water"
+          ],
+          "tags": [
+            "Dinner",
+            "Lunch"
+          ],
+          "picture": "/images/quinoa.jpg"
+        },
+        {
+          "recipeName": "Rice",
+          "description": "Cook Rice in the Microwave.",
+          "username": "mserai",
+          "identity": "1513216543348",
+          "instructions": "Pour Rice into a microwave safe bowl. Cover Rice with enough water to leave a 1 inch overlap. Microwave for 10 Minutes",
+          "amounts": [
+            ["", "Rice"],
+            ["", "Water"]
+          ],
+          "ingredients": [
+            "Rice",
+            "Water"
+          ],
+          "tags": [
+            "Dinner",
+            "Breakfast",
+            "Lunch"
+          ],
+          "picture": "/images/Rice.jpg"
+        },
+        {
+          "recipeName": "Bacon Strips",
+          "description": "Cook Bacon in the Microwave.",
+          "username": "mserai",
+          "identity": "1513216543349",
+          "instructions": "Sandwich bacon between two paper towels. Microwave for 4-6 minutes",
+          "amounts": [
+            ["4 Strips", "Bacon"]
+          ],
+          "ingredients": [
+            "Bacon"
+          ],
+          "tags": [
+            "Dinner",
+            "Breakfast",
+            "Lunch"
+          ],
+          "picture": "/images/bacon.jpg"
+        },
+        {
+          "recipeName": "Mug Omelette",
+          "description": "Cook an omelette in the Microwave.",
+          "username": "mserai",
+          "identity": "1513216543350",
+          "instructions": "Open 2 eggs into a mug. Add diced bell pepper, diced ham, diced spinach into the mug. Stir, then microwave for 2-3 minutes",
+          "amounts": [
+            ["2", "Eggs"],
+            ["1/2", "Bell Pepper"],
+            ["2 slices", "Ham"],
+            ["1/2", "Spinach"],
+            ["pinch", "salt"],
+            ["pinch", "pepper"]
+          ],
+          "ingredients": [
+            "Egg",
+            "Salt",
+            "Pepper",
+            "Bell Pepper",
+            "Ham",
+            "Spinach"
+          ],
+          "tags": [
+            "Dinner",
+            "Breakfast",
+            "Lunch"
+          ],
+          "picture": "/images/mugomel.jpg"
+        },
+        {
           "recipeName": "Chicken and Bacon Spaghetti",
           "description": "Delicious little snack that's simple to make.",
           "username": "kleve84",
@@ -1947,8 +2036,7 @@
             "Bacon",
             "Noodles",
             "Tomatoes"
-          ],
-          "tags": [
+          ],          "tags": [
             "Dinner",
             "Spaghetti"
           ],
