@@ -624,7 +624,7 @@
             "Dinner",
             "Spaghetti"
           ],
-          "picture": "/images/SpaghettiBolognese.PNG"
+          "picture": "/images/SpaghettiBolgnese.PNG"
         },
         {
           "recipeName": "Grilled Cheese Roll Ups with Tomato Dipping Sauce",
@@ -853,7 +853,7 @@
           "picture": "/images/TacoSalad.PNG"
         },
         {
-          "recipeName": "Quino Salad",
+          "recipeName": "Quinoa Salad",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
           "identity": "1513133752970",
@@ -868,7 +868,6 @@
             "Quinoa",
             "Water",
             "Tomato",
-            "Pepper",
             "Garlic",
             "Lemon Juice",
             "Olive Oil",
@@ -959,33 +958,6 @@
           "picture": "/images/Casserole.PNG"
         },
         {
-          "recipeName": "Tortellini Casserole",
-          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
-          "username": "kleve84",
-          "identity": "1513133755133",
-          "instructions": "Pre-heat oven or toaster oven to 350 degrees F. Bring a pot of water to a boil and cook tortellini via package instructions. In a small baking dish, coming tortellini with enchilada sauce and stir to coat. Top with a hearty sprinkling of grated cheese and bake on center rack for 15-20 minutes or until hot and bubbly. While the tortellini bakes, chop your veggies + toppings and set aside. Once the pasta is ready to be scarfed, remove from oven.",
-          "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
-          ],
-          "ingredients": [
-            "Enchilada Sauce",
-            "Cheese",
-            "Tomatoes",
-            "Bell Pepper",
-            "Cilantro",
-            "Yogurt",
-            "Guacamole"
-          ],
-          "tags": [
-            "Dinner",
-            "Casserole"
-          ],
-          "picture": "/images/Casserole.PNG"
-        },
-        {
           "recipeName": "One Bowl Brownies",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
@@ -1040,33 +1012,6 @@
           "picture": "/images/CookieBars.PNG"
         },
         {
-          "recipeName": "Cookie Bars",
-          "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
-          "username": "kleve84",
-          "identity": "1513133756702",
-          "instructions": "Melt butter in microwave safe bowl until melted. Let cool. Add brown sugar, vanilla and egg - mix well. Add dry ingredients gradually. Blend well, and pour into greased 9x9 pan. Sprinkle with chocolate chips and bake at 350 for 20-25 minutes.",
-          "amounts": [
-            ["1 lb", "Chicken"],
-            ["1/4 cup", "Lime Juice"],
-            ["2 tbsp", "Taco Seasoning"],
-            ["", "Taco Shells"]
-          ],
-          "ingredients": [
-            "Butter",
-            "Brown Sugar",
-            "Eggs",
-            "Salt",
-            "Baking Powder",
-            "Vanilla Extract",
-            "Chocolate Chips"
-          ],
-          "tags": [
-            "Dinner",
-            "Casserole"
-          ],
-          "picture": "/images/CookieBars.PNG"
-        },
-        {
           "recipeName": "Peanut Butter Clusters",
           "description": "This is the perfect recipe for those of you with minimal kitchen supplies and are craving something that reminds you of home.",
           "username": "kleve84",
@@ -1086,7 +1031,6 @@
             "Vanilla",
             "Peanut Butter",
             "Corn Flakes",
-            "Vanilla",
             "Cashews"
           ],
           "tags": [
@@ -1136,7 +1080,6 @@
             "Olive Oil",
             "Vinegar",
             "Orange Juice",
-            "Vinegar",
             "Salt",
             "Pepper"
           ],
@@ -1962,6 +1905,54 @@
             "Dessert"
           ],
           "picture": "/images/Shortbread.PNG"
+        },
+        {
+          "recipeName": "Breaded Beef",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513216512451",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Beef"],
+            ["8 oz", "Bread"],
+            ["2 cup", "Flour"],
+            ["3", "Eggs"]
+          ],
+          "ingredients": [
+            "Beef",
+            "Bread",
+            "Flour",
+            "Eggs"
+          ],
+          "tags": [
+            "Dinner",
+            "Beef"
+          ],
+          "picture": "/images/BreadedBeef.PNG"
+        },
+        {
+          "recipeName": "Chicken and Bacon Spaghetti",
+          "description": "Delicious little snack that's simple to make.",
+          "username": "kleve84",
+          "identity": "1513216543347",
+          "instructions": "Preheat oven to 350°. Cream together the butter and sugar. Once blended, add the flour. Continue to mix together until mixture becomes a soft dough (it'll be crumb like at the beginning...keep mixing and it will turn to dough. If needed, add 1-2 Tablespoons of water). Roll dough out onto a slightly floured surface until ¼ inch thick.Cut into rounds and place on a parchment or Silpat lined baking sheet. Bake for 20-25 minutes or until a pale, golden brown.",
+          "amounts": [
+            ["1/2 cup", "Chicken"],
+            ["8 oz", "Bacon"],
+            ["2 cup", "Noodles"],
+            ["3", "Tomatoes"]
+          ],
+          "ingredients": [
+            "Chicken",
+            "Bacon",
+            "Noodles",
+            "Tomatoes"
+          ],
+          "tags": [
+            "Dinner",
+            "Spaghetti"
+          ],
+          "picture": "/images/BaconSpaghetti.PNG"
         }
       ]
     },
