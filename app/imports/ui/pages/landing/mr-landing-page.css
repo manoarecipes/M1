@@ -1,19 +1,16 @@
 .landing-section-1 {
-  padding: 10px 10px 30px 10px;
-  background-color: #2befe5;
-  color: #323638;
+  background: burlywood url("images/background2.jpg");
+  background-size: cover;
 }
 
 .landing-section-2 {
-  padding: 20px 10px 20px 10px;
-  background-color: #ffffff;
-  color:  #111111;
+  background: burlywood url("images/cooking.jpg");
+  background-size: cover;
 }
 
 .landing-section-3 {
-  padding: 20px 10px 30px 30px;
-  background-color: #2befe5;
-  color: #323638;
+  background: burlywood url("images/cuttingboard.jpg");
+  background-size: cover;
 }
 
 .landing-section-4   {
@@ -36,11 +33,7 @@
 }
 
 .landing-section-sample {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background-color: white;
 }
 
 .landing-section-recipe-name {
@@ -50,7 +43,6 @@
 }
 
 body {
-  background-color: #ffffff;
 }
 
 h4 {
